@@ -120,6 +120,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta name="citation_reference" content="citation_title=Epistemic existentialism;citation_publication_date=2021;citation_doi=10.1017/epi.2019.25;citation_author=Laura Frances Callahan" />
   <meta name="citation_reference" content="citation_title=The dynamics of rational deliberation;citation_publication_date=1990;citation_publisher=Harvard University Press;citation_author=Brian Skyrms" />
   <meta name="citation_reference" content="citation_title=The causal decision theorist’s gudie to managing the news;citation_publication_date=2020;citation_volume=117;citation_author=J. Dmitri Gallow" />
+  <meta name="citation_reference" content="citation_title=Mixed strategies and ratifiability in causal decision theory;citation_publication_date=1986;citation_volume=24;citation_doi=10.1007/BF00183199;citation_author=William Harper" />
   <meta name="citation_reference" content="citation_title=The uniqueness thesis;citation_publication_date=2016;citation_volume=11;citation_doi=10.1111/phc3.12318;citation_author=Matthew Kopec;citation_author=Michael G. Titelbaum" />
   <meta name="citation_reference" content="citation_title=Rationalizable strategic behavior and the problem of perfection;citation_publication_date=1984;citation_volume=52;citation_doi=10.2307/1911197;citation_author=David G. Pearce" />
   <meta name="citation_reference" content="citation_title=Rationality revisited;citation_publication_date=1984;citation_volume=62;citation_doi=10.1080/00048408412341601;citation_author=Reed Richter" />
@@ -1536,11 +1537,48 @@ Picture is “Study for ‘The Bear Hunt’ (for the Alcázar, Madrid)” by Pet
 <li>There is a non-singleton set of choices each of which is tied for being best, and each of which can be permissibly chosen.</li>
 </ol>
 <p>A decision theory is <strong>decisive over binary choices</strong> iff it satisfies this condition for all decision problems where there are just two choices. Most decision theories in the literature are decisive, and of those that are not, most of them are at least decisive over binary choices. I’m going to argue that the correct decision theory, whatever it is, is indecisive. It is not, I’ll argue, even decisive over binary choices.</p>
-<p>My argument will focus on the following kind of problem. Player has a binary choice. There is a Demon who is very good, arbitrarily good, at predicting choices, and has already made a prediction about what Player will choose. Player’s payoff is a function of what they choose, and what the Demon predicts. I’ll use capital letters for Player’s choices, and matching lower case letters for the Demon’s predictions. Here is one very familiar example of the kind of case I have in mind.</p>
+<p>The argument is going to be broadly abductive. I’m going to look at a lot of existing decision theories, and argue that each of them fails. Indeed, I’m going to argue that each of them can be refuted by the very same argument. I’ll suggest that the source of the problem is what those theories have in common, namely their decisiveness. To be clear, that last suggestion is going to be little more than a suggestion. I think you’ll find it pretty plausible once you see the range of theories that fail in the same way. But it’s certainly possible that one consequence of this paper is that someone will devise a new decisive decision theory that avoids the problem. That would be a pleasing kind of progress.</p>
+<p>The argument I referred to in the last paragraph turns on a pair of very similar decision problems. Each problem has the following structure. There is a human player, and a predictor, who I’ll call Doctor. Doctor is very good, as good as the demon in Newcomb’s problem, at predicting human’s behavior. Doctor will make two decisions. First, they will opt-in (which I’ll write as I for In), or opt-out (which I’ll write as O for out). If they opt-out, Doctor gets $2, and the player gets $100. (Assume both Doctor and the human prefer more money to less, and indeed that over these small sums there is more or less no declining marginal utility of money.) If they opt-in, this will be publicly announced, an another game will be played. Each of Doctor and the human player will (independently) pick a letter: A or B. Doctor will aim to predict the human’s choice, and will be rewarded iff that prediction is correct. Here is the payout table for the possible outcomes of this game.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Human Pick</th>
+<th style="text-align: center;">Doctor Pick</th>
+<th style="text-align: center;">Human Reward</th>
+<th style="text-align: center;">Doctor Reward</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">$4</td>
+<td style="text-align: center;">$4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">$0</td>
+<td style="text-align: center;">$0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">$3</td>
+<td style="text-align: center;">$0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">$2</td>
+<td style="text-align: center;">$2</td>
+</tr>
+</tbody>
+</table>
+<p>If you prefer this in the way we standardly present games in normal form, it looks like this, with the human as Row, doctor as Column, and in each cell the human’s payout is listed first. (All payouts are in dollars)</p>
 <div class="layout-chunk" data-layout="l-body">
 <table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-2">
 <caption style="caption-side: bottom; text-align: center;">
-Demonic Prisoners’ Dilemma
 </caption>
 <col>
 <col>
@@ -1549,99 +1587,118 @@ Demonic Prisoners’ Dilemma
 <th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
 </th>
 <th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-c
+A
 </th>
 <th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-d
+B
 </th>
 </tr>
 <tr style="height: 33.3%;">
 <td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-C
+A
 </td>
 <td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-4
+4,4
 </td>
 <td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-0
+0,0
 </td>
 </tr>
 <tr style="height: 33.3%;">
 <td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-D
+B
 </td>
 <td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-5
+3,0
 </td>
 <td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-1
+2,2
 </td>
 </tr>
 </table>
 </div>
-<p>I’ve called this <strong>Demonic Prisoners’ Dilemma</strong>. It’s <em>Demonic</em> because there’s a demon. And it’s Prisoners’ Dilemma because Player’s payouts are taken from the payout table for Prisoners’ Dilemma. I’ll come back in the next section to the general strategy I’m using for generating puzzles like this. If you’re a philosopher reading this, you’re probably used to thinking of Demonic Prisoners’ Dilemma as Newcomb’s Problem, but I want to use a productive naming convention, so I’m calling it Demonic Prisoners’ Dilemma.</p>
-<p>Here is another decision problem of the same broad kind.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;"> </th>
+<th style="text-align: center;">A</th>
+<th style="text-align: center;">B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">A</td>
+<td style="text-align: center;">4,4</td>
+<td style="text-align: center;">0,0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">B</td>
+<td style="text-align: center;">3,0</td>
+<td style="text-align: center;">2,2</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Situation</th>
+<th style="text-align: center;">Doctor</th>
+<th style="text-align: center;">Human</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Doctor opts-out</td>
+<td style="text-align: center;">$2</td>
+<td style="text-align: center;">$100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Doctor opts-in, both pick A</td>
+<td style="text-align: center;">$3</td>
+<td style="text-align: center;">$3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Doctor opts-in, both pick B</td>
+<td style="text-align: center;">$1</td>
+<td style="text-align: center;">$1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Doctor opts-in, different picks</td>
+<td style="text-align: center;">$0</td>
+<td style="text-align: center;">$0</td>
+</tr>
+</tbody>
+</table>
+<p>Now I said there were going to be two problems. Here’s how they are created. Two of the humans who are going to play this game are Amsterdam and Brussels. They have identical utility functions over money, and identical prior probability distributions about what the Doctor will do conditional on each of their choices. That’s to say, they both think the probability that Doctor will be wrong is vanishingly small. But Brussels is busy and has to run to the bank, so they have to write their decision in an envelope that will be revealed, after Doctor chooses A or B, iff Doctor opts-in in the game with Brussels. Amsterdam, on the other hand, gets to see Doctor’s decision about whether to opt-in or opt-out, and then (if Doctor opts-in) has to write their decision in an envelope that will be revealed after Doctor chooses A or B. For ease of reference, call Brussels’s decision the <em>early</em> decision and Amsterdam’s decision the <em>late</em> decision.</p>
+<p>Here is the core philosophical premise in the argument to follow.</p>
+<ul>
+<li>A choice of letter is rationally permissible for Brussels, i.e., in the early decision, iff it is rationally permissible for Amsterdam, i.e., in the late decision.</li>
+</ul>
+<p>I’m calling it a premise, though in the next section I’ll offer a few arguments for it, in case you don’t think it is obviously correct. (I sort of think it is obviously correct, but I’m really not going to rely on you sharing that intuition.) A really striking array of decisive decision theories violate it - they say that Amsterdam should choose A, and Brussels should choose B. I think that pair of recommendations is incoherent, so those decisive theories are mistaken. And I suspect this pattern is quite common, that any otherwise plausible decisive theory will make that recommendation. So I suspect that all decisive theories are mistaken.</p>
+<!-- My argument will focus on the following kind of problem. Player has a binary choice. There is a Demon who is very good, arbitrarily good, at predicting choices, and has already made a prediction about what Player will choose. Player's payoff is a function of what they choose, and what the Demon predicts. I'll use capital letters for Player's choices, and matching lower case letters for the Demon's predictions. Here is one very familiar example of the kind of case I have in mind. -->
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-3">
-<caption style="caption-side: bottom; text-align: center;">
-Demonic Stag Hunt
-</caption>
-<col>
-<col>
-<col>
-<tr style="height: 33.3%;">
-<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-</th>
-<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-g
-</th>
-<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-h
-</th>
-</tr>
-<tr style="height: 33.3%;">
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-G
-</td>
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-15
-</td>
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-40
-</td>
-</tr>
-<tr style="height: 33.3%;">
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">
-H
-</td>
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-0
-</td>
-<td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">
-50
-</td>
-</tr>
-</table>
+
 </div>
-<p>It’s called Demonic Stag Hunt because it’s got a Demon, and Player’s payouts are like in a Stag Hunt.</p>
-<p>The main decision problem I’m interested has the following structure: Player plays Demonic Prisoners’ Dilemma, then Demonic Stag Hunt, and gets the sum of the payouts across the two games. More precisely, the following six things happen in this order.</p>
-<ol type="1">
-<li>Demon predicts what Player will do in Demonic Prisoners’ Dilemma.</li>
-<li>Player makes a choice in Demonic Prisoners’ Dilemma.</li>
-<li>Demon’s prediction and Player’s choices are revealed (to both Demon and Player), and Player receives their first payout.</li>
-<li>Demon predicts what Player will do in Demonic Stag Hunt.</li>
-<li>Player makes a choice in Demonic Stag Hunt.</li>
-<li>Demon’s prediction and Player’s choices are revealed (to both Demon and Player), and Player receives their second payout.</li>
-</ol>
-<p>I’m going to argue for the following claims.</p>
-<ol type="1">
-<li>If a decisive decision theory is correct, Player’s choices at stages 2 and 5 should be exactly the choices they would make if they were playing these games as one-shot games, independent of any other interaction with the Demon.</li>
-<li>Player’s choice dispositions over the two games should be consistent with the choice they would make if they were choosing a <strong>strategy</strong> for playing the two games. I’m going to call this constraint Backwards Dynamic Consistency.</li>
-<li>If 1 is true, then all existing decisive decision theories either violate Backwards Dynamic Consistency, or are independently objectionable.</li>
-</ol>
-<p>So that’s the plan, but before we start there are two pieces of important housekeeping.</p>
+<!-- I've called this **Demonic Prisoners' Dilemma**. It's _Demonic_ because there's a demon. And it's Prisoners' Dilemma because Player's payouts are taken from the payout table for Prisoners' Dilemma. I'll come back in the next section to the general strategy I'm using for generating puzzles like this. If you're a philosopher reading this, you're probably used to thinking of Demonic Prisoners' Dilemma as Newcomb's Problem, but I want to use a productive naming convention, so I'm calling it Demonic Prisoners' Dilemma. -->
+<!-- Here is another decision problem of the same broad kind. -->
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<!-- It's called Demonic Stag Hunt because it's got a Demon, and Player's payouts are like in a Stag Hunt. -->
+<!-- The main decision problem I'm interested has the following structure: Player plays Demonic Prisoners' Dilemma, then Demonic Stag Hunt, and gets the sum of the payouts across the two games. More precisely, the following six things happen in this order. -->
+<!-- 1. Demon predicts what Player will do in Demonic Prisoners' Dilemma. -->
+<!-- 2. Player makes a choice in Demonic Prisoners' Dilemma. -->
+<!-- 3. Demon's prediction and Player's choices are revealed (to both Demon and Player), and Player receives their first payout. -->
+<!-- 4. Demon predicts what Player will do in Demonic Stag Hunt. -->
+<!-- 5. Player makes a choice in Demonic Stag Hunt. -->
+<!-- 6. Demon's prediction and Player's choices are revealed (to both Demon and Player), and Player receives their second payout. -->
+<!-- I'm going to argue for the following claims. -->
+<!-- 1. If a decisive decision theory is correct, Player's choices at stages 2 and 5 should be exactly the choices they would make if they were playing these games as one-shot games, independent of any other interaction with the Demon. -->
+<!-- 2. Player's choice dispositions over the two games should be consistent with the choice they would make if they were choosing a **strategy** for playing the two games. I'm going to call this constraint Backwards Dynamic Consistency. -->
+<!-- 3. If 1 is true, then all existing decisive decision theories either violate Backwards Dynamic Consistency, or are independently objectionable. -->
+<p>So that’s the plan, but before we start there are three pieces of important housekeeping.</p>
 <p>First, the definition of decisiveness referred to options being tied. For the definition to be interesting, it can’t just be that options are tied if each is rationally permissible. Then a decisive theory would just be one that either says one option is mandatory or many options are permissible. To solve this problem, I’ll borrow a technique from Ruth <span class="citation" data-cites="Chang2002"><a href="#ref-Chang2002" role="doc-biblioref">Chang</a> (<a href="#ref-Chang2002" role="doc-biblioref">2002</a>)</span>. Some options are <strong>tied</strong> iff either is permissible, but this permissibility is sensitive to sweetening. That is, if options <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are tied, then for any positive <span class="math inline">\(\varepsilon\)</span>, the agent prefers <span class="math inline">\(X + \varepsilon\)</span> to <span class="math inline">\(Y\)</span>. If either choice is permissible even if <span class="math inline">\(X\)</span> is ‘sweetened,’ i.e.., replaced in the list of choices by <span class="math inline">\(X + \varepsilon\)</span>, we’ll say they aren’t tied. My thesis then is that the correct decision theory says that sometimes there are multiple permissible options, and each of them would still be permissible if one of them was sweetened. Indeed, the argument will be that the very first decision problem I’ve stated is like that.</p>
-<p>Second, there is an important term in the definition of decisiveness that I haven’t clarified: <strong>decision problem</strong>. Informally, the argument assumes that in setting out Demonic Prisoners’ Dilemma (aka Newcomb’s Problem) and Demonic Stag Hunt I’ve described two decision problems. More formally, I’m assuming it suffices to specify a decision problem to describe the following four values.</p>
+<p>Second, there is an important term in the definition of decisiveness that I haven’t clarified: <strong>decision problem</strong>. Informally, the argument assumes that in setting out the proble facing Amsterdam and Brussels is indeed a decision problem. More formally, I’m assuming it suffices to specify a decision problem to describe the following four values.</p>
 <ul>
 <li>What choices the Player has;</li>
 <li>What possible states of the world there are (where it is understood that the choices of Player make no causal impact on which state is actual)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>;</li>
@@ -1649,13 +1706,14 @@ H
 <li>What return Player gets for each choice-state pair.</li>
 </ul>
 <p>Most recent papers on decision theory do not precisely specify what they count as a decision problem, but they seem to implicitly share this assumption, since they will often describe a vignette that settles nothing beyond these four things as a decision problem. And that’s what I did as well! And you should understand this as being part of the definition of decisiveness. And this implies that there are two ways to reject decisiveness.</p>
-<p>First, say that these four conditions underspecify a real decision problem. In any real situation, decision theory has a decisive verdict, but it rests on information above and beyond the setting of these four values. Some versions of Causal Decision Theory go this route, though as we’ll see not all do. So on this model, for any person playing Demonic Stag Hunt there is a decision theoretically correct thing for them to do (or the options are tied), but it’s potentially a different thing for different people</p>
-<p>Second, say that no matter how much one adds to the specification, there will be cases where the correct decision theory is indecisive. This is the view I ultimately want to defend, and this paper is a part of the defence. But it’s a proper part. In particular, it says nothing against the theories that say that once a problem like Demonic Stag Hunt is fully specified, there is a single correct option. That’s an argument for another day. Today, we have enough to be getting on with.</p>
+<p>First, say that these four conditions underspecify a real decision problem. In any real situation, decision theory has a decisive verdict, but it rests on information, typically information about the player, above and beyond the setting of these four values. I’ll say a theory that goes this route violates <em>interpersonal</em> decisiveness, but not <em>intrapersonal</em> decisiveness.</p>
+<p>Second, say that no matter how much one adds to the specification, there will be cases where the correct decision theory is indecisive. Such a theory violates <em>intrapersonal</em> decisiveness. There is nothing you could add about the person to the specification of a decision problem which decides what they should do, or even which options are tied. This is the view I ultimately want to defend, and this paper is a part of the defence. But it’s a proper part. Nothing I say here rules out mere interpersonal indecisiveness. That’s an argument for another day. Today, we have enough to be getting on with.</p>
+<p>Third, I have set up this problem quite explicitly as a game, with another player - the Doctor. I don’t think this is particularly big deal, though I gather not everyone agrees. In this respect (among others) I’m following William <span class="citation" data-cites="Harper1986"><a href="#ref-Harper1986" role="doc-biblioref">Harper</a> (<a href="#ref-Harper1986" role="doc-biblioref">1986</a>)</span>, who recommended treating Newcomb’s Problem as a game. It’s not clear why it wouldn’t be a game. The demon, after all, makes a choice, and if you assume the demon gets utility 1 from correct predictions and utility 0 from incorrect predictions, they make choices that maximise their return given their beliefs about what the other (human) players will do. So game theoretic techniques can and should apply. I think any problem with a predictive demon is best thought of as a game where the demonic player gets utility 1 or 0 depending on whether their prediction is right. Here the predictive player, the Doctor, has a utility function with slightly more structure. But if we think decision theory should apply in cases where there is a predictor around, it should still apply when that predictor has preferences with slightly more structure.</p>
 <h3 id="demonic-games">Demonic Games</h3>
 <p>Here is a general recipe for generating a philosophically interesting decision problem. Take an interesting game, and replace one of the players with a demon. A demon, in the relevant context, can be defined in one of two more or less equivalent ways. One way is to say that the demon’s payouts are 1 if in some sense they make the ‘same’ play as the other player, and 0 otherwise. Another is to say that each of their moves are predictions of what the other player will do, and conditional on any choice that player makes, the conditional probability of the demon making a correct prediction is arbitrarily high.</p>
 <p>Let’s illustrate this with a familiar game, Prisoners’ Dilemma. I’m going to use slightly different payouts from those that <span class="citation" data-cites="Axelrod1984"><a href="#ref-Axelrod1984" role="doc-biblioref">Axelrod</a> (<a href="#ref-Axelrod1984" role="doc-biblioref">1984</a>)</span> uses in his classic discussion, but not so different as to make the example unfamiliar. First, here is the game version.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-4">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-5">
 <caption style="caption-side: bottom; text-align: center;">
 Prisoners’ Dilemma
 </caption>
@@ -1698,7 +1756,7 @@ D
 </div>
 <p>Now here’s what happen if we demonize the payouts for column.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-5">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-6">
 <caption style="caption-side: bottom; text-align: center;">
 Prisoners’ Dilemma with a Demon
 </caption>
@@ -1741,7 +1799,7 @@ D
 </div>
 <p>And here is what happens if we remove the demon altogether.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-6">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-7">
 <caption style="caption-side: bottom; text-align: center;">
 Demonic Prisoners’ Dilemma
 </caption>
@@ -1787,7 +1845,7 @@ D
 <p>When I’m introducing games in classes, I usually walk through five instances of two player, two options each, games. Four of them have already been mentioned in this section: Prisoners’ Dilemma, Matching Pennies, Battle of the Sexes, and Chicken. But the fifth is probably the most interesting of the lot: Stag Hunt. Brian Sykrms has written extensively on why Stag Hunt is philosophically important <span class="citation" data-cites="Skyrms2001 Skyrms2004">(<a href="#ref-Skyrms2001" role="doc-biblioref">Skyrms 2001</a>, <a href="#ref-Skyrms2004" role="doc-biblioref">2004</a>)</span>. I’ll really just focus on one reason.</p>
 <p>Here is an abstract form of a Stag Hunt game, where the options are G/g for Gather or H/h for Hunt. Actually, this is a table for a generic symmetric game; what makes it a Stag Hunt are the four constraints listed below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-7">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-8">
 <caption style="caption-side: bottom; text-align: center;">
 Generic Stag Hunt
 </caption>
@@ -1848,7 +1906,7 @@ H
 <p>Note that this argument does not carry across to indecisive theories. One way to be indecisive is to think that there is some further information, behind the four things we’ve taken to describe a game here, that affect what choices one should make. And it is possible that there could be causal or evidential links between what one does in round one, and that ‘further information’ in round two. So given indecisiveness, it is possible there are strategic reasons for doing something in round 1 that one would not do in a one round game, or informational reasons for doing something in round 2 that one would not do in a one round game. And in fact I think that is the case - but it is something that only indecisive theories can accept.</p>
 <p>We are going to be interested primarily in the following two round game: Demonic Prisoners’ Dilemma plus Demonic Stag Hunt. And to make things concrete, I’ll use the following payouts for the two games. First, Demonic Prisoners’ Dilemma.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-8">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-9">
 <caption style="caption-side: bottom; text-align: center;">
 Demonic Prisoners’ Dilemma
 </caption>
@@ -1891,7 +1949,7 @@ D
 </div>
 <p>Second, Demonic Stag Hunt.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-9">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-10">
 <caption style="caption-side: bottom; text-align: center;">
 Demonic Stag Hunt
 </caption>
@@ -1935,7 +1993,7 @@ H
 <p>As you can see, I’ve made the stakes much higher in Demonic Stag Hunt than in Demonic Prisoners’ Dilemma. Whether Player can cause the Demon to play <span class="math inline">\(h\)</span> in round 2 is much more significant than whether they play <span class="math inline">\(C\)</span> or <span class="math inline">\(D\)</span> in round 1.</p>
 <p>There are 16 possible outcomes to this game, depending on what Player and Demon do. They are given in this table.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-10">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 50%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-11">
 <caption style="caption-side: bottom; text-align: center;">
 Possible Outcomes of DPD+DSH
 </caption>
@@ -2128,7 +2186,7 @@ DH
 <p>Player B has an interaction like Player A’s, but with the following difference. The demon has the option of <em>passing</em>, and not predicting what choice B will make. The demon would prefer correct prediction to passing, and passing to incorrect prediction. If the demon passes, B will get $2000, not just $1000. But still, B will be shown how much is in each box. So almost all theorists will say that B should take the money, and since the demon knows this, the demon shouldn’t pass. (I’ll come back to theories that say B should pass up the money in the penultimate section of the paper.)</p>
 <p>Player C is like Player B, except they will be at work all day tomorrow, and unable to make a choice. So they are asked to record in advance their strategy,. Now things get interesting. C has four options to choose between - since they have to announce left or right for each possible revelation of where the money is. And the demon has three choices, left, right or pass. So here’s the game table, with Player C as Row and Demon as Column. (I’ll write X-Y to mean for C to mean Do X if the money is in the left box, and Do Y if the money is in the right box. And I’ll assume each $1000 is worth 1 util to C.)</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 40%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-11">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 40%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-12">
 <caption style="caption-side: bottom; text-align: center;">
 Threat Game
 </caption>
@@ -2209,7 +2267,7 @@ Right-Right
 </div>
 <p>From what we’ve said about the demon, we can deduce the following conditional probabilities for predictions given strategies. (The second line is because the value for <span class="math inline">\(x\)</span> is undetermined, but it’s not going to matter given what comes next.)</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 40%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-12">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 40%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-13">
 <caption style="caption-side: bottom; text-align: center;">
 Probabilities in Threat Game
 </caption>
@@ -2353,7 +2411,7 @@ p_{i+1}(O) = \frac{rp_i(O) + c_i(O)}{r + \sum c(X)}
 <p>So let’s turn to the third reason, which is that midpoint theory is also arguably dynamically inconsistent in a different case. I say ‘arguably’ because the case involves mixed strategies, and just how to understand dynamic consistency when mixed strategies are around is a tricky question.</p>
 <p>The example involves playing the following two Demonic Anti-Coordination games in order, with the results of the first game being revealed to Player and demon before the second game is played.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-13">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-14">
 <caption style="caption-side: bottom; text-align: center;">
 First Anti-Coordination Game
 </caption>
@@ -2395,7 +2453,7 @@ D
 </table>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-14">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-15">
 <caption style="caption-side: bottom; text-align: center;">
 Second Anti-Coordination Game
 </caption>
@@ -2564,6 +2622,9 @@ Gallow, J. Dmitri. 2020. <span>“The Causal Decision Theorist’s Gudie to Mana
 </div>
 <div id="ref-GibbardHarper1978" class="csl-entry" role="doc-biblioentry">
 Gibbard, Allan, and William Harper. 1978. <span>“Counterfactuals and Two Kinds of Expected Utility.”</span> In <em>Foundations and Applications of Decision Theory</em>, edited by C. A. Hooker, J. J. Leach, and E. F. McClennen, 125–62. Dordrecht: Reidel.
+</div>
+<div id="ref-Harper1986" class="csl-entry" role="doc-biblioentry">
+Harper, William. 1986. <span>“Mixed Strategies and Ratifiability in Causal Decision Theory.”</span> <em>Erkenntnis</em> 24 (1): 25–36. <a href="https://doi.org/10.1007/BF00183199">https://doi.org/10.1007/BF00183199</a>.
 </div>
 <div id="ref-Holton2009" class="csl-entry" role="doc-biblioentry">
 Holton, Richard. 2009. <em>Willing, Wanting, Waiting</em>. Oxford: Oxford University Press.

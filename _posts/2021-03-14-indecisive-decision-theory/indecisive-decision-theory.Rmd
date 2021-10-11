@@ -90,24 +90,39 @@ Picture is "Study for 'The Bear Hunt' (for the Alcázar, Madrid)" by Peter Paul 
 
 A decision theory is **decisive over binary choices** iff it satisfies this condition for all decision problems where there are just two choices. Most decision theories in the literature are decisive, and of those that are not, most of them are at least decisive over binary choices. I'm going to argue that the correct decision theory, whatever it is, is indecisive. It is not, I'll argue, even decisive over binary choices.
 
-The argument is going to be broadly abductive. I'm going to look at a lot of existing decision theories, and argue that each of them fails. Indeed, I'm going to argue that each of them can be refuted by the very same argument. I'll suggest that the source of the problem is what those theories have in common, namely their decisiveness. To be clear, that last suggestion is going to be little more than a suggestion. I think you'll find it pretty plausible once you see the range of theories that fail in the same way. But it's certainly possible that one consequence of this paper is that someone will devise a new decisive decision theory that avoids the problem. That would be a pleasing kind of progress.
+The argument is going to be broadly abductive. I'm going to look at a lot of existing decision theories, and argue that each of them fails. Indeed, I'm going to argue that each of them can be refuted by the very same argument. I'll suggest that the source of the problem is what those theories have in common, namely their decisiveness. To be clear, that last suggestion is going to be little more than a suggestion. I think you'll find it pretty plausible once you see the range of theories that fail, and how easy it is to generate problem cases for new kinds of decisive theories. But it's certainly possible that one consequence of this paper is that someone will devise a new decisive decision theory that avoids the problem. That would be a pleasing kind of progress.
 
-The argument I referred to in the last paragraph turns on a pair of very similar decision problems. Each problem has the following structure. There is a human player, and a predictor, who I'll call Doctor. Doctor is very good, as good as the demon in Newcomb's problem, at predicting human's behavior. Doctor will make two decisions. First, they will opt-in (which I'll write as I for In), or opt-out (which I'll write as O for out). If they opt-out, Doctor gets $2, and the player gets $100. (Assume both Doctor and the human prefer more money to less, and indeed that over these small sums there is more or less no declining marginal utility of money.) If they opt-in, this will be publicly announced, an another game will be played. Each of Doctor and the human player will (independently) pick a letter: A or B. If they both pick A, they both get $3. If they both pick B, they both get $1. If they pick differently, they both get $0. So to summarise:
+The argument I referred to in the last paragraph turns on a pair of very similar decision problems. Each problem has the following structure. There is a human player, and a predictor, who I'll call Doctor. Doctor is very good, as good as the demon in Newcomb's problem, at predicting human's behavior. Doctor will make two decisions. First, they will opt-in (which I'll write as I for In), or opt-out (which I'll write as O for out). If they opt-out, Doctor gets $2, and the player gets $100. (Assume both Doctor and the human prefer more money to less, and indeed that over these small sums there is more or less no declining marginal utility of money.) If they opt-in, this will be publicly announced, an another game will be played. Each of Doctor and the human player will (independently) pick a letter: A or B. Doctor will aim to predict the human's choice, and will be rewarded iff that prediction is correct. Here is the payout table for the possible outcomes of this game.
 
-Situation                         Doctor    Human
--------------------------------  --------  -------
-Doctor opts-out                    $2       $100
-Doctor opts-in, both pick A        $3        $3
-Doctor opts-in, both pick B        $1        $1
-Doctor opts-in, different picks    $0        $0
+ Human Pick   Doctor Pick   Human Reward   Doctor Reward
+------------ ------------- -------------- ---------------
+     A           A              $4             $4
+     A           B              $0             $0
+     B           A              $3             $0
+     B           B              $2             $2
+     
+
+If you prefer this in the way we standardly present games in normal form, it looks like this, with the human as Row, doctor as Column, and in each cell the human's payout is listed first. (All payouts are in dollars)
+
+```{r}
+	main_game <- tribble(
+	   ~"", ~A, ~B,
+	   "A", "4,4", "0,0",
+	   "B", "3,0", "2,2"
+	)
+gameformat(main_game, "")
+```
 
 Now I said there were going to be two problems. Here's how they are created. Two of the humans who are going to play this game are Amsterdam and Brussels. They have identical utility functions over money, and identical prior probability distributions about what the Doctor will do conditional on each of their choices. That's to say, they both think the probability that Doctor will be wrong is vanishingly small. But Brussels is busy and has to run to the bank, so they have to write their decision in an envelope that will be revealed, after Doctor chooses A or B, iff Doctor opts-in in the game with Brussels. Amsterdam, on the other hand, gets to see Doctor's decision about whether to opt-in or opt-out, and then (if Doctor opts-in) has to write their decision in an envelope that will be revealed after Doctor chooses A or B. For ease of reference, call Brussels's decision the _early_ decision and Amsterdam's decision the _late_ decision.
 
 Here is the core philosophical premise in the argument to follow.
 
-- A choice of letter is rationally permissible for Brussels, i.e., in the early decision, iff it is rationally permissible for Amsterdam, i.e., in the late decision.
+The Core Premise
+:    If there is is precisely one permissible choice for Amsterdam, and one permissible choice for Brussels, then it must be the same choice. That is, if each of them is obliged to choose a particular letter, it must be the same letter. It can't be that one is obliged to choose A, and the other obliged to choose B.
 
-I'm calling it a premise, though in the next section I'll offer a few arguments for it, in case you don't think it is obviously correct. (I sort of think it is obviously correct, but I'm really not going to rely on you sharing that intuition.) A really striking array of decisive decision theories violate it - they say that Amsterdam should choose A, and Brussels should choose B. I think that pair of recommendations is incoherent, so those decisive theories are mistaken. And I suspect this pattern is quite common, that any otherwise plausible decisive theory will make that recommendation. So I suspect that all decisive theories are mistaken.
+I'm calling **The Core Premise** a premise, though in the next section I'll offer a few arguments for it, in case you don't think it is obviously correct. (I sort of think it is obviously correct, but I'm really not going to rely on you sharing that intuition.) And it turns out that a huge number of theories violate this. Some of them say taht Amsterdam should choose A and Brussels should choose B, but a few say the reverse. Either way, I think the pair of recommendations each theory offers is incoherent, so those decisive theories are mistaken. And I suspect any other plausible decisive theory will make an incoherent pair of recommendations in either this case, or one very similar to it. So I suspect that all decisive theories are mistaken.
+
+**The Core Premise** is a conditional, but any decisive theory that denies that the choices are tied will meet the condition. So from now on in arguing against decisive theories I'll mostly just interpret **The Core Premise** as saying Amsterdam and Brussels must make the same choice. The main thing to check for is that a theory doesn't say the choices are tied. None of the theories I'll look at will say that, but it's an important thing to check.
 
 <!-- My argument will focus on the following kind of problem. Player has a binary choice. There is a Demon who is very good, arbitrarily good, at predicting choices, and has already made a prediction about what Player will choose. Player's payoff is a function of what they choose, and what the Demon predicts. I'll use capital letters for Player's choices, and matching lower case letters for the Demon's predictions. Here is one very familiar example of the kind of case I have in mind. -->
 
@@ -150,7 +165,7 @@ I'm calling it a premise, though in the next section I'll offer a few arguments 
 <!-- 2. Player's choice dispositions over the two games should be consistent with the choice they would make if they were choosing a **strategy** for playing the two games. I'm going to call this constraint Backwards Dynamic Consistency. -->
 <!-- 3. If 1 is true, then all existing decisive decision theories either violate Backwards Dynamic Consistency, or are independently objectionable. -->
 
-So that's the plan, but before we start there are three pieces of important housekeeping.
+Before we start there are three pieces of important housekeeping.
 
 First, the definition of decisiveness referred to options being tied. For the definition to be interesting, it can't just be that options are tied if each is rationally permissible. Then a decisive theory would just be one that either says one option is mandatory or many options are permissible. To solve this problem, I'll borrow a technique from Ruth @Chang2002. Some options are **tied** iff either is permissible, but this permissibility is sensitive to sweetening. That is, if options $X$ and $Y$ are tied, then for any positive $\varepsilon$, the agent prefers $X + \varepsilon$ to $Y$. If either choice is permissible even if $X$ is 'sweetened', i.e.., replaced in the list of choices by $X + \varepsilon$, we'll say they aren't tied. My thesis then is that the correct decision theory says that sometimes there are multiple permissible options, and each of them would still be permissible if one of them was sweetened. Indeed, the argument will be that the very first decision problem I've stated is like that.
 
@@ -168,6 +183,62 @@ First, say that these four conditions underspecify a real decision problem. In a
 Second, say that no matter how much one adds to the specification, there will be cases where the correct decision theory is indecisive. Such a theory violates _intrapersonal_ decisiveness. There is nothing you could add about the person to the specification of a decision problem which decides what they should do, or even which options are tied. This is the view I ultimately want to defend, and this paper is a part of the defence. But it's a proper part. Nothing I say here rules out mere interpersonal indecisiveness. That's an argument for another day. Today, we have enough to be getting on with.
 
 Third, I have set up this problem quite explicitly as a game, with another player - the Doctor. I don't think this is particularly big deal, though I gather not everyone agrees. In this respect (among others) I'm following William @Harper1986, who recommended treating Newcomb's Problem as a game. It's not clear why it wouldn't be a game. The demon, after all, makes a choice, and if you assume the demon gets utility 1 from correct predictions and utility 0 from incorrect predictions, they make choices that maximise their return given their beliefs about what the other (human) players will do. So game theoretic techniques can and should apply. I think any problem with a predictive demon is best thought of as a game where the demonic player gets utility 1 or 0 depending on whether their prediction is right. Here the predictive player, the Doctor, has a utility function with slightly more structure. But if we think decision theory should apply in cases where there is a predictor around, it should still apply when that predictor has preferences with slightly more structure.
+
+### Defending The Core Premise
+
+In this section I'll offer three arguments in defence of **The Core Premise**. The first will be to argue that Amsterdam and Brussels have in a key sense the same choice, the second will argue that violations of **The Core Premise** will violate the Sure Thing Principle, and the third is that violations of **The Core Premise** lead to people being willing to pay to avoid information. The arguments will make frequent use of the following equivalence. A player must choose a letter iff the player prefers choosing that letter. So I'll move freely from saying that a theory says Amsterdam should choose X to saying Amsterdam should prefer X. I don't think this should be controversial, but it's worth noting. Onto the three arguments.
+
+Think about what Brussels is doing when writing in the envelope. They know that the envelope will only be opened if the Doctor opts-in. If the Doctor does, then what they play will determine their payout. So they should imagine that the Doctor has opted-in, and act accordingly. But in that imaginative situation, they will do the same thing as if they knew that the Doctor had opted-in. That is, they'll do the same thing Amsterdam will do. There isn't any difference, for purposes of choice, between supposing that the Doctor has opted-in, and learning that the Doctor has opted-in. And Brussels should suppose that the Doctor has opted-in. After all, they are being asked what to contribute to the game if, and only if, the Doctor opts-in. So the two choices are effectively the same, and they should get the same verdict. That's the first argument.
+
+Assume that a theory says Amsterdam should do X, but Brussels should do Y, where X and Y are distinct. Now ask the theory, what should Brussels prefer conditional on the Doctor opting-in, and conditional on the Doctor opting-out. Since Amsterdam should choose X, conditional on the Doctor opting-in, Brussels thinks X is better than Y. And conditional on the doctor opting-out, Brussels is indifferent between X and Y, so thinks X is as at least as good as Y. The sure thing principle (or at least the version that matters here) says that if Brussels knows that precisely one of a set of outcomes obtains, and X is at least as good as Y conditional on each member of the set, then X is at least as good as Y overall. But that contradicts the assumption that Brussels should choose Y. So that's the second argument.
+
+Assume again that a theory says Amsterdam should do X, but Brussels should do Y, where X and Y are distinct. Now imagine a third player, Cardiff. Cardiff isn't busy, like Brussels. But Cardiff hasn't yet found out whether the Doctor has opted-in. They are offered the chance to buy ear plugs, so they won't hear the announcement of whether the Doctor opts-in or opts-out. They should like to get those, since right now they prefer Y to X, but there's a chance that they'll hear the Doctor has opted-in, which will leave them in the same situation as Amsterdam, and hence they'll choose X. And there is nothing they can gain from hearing the announcement. But this is absurd - a player should not pay to avoid relevant information about the game. So that's the third argument.
+
+Now this last argument has one caveat. I didn't calculate how much the player should pay for the ear plugs. That turns out to vary a little depending on just which decisive theory we are looking at. And some theories will say that Cardiff should not pay anything for the ear plugs, since they are certain the Doctor will opt-out. The third argument isn't particularly effective, I think, against those theories. But it works well, and I feel is the strongest argument, against some other theories. But we'll have to look case by case at just how much a theory would recommend Cardiff pay for the ear plugs.
+
+So that's the defence of **The Core Premise**. What I'll now show is that a wide range of decisive theories violate it, and so we can conclude they are false.
+
+### Early and Late Choices
+
+To see why theories might violate **The Core Premise**, it's helpful to set out explicitly the choices that Amsterdam and Brussels face. And we'll treat the Doctor largely as a non-player character, just as the demon is typically treated in Newcomb's problem. So from now on the columns will not be the Doctor's choices, but what the Doctor predicts the human player chooses. And we'll assume the Doctor maximises their financial return given a correct prediction. It's easy to set out the choice Amsterdam faces; it's just the embedded game with some notational differences.
+
+```{r}
+	ams_game <- tribble(
+	   ~"", ~PA, ~PB,
+	   "A", "4", "0",
+	   "B", "3", "2"
+	)
+gameformat(ams_game, "")
+```
+
+I've written **PA** and **PB** in the columns to indicated that A or B is Predicted. But in this game that makes little difference, since the Doctor will do whatever they predict Amsterdam will do. Things are a little different for Brussels. If Doctor predicts that Brussels has written B, they will opt-out and get $3, rather than opting-in, and getting $2. So the table Brussels faces looks like this.
+
+```{r}
+	bru_game <- tribble(
+	   ~"", ~PA, ~PB,
+	   "A", "4", "100",
+	   "B", "3", "100"
+	)
+gameformat(bru_game, "")
+```
+
+So what **The Core Premise** says is that if each of these games has a uniquely rational choice, it must be the same choice. As we'll see, a lot of theories do 
+
+### Evidential Decision Theory
+
+
+### Stag Hunt
+
+- The recipe for converting games
+- Lewis1981 as source
+- PD becomes Newcomb; Matching Pennies becomes Death in Damascus; Chicken becomes Psychopath Button
+- But less attention to Stag Hunt
+- Define what a Stag Hunt
+- Harsanyi 1988 says play A
+- Harsanyi and Selten 1993 say play B
+- And an interesting choice about what to do
+- Brussels is playing a borderline case of a stag hunt, since only have tie
+
 
 ### Demonic Games
 
