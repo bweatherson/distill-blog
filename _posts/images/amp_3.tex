@@ -1,0 +1,54 @@
+\documentclass{minimal}
+\begin{document}
+\begin{center}
+\setlength{\unitlength}{0.3mm}
+\begin{picture}(192, 135)
+%Draw left square
+\put(0,0){\line(1,0){128}}
+\put(0,0){\line(0,1){128}}
+\put(0,128){\line(1,0){128}}
+%Draw dotted line
+\multiput(128,0)(0,1){128}{\line(0,1){0.5}}
+%Draw large triangle
+\put(128,0){\line(1,1){64}}
+\put(128,128){\line(1,-1){64}}
+%Draw large diamond
+\put(128,64){\line(1,1){32}}
+\put(128,64){\line(1,-1){32}}
+%Draw next two diamonds
+\put(128,96){\line(1,1){16}}
+\put(128,96){\line(1,-1){16}}
+\put(128,32){\line(1,1){16}}
+\put(128,32){\line(1,-1){16}}
+%Draw next four diamonds
+\put(128,112){\line(1,1){8}}
+\put(128,112){\line(1,-1){8}}
+\put(128,80){\line(1,1){8}}
+\put(128,80){\line(1,-1){8}}
+\put(128,48){\line(1,1){8}}
+\put(128,48){\line(1,-1){8}}
+\put(128,16){\line(1,1){8}}
+\put(128,16){\line(1,-1){8}}
+%Draw next eight diamonds
+\put(128,120){\line(1,1){4}}
+\put(128,120){\line(1,-1){4}}
+\put(128,104){\line(1,1){4}}
+\put(128,104){\line(1,-1){4}}
+\put(128,88){\line(1,1){4}}
+\put(128,88){\line(1,-1){4}}
+\put(128,72){\line(1,1){4}}
+\put(128,72){\line(1,-1){4}}
+\put(128,56){\line(1,1){4}}
+\put(128,56){\line(1,-1){4}}
+\put(128,40){\line(1,1){4}}
+\put(128,40){\line(1,-1){4}}
+\put(128,24){\line(1,1){4}}
+\put(128,24){\line(1,-1){4}}
+\put(128,8){\line(1,1){4}}
+\put(128,8){\line(1,-1){4}}
+%Draw arrow
+\thicklines
+\put(64,64){\vector(1,0){24}}
+\end{picture}
+\end{center}
+\end{document}

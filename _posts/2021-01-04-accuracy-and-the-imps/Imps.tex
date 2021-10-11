@@ -1,0 +1,196 @@
+\begin{document}
+\section{Accuracy, Bribes and Scoring Rules}
+\label{accuracybribesandscoringrules}
+
+Belief aims at the truth.\footnote{Thanks to [redacted for anonymous review] for helpful comments.} So at least in some sense, an agent is doing better at believing the closer they are to the truth. When applied to individual beliefs, this generates epistemic advice that is literally platitudinous: if you know that a change in your attitude towards \emph{p} will make your attitude towards \emph{p} more accurate, make that change! When applied to collective bodies of belief though, the advice turns out to be more contentious. Call \textbf{epistemic consequentialism} the view that if an agent knows that a change in their overall belief state will make their belief state more accurate, they should make that change, if they have the power to do so.
+
+Hilary  \citet{Greaves2013} has recently argued that epistemic consequentialism is false because it licences certain epistemic `bribes', and these should not be licenced. We'll argue that the best forms of epistemic consequentialism do not licence some of these bribes after all.\footnote{Though they do licence others; see section 2.4 for more discussion.} Here is the key case Greaves uses.\footnote{Greaves has four other cases, but the Imps case is the only one that is a problem for all forms of consequentialism she discusses. Similar cases have suggested by Selim  \citet{Berker2013b, Berker2013a} and C. S.  \citet{Jenkins2007}, but we'll focus on Greaves's discussion since she engages more fully with the literature on scoring rules. We'll return briefly to Berker's discussion in section 2.}
+
+\begin{quote}
+
+Emily is taking a walk through the Garden of Epistemic Imps. A child plays on the grass in front of her. In a nearby summerhouse are $n$ further children, each of whom may or may not come out to play in a minute. They are able to read Emily's mind, and their algorithm for deciding whether to play outdoors is as follows. If she forms degree of belief 0 that there is now a child before her, they will come out to play. If she forms degree of belief 1 that there is a child before her, they will roll a fair die, and come out to play iff the outcome is an even number. More generally, the summerhouse children will play with chance $(1-\nicefrac{q(C_0)}{2})$, where $q(C_0)$ is the degree of belief Emily adopts in the proposition $C_0$ that there is now a child before her. Emily’s epistemic decision is the choice of credences in the proposition $C_0$ that there is now a child before her, and, for each $j = 1, \ldots, n$ the proposition $C_j$ that the \emph{j}th summerhouse child will be outdoors in a few minutes' time.
+\end{quote}
+
+\begin{quote}
+
+$\ldots$ if Emily can just persuade herself to ignore her evidence for $C_0$, and adopt (at the other extreme) credence 0 in $C_0$, then, by adopting degree of belief 1 in each $C_{j} (j = 1, ... , 10)$, she can guarantee a perfect match to the remaining truths. Is it epistemically rational to accept this `epistemic bribe'?  \citet[918]{Greaves2013}
+\end{quote}
+The epistemic consequentialist says that it is best to have credences that are as accurate as possible. We will focus on believers who assign probabilistically coherent credences (degrees of belief) to the propositions in some ``target set'' $\mathscr{X}$, and we will think of the ``degree of fit'' between her beliefs and the truth as being measured by a strictly proper scoring rule. This is a function $\mathbf{I}_{\mathscr{X}}$ which associates each pair $\langle \mathbf{cred}, @ \rangle$ consisting of a credence function $\mathbf{cred}$ whose domain includes $\mathscr{X}$ and a consistent truth-value assignment @ for elements of $\mathscr{X}$ with a non-negative real number $\mathbf{I}_{\mathscr{X}}(@, \mathbf{cred})$. Intuitively, $\mathbf{I}_{\mathscr{X}}$ measures the inaccuracy of the credences that cred assigns to the propositions in $\mathscr{X}$ when their truth-values are as described by @. Note that higher $\mathbf{I}_{\mathscr{X}}$-values indicate higher levels of epistemic disutility, so that lower is better from a consequentialist perspective. One popular scoring rule is the Brier score, which identifies inaccuracy with the average squared distance between credences and truth-values. (Greaves calls this the `quadratic scoring rule', which is a useful description too.) More formally, we have:
+
+$$\mathbf{Brier}_{\mathscr{X}}(@, \mathbf{cred}) = \frac{1}{|\mathscr{X}|}\sum_{X \in \mathscr{X}} (\mathbf{cred}(X) - @(X))^2$$
+where $|\mathscr{X}|$ is the number of propositions in $\mathscr{X}$ and $@(X)$ is either zero or one depending upon whether X is true or false. 
+
+Another common score is the logarithmic rule, which defines inaccuracy as:
+
+$$\mathbf{Log}_{\mathscr{X}}(@, \mathbf{cred}) = \frac{1}{|\mathscr{X}|}\sum_{X \in \mathscr{X}} -\text{log}(\mathbf{cred}(X)) \cdot @(X)$$
+For now we will follow Greaves in assuming that our epistemic consequentialist uses the Brier score to measure epistemic disutility, but we will relax that assumption in a little while.
+
+Now let's think about the `bribe' that Greaves offers, from the point of view of the epistemic consequentialist. The choices are to have one of two credal states, which we'll call \textbf{cred1} and \textbf{cred2}. We'll say \textbf{cred1} is the one that best tracks the initial evidence, so $\mathbf{cred1}(C_0) = 1$, and $\mathbf{cred1}(C_i) = 0.5$ for $i \in {1, ..., 10}$. And \textbf{cred2} is the credence Emily adopts if she accepts the bribe, so $\mathbf{cred2}(C_0) = 0$, while $\mathbf{cred2}(C_i) = 1$ for $i \in {1, ..., 10}$. Which state is better?
+
+Thinking like an epistemic consequentialist, you might ask which state is more accurate? It seems like that would be \textbf{cred2}. While \textbf{cred1} gets $C_0$ exactly right it does not do very well on the other propositions. In contrast, while \textbf{cred2} gets $C_0$ exactly wrong, it is perfect on the other ten propositions. So overall, \textbf{cred2} looks to have better epistemic consequences: when compared to being right about one proposition and off by 0.5 on ten others, being right on ten is surely worth one false belief. The Brier score seems to bear this out. If we let $\mathscr{X}$, the target set, consist of $C_0, C_1, ..., C_{10}$, then we have
+\begin{align*}
+\mathbf{Brier}_\mathscr{X}(\mathbf{cred1}, @) &= \frac{1}{11}[(1-\mathbf{cred1}(C_0))^2 + \sum_{i = 1}^{10} (@(C_i) - \nicefrac{1}{2}) ^2] = \frac{10}{44} \\
+\mathbf{Brier}_\mathscr{X}(\mathbf{cred2}, @) &= \frac{1}{11}[(1-\mathbf{cred2}(C_0))^2 + \sum_{i = 1}^{10} (@(C_i) - cred(C_i)) ^2] = \frac{1}{11} 
+\end{align*}
+So, it seems that a good epistemic consequentialist will take the bribe. But, doesn’t that seem like the height of epistemic irresponsibility? It means choosing to believe that $C_0$ is certainly false when you have conclusive evidence for thinking that it is true. If you see the child on the lawn in front of you, how can you sanction believing she is not there?
+
+As Greaves admits, intuitions are divided here. Some consequentialists might think that ``epistemic bribes'' are at least sometimes worth taking, while those of a more deontological bent will always find such trade-offs ``beyond the pale'' ~\citep[363]{Berker2013b}. We will largely sidestep these contentious issues here, though our argument will offer comfort to epistemic consequentialists who feel queasy about accepting the bribe offered in Imps. We contend that, when inaccuracy is measured properly, the consequences of adopting the \textbf{cred2} credences are strictly worse than the consequences of adopting \textbf{cred1}.
+
+The basic problem is that Imps cherry-picks propositions in a way no consequentialist should condone. Its persuasive force rests on the assumption that, for purposes of epistemic evaluation, nothing matters except the accuracies of the credences assigned to propositions in the target set $\mathscr{X}$. But $\mathscr{X}$ is the wrong target! By confining attention to it Greaves ignores the many other credences to which Emily becomes committed as a consequence of adopting \textbf{cred1} or \textbf{cred2}. Any (coherent) agent who invests credence zero in $C_0$ must also invest credence zero in any proposition $C_0 \wedge Y$, where $Y$ is any conjunction or disjunction of elements from $\mathscr{X}$. Likewise, anyone who invests credence one in $C_n$ must invest credence one in any proposition $C_n \vee Y$, where $Y$ is any conjunction or disjunction from $\mathscr{X}$. In the current context (where the probabilities of the various $C_i$ are independent), when Emily adopts a credence function over $\mathscr{X}$ she commits to having a credence for (i) every atomic proposition ±$C_0 \wedge $± $C_1 \wedge$±$C_2 \wedge \ldots \wedge$±$C_{10}$, where `±' can be either an affirmation or a negation, and (ii) every disjunction of these atomic propositions. In short, she commits to having credences over the whole Boolean algebra $\mathscr{A}_\mathscr{X}$ generated by $\mathscr{X}$. Since each event of a child coming out is independent, adopting \textbf{cred1} will commit her to setting \textbf{cred1}(±$C_0 \wedge $± $C_1 \wedge$±$C_2 \wedge \ldots \wedge$±$C_{10}) = \nicefrac{1}{1024}$ when $C_0$ is affirmed, and 0 when it is negated. While adopting \textbf{cred2} commits her to setting \textbf{cred2}(±$C_0 \wedge $± $C_1 \wedge$±$C_2 \wedge \ldots \wedge$±$C_{10}$) equal to 1 when $C_0$ is negated and the rest of the $C_i$ are affirmed, and to 0 otherwise. In this way, each of these probability assignments over the 2048 atoms determine a definite probability for every one of the $2^{2048}$ propositions in $\mathscr{A}_\mathscr{X}$. 
+
+It is our view that consequentialists should reject any assessment of epistemic utility that fails to take the accuracies of \textit{all} these credences into account. All are consequences of adopting \textbf{cred1} or \textbf{cred2}, and so all should be part of any consequentialist evaluation of the quality of those credal states. The right ``target set'' to use when computing epistemic disutility is not $\mathscr{X}$ but $\mathscr{A}_\mathscr{X}$. If we don't do that, we ignore most of the ways in which \textbf{cred1} and \textbf{cred2} differ in accuracy. If Emily takes the bribe, she goes from having credence 0.5 in $C_0 \leftrightarrow C_1$ to having credence 0 in it. And that's unfortunate, because the chance of $C_0 \leftrightarrow C_1$ goes from 0.5 to 1. This is another proposition, as well as $C_0$, that Emily acquires a false belief in by taking the bribe. Of course, there are other propositions not counted that go the other way. Originally, Emily has a credence of 0.25 in $C_1 \wedge C_2$, and its chance is also 0.25. After taking the bribe, this has a chance of 1, and her credence in it is 1. That's an improvement in accuracy. So there are a host of both improvements and deteriorations that are as yet unaccounted for. We should account for them, and making the target set be $\mathscr{A}_\mathscr{X}$ does that.
+
+When seen from this broader perspective, it turns out the seeming superiority of \textbf{cred2} over \textbf{cred1} evaporates. The rest of this section (and the appendix) is dedicated to demonstrating this. We'll make the calculations a little easier on ourselves by relying on a theorem concerning Brier scores for coherent agents. Assume, as is the case here, that Emily's credences are defined over an atomic Boolean alegbra of propositions. The atoms are the `worlds', or states that are maximially specific with respect to the puzzle at hand. In this case there are 2048 states, which we'll label $s_0$ through $s_{2047}$. In $s_k$, the first child is on the lawn iff $k \leq 1023$, and summerhouse child $i$ comes out iff the ($i$ + 1)th digit in the binary expansion of $k$ is 1. Let $\mathscr{S}_\mathscr{X}$ be the set of all these states. That's not a terrible target set; as long as Emily is probabilistically coherent it is comprehensive. The theorem in question says that for any credence function \textbf{cred} defined over a partition of states $\mathscr{S}$, and over the algebra $\mathscr{A}$ generated by those states,
+
+\begin{quote}
+\textbf{Theorem-1}
+$$\mathbf{Brier}_{\mathscr{A}}(\mathbf{cred}, @) = \frac{|\mathscr{S}|}{4}\mathbf{Brier}_{\mathscr{S}}(\mathbf{cred}, @)$$
+\end{quote}
+(The proof of this is in the appendix.) So whichever credence function is more accurate with respect to $\mathscr{S}_{\mathscr{X}}$ will be more accurate with respect to $\mathscr{A}_{\mathscr{X}}$. So let's just work out $\mathbf{Brier}_{\mathscr{S}_{\mathscr{X}}}$ for \textbf{cred1} and \textbf{cred2} at the actual world.
+
+First, \textbf{cred1} will appropriately assign credence 0 to each $s_k (k \in {0, ..., 1023})$. Then it assigns credence $\nicefrac{1}{1024}$ to every other $s_k$. For 1023 of these, that is off by $\nicefrac{1}{1024}$, contributing $\nicefrac{1}{2^{20}}$ to the Brier score. And for 1 of them, namely @, it is off by $\nicefrac{1023}{1024}$, contributing $\nicefrac{1023^2}{2^{20}}$. So we get:
+\begin{align*}
+\mathbf{Brier}_{\mathscr{S}_{\mathscr{X}}}(\mathbf{cred1}, @) &= \frac{1}{2048} [1024 \cdot 0 + 1023 \cdot \frac{1}{2^{20}} + \frac{1023^2}{2^{20}}] \\
+&= \frac{1}{2048} \cdot \frac{1023 + 1023 ^2}{2^{20}} \\
+&= \frac{1}{2048} \cdot \frac{1023 \cdot 1024}{2^{20}} \\
+&= \frac{1}{2048} \cdot \frac{1023}{1024} \\
+&= \frac{2^{10}-1}{2^{21}}
+\end{align*}
+It's a bit easier to work out $\mathbf{Brier}_{\mathscr{S}_{\mathscr{X}}}(\mathbf{cred2}, s_{2047})$. (We only need to work out the Brier score for that state, because by the setup of the problem, Emily knows that's the state she'll be in if she adopts \textbf{cred2}). There are 2048 elements in $\mathscr{S}_{\mathscr{X}}$. And \textbf{cred2} assigns the perfectly accurate credence to 2046 of them, and is perfectly inaccurate on 2, namely $s_{1023}$, which it assigns credence 1, and $s_{2047}$ which it assigns credence 0. So we have
+\begin{align*}
+\mathbf{Brier}_{\mathscr{S}_{\mathscr{X}}}(\mathbf{cred2}, s_{2047}) &= \frac{1}{2048} (2046 \cdot 0 + 1 + 1) \\
+&= \frac{1}{1024} \\
+&= \frac{2^{11}}{2^{21}}
+\end{align*}
+In fact, it isn't even close. If Emily adopts \textbf{cred2} she becomes a little more than twice as inaccurate.
+
+It is tedious to calculate $\mathbf{Brier}_{\mathscr{A}_{\mathscr{X}}}(\mathbf{cred1}, @)$ directly, but it is enlightening to work through the calculation of $\mathbf{Brier}_{\mathscr{A}_{\mathscr{X}}}(\mathbf{cred2}, s_{2047})$. Note that there are two crucial states out of the 2048: $s_{2047}$, the actual state where all children come out, and state $s_{1023}$ where child 0 does not come out, but the other 10 children all do. There are $2^{2^{11}-2}$ propositions in each of the following four sets:
+
+\begin{enumerate}
+\item $\{p: s_{2047} \vDash p$ and $s_{1023} \vDash p\}$
+
+\item $\{p: s_{2047} \vDash p$ and $s_{1023} \nvDash p\}$
+
+\item $\{p: s_{2047} \nvDash p$ and $s_{1023} \vDash p\}$
+
+\item $\{p: s_{2047} \nvDash p$ and $s_{1023} \nvDash p\}$
+
+\end{enumerate}
+If Emily takes the bribe, she will have perfect accuracy with respect to all the propositions in class 1 (which are correctly believed to be true), and all the propositions in class 4 (which are correctly believed to be false). But she will be perfectly inaccurate with respect to all the propositions in class 2 (which are incorrectly believed to be false), and all the propositions in class 3 (which are incorrectly believed to be true). So she is perfectly accurate on half the propositions, and perfectly inaccurate on half of them, so one's average inaccuracy is $0.5 \cdot 0 + 0.5 \cdot 1 = 0.5$. And that's an enormous inaccuracy. It is, in fact, as inaccurate as one can possibly be while maintaining probabilistic coherence.
+
+\begin{quote}
+\textbf{Theorem-2}: When inaccuracy over $\mathscr{A}$ is measured using the Brier score, the least accurate credal states are those which assign credence 1 to some false atom of $\mathscr{A}$.
+\end{quote}
+(The proof is in the appendix.) So taking the bribe is not a good deal, even by consequentialist lights. And that isn't too surprising; taking the bribe makes Emily have maximally inaccurate credences on half of the possible propositions about the children.
+
+So far we have followed Greaves in assuming that inaccuracy is measured by the quadratic, or Brier, rule. It turns out that we can drop that assumption. We actually only need some very weak conditions on accuracy rules to get the result that Greaves style bribes are bad deals, though the proof of this becomes a trifle more complicated.
+
+Let $\mathscr{A}$ be an algebra of propositions generated by a partition of $2N$ atoms $a_1, ..., a_{2N}$. Suppose $a_1$ is the truth, and consider two probability functions, $P$ and $Q$ defined in $\mathscr{A}$. $P$ assigns all its mass to the first $N$ atoms, so that $P(a_k) = 0$ for all $k > N$. We also assume that $P$ assigns some positive probability to the true atom $a_1$. $Q$ assigns all its mass to the false atom $a_{2N}$. Note that this will be a good model of any case where an agent is offered a bribe of the form: drop the positive confidence you have in proposition $p_0$, instead assign it credence 0, and you'll be guaranteed a maximally accurate credence in $j$ other logically independent propositions $p_1, ..., p_j$. The only other assumptions needed to get the model to work are that $p_0$ is actually true, and $N = 2^j$.
+
+Imagine that the accuracy of a probability function $\pi$ over $\mathscr{A}$ is measured by a proper scoring rule of the form
+
+$$\mathbf{I}(a_n, \pi) = 2^{-2N}\sum_{X \in \mathscr{A}} \mathbf{i}(v_n(X), \pi(X))$$
+where $v_n(X)$ is $X$s truth value when $a_n$ is the true atom, and \textbf{i} is a score that gives the accuracy of $\pi(X)$ in the event that $X$s truth value is $v_n(X)$. We shall assume that this score has the following properties.
+
+\begin{description}
+
+\item[Truth Directedness]
+
+The value of $\mathbf{i}(1, p)$ decreases monotonically as $p$ increases. The value of $\mathbf{i}(0, p)$ increases monotonically as $p$ decreases.
+
+\item[Extensionality]
+
+$\mathbf{i}(v_n(X), \pi(X))$ is a function only of the truth-value and the probability; the identity of the proposition does not matter.
+
+\item[Negation Symmetry]
+
+$\mathbf{i}(v_n(\neg X), \pi(\neg X)) = \mathbf{i}(v_n(X), \pi(X))$ for all $x, n, \pi$.
+\end{description}
+
+\begin{quote}
+
+\textbf{Theorem-3}: Given these assumptions, $P$'s accuracy strictly exceeds $Q$'s.
+\end{quote}
+Again, the proof is in the appendix.
+
+Theorem-3 ensures that taking the deal that Greaves offers in Imps will reduce Emily's accuracy relative to any proper scoring rule satisfying Truth Directedness, Extensionality and Negation Symmetry.  To see why, think of Emily's credences as being defined over an algebra generated by the atoms ±$C_0 \wedge $± $C_1 \wedge$±$C_2 \wedge \ldots \wedge$±$C_{10}$, where it is understood that some $C_0$ atom is true and all the $\neg C_0$ atoms are false.  Since Emily is convinced of $C_0$ and believes that every other $C_n$ has some chance of occurring, and since the various $C_n$ are independent of one another, her credence function \textbf{cred1} will assigns a positive probability to each $C_0$ atom, including the true atom (whichever that might be).  Now, let $Q$ be a credence function that places all its weight on some false atom $\neg C_0 \wedge $± $C_1 \wedge$±$C_2 \wedge \ldots \wedge$±$C_{10}$.  Theorem-3 tells us that Emily's \textbf{cred1} is more accurate than $Q$, and that this is true no matter which $C_0$ atom is true or which $\neg C_0$ atom $Q$ regards as certain.  By taking the bribe Emily will guarantee the truth of $C_0 \wedge C_1 \wedge \dots \wedge C_{10}$, but the cost will be that she must adopt the \textbf{cred2} credences, which assign probability one to the false atom $\neg C_0 \wedge C_1 \wedge \dots \wedge C_{10}$.  Extensionality ensures that any two credence functions that assign probability one to a false atom will have the same inaccuracy score, and that this score will not depend on which atom happens to be the true one.  The upshot is that \textbf{cred2} will have the same inaccuracy when Emily accepts the bribe as $Q$ does when she rejects it.  Thus, since \textbf{cred1} is more accurate than $Q$, it is also more accurate than \textbf{cred2}, which means that Emily should reject the bribe in order to promote credal accuracy. 
+
+We do not want to oversell this conclusion. Strictly speaking, we have only shown that consequentialists should reject epistemic bribes when doing so requires them to go from being confident in a truth to being certain of some maximally specific falsehood.  This is a rather special situation, and there are nearby cases to which our results do not apply, and in which consequentialists may sanction bribe-taking.  For example, if Emily only has to cut her credence for $C_0$ in half, say from $\nicefrac{1}{2}$ to $\nicefrac{1}{4}$, to secure knowledge of $C_1 \wedge \dots \wedge C_{10}$, then Theorem-3 offers us no useful advice.  Indeed, depending on the scoring rule and the nature of the bribe, we suspect that believers will often be able to improve accuracy by changing their credences in ways not supported by their evidence, especially when these changes affect the truth-values of believed propositions.  The only thing we insist upon is that, in all such cases, credal accuracy should be measured over all relevant propositions, not just over a select salient few. But that's something that is independently plausible. Perhaps it might be pragmatically justified to become more accurate on salient propositions at the expense of becoming very inaccurate over hard to state compounds of those propositions, but it is never epistemically justified. 
+
+\section{Four Caveats}
+\label{fourcaveats}
+
+\subsection{Greaves's Imps Argument May Work Against Some Forms of Consequentialism}
+\label{greavessargumentmayworkagainstsomeformsofconsequentialism}
+
+We said above that no consequentialist should accept Greaves's setup of the Imps puzzle, since they should not accept an inaccuracy measure that ignores some kind of introduced inaccuracy. That means that, for all we have said, Greaves's argument works against those consequentialists who do not agree with us over the suitability of target sets that are neither algebras or partitions. And, at least outside philosophy, some theorists do seem to disagree with us.
+
+For instance, it is common in meteorology to find theorists who measure the accuracy of rain forecasts over an $n$ day period by just looking at the square of the distance between the probability of rain and the truth about rain on each day. To pick an example almost literally at random, Mark  \citet{Roulston2007} defends the use of the Brier score, calculated just this way, as a measure of forecast accuracy. So Greaves's target, while not including all consequentialists, does include many real theorists.
+
+That said, it seems there are more mundane reasons to not like this approach to measuring the accuracy of weather forecasts. Consider this simple case. Ankita and Bojan are issuing forecasts for the week that include probabilities of rain. They each think that there is a 0\% chance of rain most days. But Ankita thinks there will be one short storm come through during the week, while Bojan issues a 0\% chance of rain forecast for each day. Ankita thinks the storm is 75\% likely to come on Wednesday, so there's a 75\% chance of rain that day, and 25\% likely to come Thursday, so there's a 25\% chance of rain that day.
+
+As it happens, the storm comes on Thursday. So over the course of the week, Bojan's forecast is more accurate than Ankita's. Bojan is perfectly accurate on 6 days, and off by 1 on Thursday. Ankita is perfectly accurate on 5 days, and gets an inaccuracy score of $0.75^2 = 0.5625$ on Wednesday and Thursday, which adds up to more than Bojan's inaccuracy. But this feels wrong. There is a crucial question that Ankita was right about and Bojan was wrong about, namely will there be a storm in the middle of the week. Ankita's forecast only looks less accurate because we aren't measuring accuracy with respect to this question. So even when we aren't concerned with magical cases like Greaves's, there is a good reason to measure accuracy comprehensively, i.e., with respect to an algebra or a partition.
+
+\subsection{Separateness of Propositions}
+\label{separatenessofpropositions}
+
+There is a stronger version of the intuition behind the Imps case that we simply reject. The intuition is well expressed by Selim  \citet[365, emphasis in original]{Berker2013b}
+
+\begin{quote}
+
+The more general point is this: when determining the epistemic status of a belief in a given proposition, it is epistemically irrelevant whether or not that belief conduces (either directly or indirectly) toward the promotion of true belief and the avoidance of false belief in \emph{other} propositions beyond the one in question.
+\end{quote}
+Let's put that to the test by developing the Ankita and Bojan story a little further. They have decided to include, in the next week's forecast, a judgment on the credibility of rain. Bojan thinks the evidence is rather patchy. And he has been reading Glenn  \citet{Shafer1976}, and thinks that when the evidence is patchy, credences in propositions and their negations need not add to 1. So if $p$ is the proposition \emph{It will rain next week}, Bojan has a credence of 0.4 in both $p$ and $\neg p$.
+
+Ankita thinks that's crazy, and suggests that there must be something deeply wrong with the Shafer-based theory that Bojan is using. But Bojan is able to easily show that the common arguments against Shafer's theory are blatantly question begging ~\citep{Maher1997, Weatherson1999}. So Ankita tries a new tack. She has been reading  \citet{Joyce1998}, from which she got the following idea. She argues that Bojan will be better off from the point of view of accuracy in having credence 0.5 in each of $p$ and $\neg p$ than in having credence 0.4 in each. As it stands, one of Bojan's credences will be off by 0.4, and the other by 0.6, for a Brier score of $(0.4^2 + 0.6^2)/2 = 0.26$, whereas switching would give him a Brier score of $(0.5^2 + 0.5^2)/2 = 0.25$.
+
+But Bojan resists. He offers two arguments in reply.
+
+First, he says, for all Ankita knows, one of his credences might be best responsive to the evidence. And it is wrong, always and everywhere, to change a credence away from one that is best supported by the evidence in order to facilitate an improvement in global accuracy. That, says Bojan, is a violation of the ``separateness of propositions'' ~\citep{Berker2013b}.
+
+Second, he says, even by Ankita's accuracy-based lights, this is a bad idea. After all, he will be making one of his credences less accurate in order to make an improvement in global accuracy. And that's again a violation of the separateness of propositions. It's true that he won't be making himself more inaccurate in one respect so as to secure accuracy in another, as in the bribes case. But he will be following advice that is motivated by the aim of becoming, in total, more accurate, at the expense of accuracy for some beliefs.
+
+We want to make two points in response. First, if the general point that Berker offers is correct, then these are perfectly sound replies by Bojan. Although Bojan is not literally in a bribe case, like Emily, he is being advised to change some credences because the change will make his overall credal state better, even if it makes it locally worse in one place. It does not seem to matter whether he can identify which credence gets made worse. Berker argues that the trade offs that epistemic consequentialism makes the same mistake ethical consequentialism makes; it authorises inappropriate trade-offs. But in the ethical case, it doesn't matter whether the agent can identify who is harmed by the trade-off. If it is wrong to harm an identifiable person for the greater good, it is wrong to harm whoever satisfies some description in order to produce the greater good.
+
+So if the analogy with anti-consequentialism in ethics goes through, Bojan is justified in rejecting Ankita's advice. After all there is, according to Berker, a rule against making oneself doxastically worse in one spot for the gain of an overall improvement. And that's what Bojan would do if he took Ankita's advice. But, we say, Bojan is not justified in rejecting Ankita's advice. In fact, Ankita's advice is sound advice, and Bojan would do well to take it. So Berker's general point is wrong.
+
+Our second point is a little more contentious. We suspect that if Bojan has a good reason to resist this move of Ankita's, he has good reason to resist all attacks on his Shafer-based position. So if Berker's general point is right, it means there is nothing wrong with Bojan's anti-probabilist position. Now we haven't argued for this; to do so would require going through all the arguments for probabilism and seeing whether they can be made consistent with Berker's general point. But our suspicion is that none of them can be, since they are all arguments that turn on undesirable properties of global features of non-probabilistic credal states. So if Berker is right, probabilism is wrong, and we think it is not wrong.
+
+\subsection{Is this Consequentialism?}
+\label{isthisconsequentialism}
+
+So far we've acquiesed with the general idea that Greaves's and Berker's target should be called \emph{consequentialism}. But there are reasons to be unhappy with this label. In general, a consequentialist theory allows agents to make things worse in the here and now, in return for future gains. A consequentialist about prudential decision making, in the sense of \citet{Hammond1988}, will recommend exercise and medicine taking. And they won't be moved by the fact that the exercise hurts and the medicine is foul-tasting. It is worth sacrificing the welfare of the present self for the greater welfare of later selves.
+
+Nothing like that is endorsed, as far as we can tell, by any of the existing `epistemic consequentialists'. Certainly the argument that Ankita offers Bojan does not rely on this kind of reasoning. In particular, epistemic consequentialists do not say that it is better to make oneself doxastically worse off now in exchange for greater goods later. Something like that deal is offered to the reader of  \citet{DescartesMeditations}, but it isn't as popular nowadays.
+
+Rather, the rule that is endorsed is \emph{Right now, have the credences that best track the truth!} This isn't clearly a form of consequentialism, since it really doesn't care about the \emph{consequences} of one's beliefs. It does say that it is fine to make parts of one's doxastic state worse in order to make the whole better. That's what would happen if Bojan accepted Ankita's advice. But that's very different from doing painful exercise, or drinking unpleasant medicine. (Or, for that matter, to withdrawing belief in any number of truths.)
+
+When Greaves tries to flesh out epistemic consequentialism, she compares it to evidential and causal versions of prudential decision theory. But it seems like the right comparison might be to something we could call \emph{constitutive} decision theory. The core rule, remember, is that agents should form credences that constitute being maximally accurate, not that cause them to be maximally accurate.
+
+The key point here is not the terminological one about who should be called consequentialist. Rather, it is that the distinction between causation and constitution is very significant here, and comparing epistemic utility theory to prudential utility theory can easily cause it to be lost. Put another way, we have no interest in defending someone who wants to defend a causal version of epistemic utility theory, and hence thinks it could be epistemically rational to be deliberately inaccurate now in order to be much more accurate tomorrow. We do want to defend the view that overall accuracy right now is a prime epistemic goal.\footnote{For further discussion of epistemic consequentialism, see [redacted for anonymous review].}
+%\citet{Joyce2016}.}
+
+\subsection{Other Bribes}
+\label{otherbribes}
+
+As already noted, we have not offered a general purpose response to bribery based objections to epistemic consequentialism. All we've shown is that some popular examples of this form of objection misfire, because they offer bribes that are bad by the consequentialists' own lights. But there could be bribes that are immune to our objection.
+
+For example, imagine that Ankita has, right now, with credence 0.9 in $D_0$, and 0.5 in $D_1$. These are good credences to have, since she knows those are the chances of $D_0$ and $D_1$. She's then offered an epistemic bribe. If she changes her credence in $D_0$ to 0.91, the chance of $D_1$ will become 1, and she can have credence 1 in $D_1$. Taking this bribe will increase her accuracy.
+
+We could imagine the anti-consequentialist arguing as follows.
+
+\begin{enumerate}
+\item If epistemic consequentialism is true, Ankita is epistemically justified in accepting this bribe.
+
+\item Ankita is not epistemically justified in accepting this bribe.
+
+\item So, epistemic consequentialism is not true.
+
+\end{enumerate}
+We're not going to offer a reply to this argument here; that is a task for a much longer paper. There are some reasons to resist premise one. It isn't clear that it is conceptually possible to accept the bribe. (It really isn't clear that it is practically possible, but we're not sure whether that's a good reply on the part of the consequentialist.) And it isn't clear that the argument for premise one properly respects the distinction between causation and constitution we described in the last section.
+
+Even if those arguments fail, the intuitive force of premise two is not as strong as the intuition behind Greaves's, or Berker's, anti-bribery intuitions. And that's one of the main upshots of this paper. It's commonly thought that for the consequentialist, in any field, everything has its price. The result we proved at the end of section one shows this isn't true. It turns out that no good epistemic consequentialist should accept a bribe that leads them to believing an atomic proposition they have conclusive evidence is false, no matter how strong the inducements. Maybe one day there will be a convincing bribery based case that epistemic consequentialism is unacceptably corrupting of the epistemic soul. But that case hasn't been made yet, because we've shown a limit on how corrupt the consequentialist can be.
+
+\input{appendix}
+
+\end{document}

@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Brian Weatherson</title>
+    <link>http://brian.weatherson.org/html-papers/</link>
+    <atom:link href="http://brian.weatherson.org/html-papers/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Brian Weatherson's Papers
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Mixing Expert Opinion</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion</link>
+      <description>This paper contributes to the project of articulating and defending the supra-Bayesian approach to judgment aggregation. I discuss three cases where a person is disposed to defer to two different experts, and ask how they should respond when they learn about the opinion of each. The guiding principles are that this learning should go by conditionalisation, and that they should aim to update on the evidence that the expert had updated on. But this doesn't settle how the update on pairs of experts should go, because we also need to know how the experts are related. I work through three examples showing how the results change given different prior beliefs about this relationship.</description>
+      <category>games and decisions</category>
+      <category>unpublished</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion</guid>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion/two_chairs.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Indecisive Decision Theory</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory</link>
+      <description>A decisive decision theory says that in any given decision problem, either one choice is best, or all the choices are equally good. I argue against this, and in favor of indecisive decision theories. The main example that is used is a game with a demon (who is good at predicting others' moves) that has multiple equilibria. It is argued that all the plausible decisive theories violate a principle of dynamic consistency that we should accept.</description>
+      <category>games and decisions</category>
+      <category>unpublished</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory</guid>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory/bear_hunt.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>The Sporting Attitude</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-the-sporting-attitude</link>
+      <description>Contribution to a symposium on Steffen Borge's "The Philosophy of Football".</description>
+      <category>book symposium</category>
+      <category>on books</category>
+      <category>games and decisions</category>
+      <category>unpublished</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-the-sporting-attitude</guid>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-the-sporting-attitude/matildas.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Deliberation Costs</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-deliberation-costs</link>
+      <description>Our theory of rational choice should be sensitive to deliberation costs. It is irrational to take into account minor differences between goods, if the cost of taking those differences into account is greater than the expected gain from doing so. It has often been held in economics that this line of reasoning will lead to an infinite regress. I argue that the regress can be stopped if we take the rational chooser to be skilled at attending to the right information. On the appropriate model of skill, the rational agent will attend to the right information without reasoning about whether this is the right information to attend to.</description>
+      <category>games and decisions</category>
+      <category>epistemology</category>
+      <category>philosophy of economics</category>
+      <category>unpublished</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-deliberation-costs</guid>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-deliberation-costs/warhol_soup.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Accuracy and the Imps</title>
+      <dc:creator>James Joyce</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-accuracy-and-the-imps</link>
+      <description>Recently several authors have argued that accuracy-first epistemology ends up licensing problematic epistemic bribes. They charge that it is better, given the accuracy-first approach, to deliberately form one false belief if this will lead to forming many other true beliefs. We argue that this is not a consequence of the accuracy-first view. If one forms one false belief and a number of other true beliefs, then one is committed to many other false propositions, e.g., the conjunction of that false belief with any of the true beliefs. Once we properly account for all the falsehoods that are adopted by the person who takes the bribe, it turns out that the bribe does not increase accuracy.</description>
+      <category>epistemology</category>
+      <category>accuracy</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-accuracy-and-the-imps</guid>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-accuracy-and-the-imps/imp.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Freedom of Research Area</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-freedom-of-research-area</link>
+      <description>Some writers have said that academic freedom should extend to giving academics complete freedom over what they choose to research. I argue against this: it is consistent with academic freedom for universities to hire people to research particular subjects, and to make continued employment conditional on at least some of the academic’s research being in the areas they were hired to work in. In practice, many academics think that their fellow academics should be free to choose to work on anything that’s within the disciplinary boundaries of the department they were hired into. I argue that’s both too narrow and too broad. Academic freedom implies that researchers should be allowed to have their research focus drift over time. But the boundaries of permissible drift do not correspond to anything like the boundaries of contemporary academic departments.</description>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-freedom-of-research-area</guid>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-freedom-of-research-area/mcad.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Interests, Evidence and Games</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-02-interests-evidence-and-games</link>
+      <description>Pragmatic encroachment theories have a problem with evidence. On the one hand, the arguments that knowledge is interest-relative look like they will generalise to show that evidence too is interest-relative. On the other hand, our best story of how interests affect knowledge presupposes an interest-invariant notion of evidence. The aim of this paper is to sketch a theory of evidence that is interest-relative, but which allows that 'best story' to go through with minimal changes. The core idea is that the evidence someone has is just what evidence a radical interpreter says they have. And a radical interpreter is playing a kind of game with the person they are interpreting. The cases that pose problems for pragmatic encroachment theorists generate fascinating games between the interpreter and the interpretee. They are games with multiple equilibria. To resolve them we need to detour into the theory of equilibrium selection. I'll argue that the theory we need is the theory of **risk-dominant equilibria**. That theory will tell us how the interpreter will play the game, which in turn will tell us what evidence the person has. The evidence will be interest-relative, because what the equilibrium of the game is will be interest-relative. But it will not undermine the story we tell about how interests usually affect knowledge.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <category>games and decisions</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-02-interests-evidence-and-games</guid>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-02-interests-evidence-and-games/stag.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Notes on Some Ideas in Lloyd Humberstone’s Philosophical Applications of Modal Logic</title>
+      <dc:creator>Steven Kuhn</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-notes-on-some-ideas-in-lloyd-humberstones-philosophical-applications-of-modal-logic</link>
+      <description>Lloyd Humberstone’s recently published _Philosophical Applications of Modal Logic_ presents a number of new ideas in modal logic as well explication and critique of recent work of many others. We extend some of these ideas and answer some questions that are left open in the book.</description>
+      <category>logic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-notes-on-some-ideas-in-lloyd-humberstones-philosophical-applications-of-modal-logic</guid>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-notes-on-some-ideas-in-lloyd-humberstones-philosophical-applications-of-modal-logic/monash_lib.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Vagueness as Indeterminacy</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-vagueness-as-indeterminacy</link>
+      <description>Traditionally, we thought vague predicates were predicates with borderline cases. In recent years traditional wisdom has come under attack from several leading theorists. They are motivated by a common idea, that terms with borderline cases, but sharp boundaries around the borderline cases, are not vague. I argue for a return to tradition. Part of the argument is that the alternatives that have been proposed are themselves subject to intuitive counterexample. And part of the argument is that we need a theory of what vagueness is that applies to non-predicates. The traditional picture can be smoothly generalised to non-predicates if we identify vagueness generally with indeterminacy. Modern rivals to tradition do not admit of such smooth generalisation.</description>
+      <category>logic</category>
+      <category>language</category>
+      <category>vagueness</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-vagueness-as-indeterminacy</guid>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-vagueness-as-indeterminacy/clouds.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Relativism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <dc:creator>Patrick Shirreff</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-relativism</link>
+      <description>Relativism is the view that the truth of a sentence is relative both to a context of utterance and to a context of assessment. That the truth of a sentence is relative to a context of utterance is uncontroversial in contemporary semantics. This chapter focuses on three points: whether the version of contextualism is vulnerable to the disagreement and retraction arguments, and if so, whether these problems can be avoided by a more sophisticated contextualist theory. The points include: whether relativism really does avoid the four problems posed for the other theories; and whether there are other theories that also avoid the problems, without running into the problems facing relativism or problems of their own. The chapter concentrates on two families of views that have been called relativist: Relativism about propositional truth; and Relativism about utterance truth.</description>
+      <category>language</category>
+      <category>relativism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-relativism</guid>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-relativism/tasty.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Intellectual Skill and the Rylean Regress</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-intellectual-skill-and-the-rylean-regress</link>
+      <description>Intelligent activity requires the use of various intellectual skills. While these skills are connected to knowledge, they should not be identified with knowledge. There are realistic examples where the skills in question come apart from knowledge. That is, there are realistic cases of knowledge without skill, and of skill without knowledge. Whether a person is intelligent depends, in part, on whether they have these skills. Whether a particular action is intelligent depends, in part, on whether it was produced by an exercise of skill. These claims promote a picture of intelligence that is in tension with a strongly intellectualist picture, though they are not in tension with a number of prominent claims recently made by intellectualists.</description>
+      <category>epistemology</category>
+      <category>skill</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-intellectual-skill-and-the-rylean-regress</guid>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-intellectual-skill-and-the-rylean-regress/ryle.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Interest-Relative Invariantism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-02-interest-relative-invariantism</link>
+      <description>An opinionated survey of the state of the literature on interest-relative invariantism.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-02-interest-relative-invariantism</guid>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-02-interest-relative-invariantism/survey.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Analytic-Synthetic and A Priori-A Posteriori</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-analytic-synthetic-and-a-priori-a-posteriori</link>
+      <description>This article focuses on the distinction between analytic truths and synthetic truths (i.e. every truth that isn’t analytic), and between a priori truths and a posteriori truths (i.e. every truth that isn’t a priori) in philosophy, beginning with a brief historical survey of work on the two distinctions, their relationship to each other, and to the necessary/contingent distinction. Four important stops in the history are considered: two involving Kant and W. V. O. Quine, and two relating to logical positivism and semantic externalism. The article then examines questions that have been raised about the analytic–synthetic and a priori–a posteriori distinctions, such as whether all distinctively philosophical truths fall on one side of the line and whether the distinction is relevant to philosophy. It also discusses the argument that there is a lot more a priori knowledge than we ever thought, and concludes by describing epistemological accounts of analyticity.</description>
+      <category>epistemology</category>
+      <category>language</category>
+      <category>history of analytic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-analytic-synthetic-and-a-priori-a-posteriori</guid>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-analytic-synthetic-and-a-priori-a-posteriori/vixen.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>For Bayesians, Rational Modesty Requires Imprecision</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-03-for-bayesians-rational-modesty-requires-imprecision</link>
+      <description>Gordon Belot has recently developed a novel argument against Bayesianism. He shows that there is an interesting class of problems that, intuitively, no rational belief forming method is likely to get right. But a Bayesian agent's credence, before the problem starts, that she will get the problem right has to be 1. This is an implausible kind of immodesty on the part of Bayesians. My aim is to show that while this is a good argument against traditional, precise Bayesians, the argument doesn't neatly extend to imprecise Bayesians. As such, Belot's argument is a reason to prefer imprecise Bayesianism to precise Bayesianism.</description>
+      <category>epistemology</category>
+      <category>games and decisions</category>
+      <category>imprecise probability</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-03-for-bayesians-rational-modesty-requires-imprecision</guid>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-03-for-bayesians-rational-modesty-requires-imprecision/mingwing.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Reply to Eaton and Pickavance</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-eaton-and-pickavance</link>
+      <description>David Eaton and Timothy Pickavance argued that interest-relative invariantism has a surprising and interesting consequence. They take this consequence to be so implausible that it refutes interest-relative invariantism. But in fact it is a consequence that any theory of knowledge that has the resources to explain familiar puzzles (such as Gettier cases) must have.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-eaton-and-pickavance</guid>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-eaton-and-pickavance/fire.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Games, Beliefs and Credences</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-02-games-beliefs-and-credences</link>
+      <description>In previous work I've defended an interest-relative theory of belief. This paper continues the defence. I have four aims. First, to offer a new kind of reason for being unsatisfied with the simple Lockean reduction of belief to credence. Second, to defend the legitimacy of appealing to credences in a theory of belief. Third, to illustrate the importance of theoretical, as well as practical, interests in an interest-relative account of belief. And finally, to have another try at extending my basic account of belief to cover propositions that are practically and theoretically irrelevant to the agent.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <category>games and decisions</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-02-games-beliefs-and-credences</guid>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-02-games-beliefs-and-credences/dalicat.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Reply to Blackson</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-blackson</link>
+      <description>Thomas Blackson argues that interest-relative epistemologies cannot explain the irrationality of certain choices when the agent has three possible options. I argue that his examples only refute a subclass of interest-relative theories. In particular, they are good objections to theories that say that what an agent knows depends on the stakes involved in the gambles that she faces. But they are not good objections to theories that say that what an agent knows depends on the odds involved in the gambles that she faces. Indeed, the latter class of theories does a better job than interest-invariant epistemologies of explaining the phenomena he describes.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-blackson</guid>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-blackson/vials.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Memory, Belief and Time</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-03-memory-belief-and-time</link>
+      <description>I argue that what evidence an agent has does not supervene on how she currently is. Agents do not always have to infer what the past was like from how things currently seem; sometimes the facts about the past are retained pieces of evidence that can be the start of reasoning. The main argument is a variant on Frank Arntzenius’s Shangri La example, an example that is often used to motivate the thought that evidence does supervene on current features.</description>
+      <category>epistemology</category>
+      <category>games and decisions</category>
+      <category>imprecise probability</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-03-memory-belief-and-time</guid>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-03-memory-belief-and-time/shangrila.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Humean Supervenience</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-humean-supervenience</link>
+      <description>Humean supervenience is the conjunction of three theses: Truth supervenes on being, Anti‐haecceitism, and Spatiotemporalism. The first clause is a core part of Lewis's metaphysics. The second clause is related to Lewis's counterpart theory. The third clause says there are no fundamental relations beyond the spatiotemporal, or fundamental properties of extended objects. This paper sets out why Humean Supervenience was so central to Lewis's metaphysics, and why we should care about it even if there are empirical argumens against Spatiotemporalism. The project of defending Humean Supervenience was part of a larger project of philosophical compatibilism, of showing how the folk picture of the world and the scientific picture could be made to cohere with relatively little damage to the former and none to the latter. And Lewis's contributions to that project are independent of whether the scientific picture of the world ultimately includes Spatiotemporalism.</description>
+      <category>David Lewis</category>
+      <category>metaphysics</category>
+      <category>Humeanism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-humean-supervenience</guid>
+      <pubDate>Fri, 06 Mar 2015 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-humean-supervenience/companion.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Probability and Scepticism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-04-probability-and-scepticism</link>
+      <description>One way to motivate scepticism is by looking at the ways we might possibly know we aren’t brains in vats. Could we know we aren’t brains in vats a priori? Many will say no, since it is possible to be a brain in a vat. Could we know it on the basis of evidence? The chapter argues that given some commonly held assumptions, the answer is no. In particular, there is a kind of sceptical hypothesis whose probability is decreased by conditionalising on the evidence we have. Using this fact, I argue that if we want to say our knowledge that we aren’t brains in vats is a posteriori, we have to give up the view that all updating on evidence is by conditionalisation.</description>
+      <category>epistemology</category>
+      <category>scepticism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-04-probability-and-scepticism</guid>
+      <pubDate>Tue, 10 Jun 2014 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-04-probability-and-scepticism/demon.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Centrality and Marginalisation</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-06-centrality-and-marginalisation</link>
+      <description>A commentary on Herman Cappelen's "Philosophy without Intuitions".</description>
+      <category>methodology</category>
+      <category>book symposium</category>
+      <category>on books</category>
+      <category>history of analytic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-06-centrality-and-marginalisation</guid>
+      <pubDate>Sat, 22 Feb 2014 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-06-centrality-and-marginalisation/cappelen.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Running Risks Morally</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-06-running-risks-morally</link>
+      <description>I defend normative externalism from the objection that it cannot account for the wrongfulness of moral recklessness. The defence is fairly simple—there is no wrong of moral recklessness. There is an intuitive argument by analogy that there should be a wrong of moral recklessness, and the bulk of the paper consists of a response to this analogy. A central part of my response is that if people were motivated to avoid moral recklessness, they would have to have an unpleasant sort of motivation, what Michael Smith calls “moral fetishism”.</description>
+      <category>ethics</category>
+      <category>games and decisions</category>
+      <category>moral uncertainty</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-06-running-risks-morally</guid>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-06-running-risks-morally/bullfight.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>In Defense of the ACA's Medicaid Expansion</title>
+      <dc:creator>Ishani Maitra</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-06-in-defense-of-the-acas-medicaid-expansion</link>
+      <description>The only part of the Patient Protection and Affordable Care Act (hereafter, 'the ACA') struck down was a provision expanding Medicaid. We will argue that this was a mistake; the provision should not have been struck down. We'll do this by identifying a test that C.J. Roberts used to justify his view that this provision was unconstitutional. We'll defend that test against some objections raised by J. Ginsburg. We'll then go on to argue that, properly applied, that test establishes the constitutionality of the Medicaid provision.</description>
+      <category>political philosophy</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-06-in-defense-of-the-acas-medicaid-expansion</guid>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-06-in-defense-of-the-acas-medicaid-expansion/obamacare.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Disagreements, Philosophical and Otherwise</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-04-disagreements-philosophical-and-otherwise</link>
+      <description>The Equal Weight View of disagreement says that if an agent sees that an epistemic peer disagrees with her about p, the agent should change her credence in p to half way between her initial credence, and the peer's credence. But it is hard to believe the Equal Weight View for a surprising reason; not everyone believes it. And that means that if one did believe it, one would be required to lower one's belief in it in light of this peer disagreement. Brian Weatherson explores the options for how a proponent of the Equal Weight View might respond to this difficulty, and how this challenge fits into broader arguments against the Equal Weight View.</description>
+      <category>epistemology</category>
+      <category>disagreement</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-04-disagreements-philosophical-and-otherwise</guid>
+      <pubDate>Mon, 10 Jun 2013 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-04-disagreements-philosophical-and-otherwise/disagreement.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>The Role of Naturalness in Lewis's Theory of Meaning</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-the-role-of-naturalness-in-lewiss-theory-of-meaning</link>
+      <description>Many writers have held that in his later work, David Lewis adopted a theory of predicate meaning such that the meaning of a predicate is the most natural property that is (mostly) consistent with the way the predicate is used. That orthodox interpretation is shared by both supporters and critics of Lewis's theory of meaning, but it has recently been strongly criticised by Wolfgang Schwarz. In this paper, I accept many of Schwarz's criticisms of the orthodox interpretation, and add some more. But I also argue that the orthodox interpretation has a grain of truth in it, and seeing that helps us appreciate the strength of Lewis's late theory of meaning.</description>
+      <category>David Lewis</category>
+      <category>language</category>
+      <category>metaphysics</category>
+      <category>history of analytic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-the-role-of-naturalness-in-lewiss-theory-of-meaning</guid>
+      <pubDate>Mon, 20 May 2013 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-the-role-of-naturalness-in-lewiss-theory-of-meaning/natural.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Margins and Errors</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-05-margins-and-errors</link>
+      <description>Timothy Williamson has argued that cases involving fallible measurement show that knowledge comes apart from justified true belief in ways quite distinct from the familiar ‘double luck’ cases. I start by describing some assumptions that are necessary to generate Williamson's conclusion, and arguing that these assumptions are well justified. I then argue that the existence of these cases poses problems for theorists who suppose that knowledge comes apart from justified true belief only in a well defined class of cases. I end with some general discussion of what we can know on the basis of imperfect measuring devices.</description>
+      <category>epistemology</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-05-margins-and-errors</guid>
+      <pubDate>Thu, 25 Apr 2013 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-05-margins-and-errors/measurement.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Ross on Sleeping Beauty</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-04-ross-on-sleeping-beauty</link>
+      <description>In two excellent recent papers, Jacob Ross has argued that the standard arguments for the ‘thirder’ answer to the Sleeping Beauty puzzle lead to violations of countable additivity. The problem is that most arguments for that answer generalise in awkward ways when he looks at the whole class of what he calls Sleeping Beauty problems. In this note I develop a new argument for the thirder answer that doesn't generalise in this way.</description>
+      <category>epistemology</category>
+      <category>games and decisions</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-04-ross-on-sleeping-beauty</guid>
+      <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-04-ross-on-sleeping-beauty/eros.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Knowledge, Bets and Interests</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-04-knowledge-bets-and-interests</link>
+      <description>This paper argues that the interest-relativity of knowledge cannot be explained by the interest-relativity of belief. The discussion starts with an argument that knowledge plays a key pair of roles in decision theory. It is then argued that knowledge cannot play that role unless knowledge is interest-relative. The theory of the interest-relativity of belief is reviewed and revised. That theory can explain some of the cases that are used to suggest knowledge is interest-relative. But it can’t explain some cases involving ignorance, or mistake, about the odds at which a bet is offered. The paper ends with an argument that these cases require positing interest-relative defeaters, which affect whether an agent knows something without affecting whether she believes it, or is justified in believing it.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <category>games and decisions</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-04-knowledge-bets-and-interests</guid>
+      <pubDate>Thu, 26 Jul 2012 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-04-knowledge-bets-and-interests/sully.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>In Defense of a Kripkean Dogma</title>
+      <dc:creator>Jonathan Jenkins Ichikawa</dc:creator>
+      <dc:creator>Ishani Maitra</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-in-defense-of-a-kripkean-dogma</link>
+      <description>A reply to some empirical arguments against Kripkean meta-semantics.</description>
+      <category>methodology</category>
+      <category>language</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-in-defense-of-a-kripkean-dogma</guid>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-in-defense-of-a-kripkean-dogma/godel.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Induction and Supposition</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-04-induction-and-supposition</link>
+      <description>An argument that we should not treat rules of inductive inference in ordinary life as being anything like the inference rules in natural deduction systems.</description>
+      <category>epistemology</category>
+      <category>induction</category>
+      <category>scepticism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-04-induction-and-supposition</guid>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-04-induction-and-supposition/kent.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Explanation, Idealisation and the Goldilocks Problem</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-explanation-idealisation-and-the-goldilocks-problem</link>
+      <description>A contribution to a symposium on Michael Strevens's book Depth.</description>
+      <category>explanation</category>
+      <category>philosophy of economics</category>
+      <category>book symposium</category>
+      <category>on books</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-explanation-idealisation-and-the-goldilocks-problem</guid>
+      <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-explanation-idealisation-and-the-goldilocks-problem/goldilocks.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Games and the Reason-Knowledge Principle</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-04-games-and-the-reason-knowledge-principle</link>
+      <description>A potential counterexample to Hawthorne and Stanley's Reason-Knowledge Principle</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-04-games-and-the-reason-knowledge-principle</guid>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-04-games-and-the-reason-knowledge-principle/redgreen.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>The Temporal Generality Problem</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-04-the-temporal-generality-problem</link>
+      <description>The traditional generality problem for process reliabilism concerns the difficulty in identifying each belief forming process with a particular kind of process. Thatidentification is necessary since individual belief forming processes are typically of many kinds, and those kinds may vary in reliability. I raise a new kind of generality problem, one which turns on the difficulty of identifying beliefs with processes by which they were formed. This problem arises because individual beliefs may be the culmination of overlapping processes of distinct lengths, and these processes may differ in reliability. I illustrate the force of this problem with a discussion of recent work on the bootstrapping problem.</description>
+      <category>epistemology</category>
+      <category>scepticism</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-04-the-temporal-generality-problem</guid>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-04-the-temporal-generality-problem/clocktower.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Dogmatism, Probability and Logical Uncertainty</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <dc:creator>David Jehle</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-05-dogmatism-probability-and-logical-uncertainty</link>
+      <description>Many epistemologists hold that an agent can come to justifiably believe that p is true by seeing that it appears that p is true, without having any antecedent reason to believe that visual impressions are generally reliable. Certain reliabilists think this, at least if the agent’s vision is generally reliable. And it is a central tenet of dogmatism (as described by Pryor (2000) and Pryor (2004)) that this is possible. Against these positions it has been argued (e.g. by Cohen (2005) and White (2006)) that this violates some principles from probabilistic learning theory. To see the problem, let’s note what the dogmatist thinks we can learn by paying attention to how things appear. (The reliabilist says the same things, but we’ll focus on the dogmatist.)</description>
+      <category>epistemology</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-05-dogmatism-probability-and-logical-uncertainty</guid>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-05-dogmatism-probability-and-logical-uncertainty/standrews.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Stalnaker on Sleeping Beauty</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-03-stalnaker-on-sleeping-beauty</link>
+      <description>A contribution to a book symposium on Stalnaker's Our Knowledge of the Internal World, focussing on the way his framework helps cast new light on the Sleeping Beauty problem.</description>
+      <category>epistemology</category>
+      <category>games and decisions</category>
+      <category>on books</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-03-stalnaker-on-sleeping-beauty</guid>
+      <pubDate>Thu, 01 Sep 2011 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-03-stalnaker-on-sleeping-beauty/dowitcher.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Epistemic Modals and Epistemic Modality</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <dc:creator>Andy Egan</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-15-epistemic-modals-and-epistemic-modality</link>
+      <description>This chapter introduces the main themes of the volume, summarizes the chapters in it, and looks at the various arguments that have been raised for semantic relativism over the past decade. It concludes that two of these arguments seem to be resistant to the anti-relativist replies that have appeared in response to this work on relativism. One of these is an argument from agreement. It is argued that contextualist theories about various puzzling locutions have a hard time explaining why it is so easy for people who would happily utter the same words to describe themselves as agreeing, if those words were really context-sensitive. Another is an argument concerning attitude ascriptions. It seems there are quite different restrictions on what values the (allegedly) context-sensitive expressions can take inside and outside of attitude ascriptions. Since this isn't how context-sensitive terms usually behave, this phenomena tells against contextualism, and in favour of relativism.</description>
+      <category>language</category>
+      <category>relativism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-15-epistemic-modals-and-epistemic-modality</guid>
+      <pubDate>Thu, 01 Sep 2011 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-15-epistemic-modals-and-epistemic-modality/emoup.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Defending Interest Relative Invariantism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-defending-interest-relative-invariantism</link>
+      <description>Since interest-relative invariantism (hereafter, IRI) was introduced into contemporary epistemology in the early 2000s, it has been criticised on a number of fronts. This paper responds to six different criticisms of IRI launched by five different authors. And it does so by noting that the best version of IRI is immune to the criticisms they have launched. The 'best version' in question notes three things about IRI. First, what matters for knowledge is not strictly the *stakes* the agent faces in any decision-problem, but really the *odds* at which she has to bet. Second, IRI is a relatively weak theory; it just says interests sometimes matter. Defenders of IRI have often derived it from much stronger principles about reasoning, and critics have attacked those principles, but much weaker principles would do. Third, and most importantly, interests matter because generate certain kinds of *defeaters*. It isn't part of this version of IRI that an agent can know something in virtue of their interests. Rather, the theory says that whether a certain kind of consideration is a defeater to an agent's putative knowledge that _p_ depends on their interests. This matters for the intuitive plausibility of IRI. Critics have argued, rightly, that interests don't behave in ways distinctive of grounds of knowledge. But interests do behave like other kinds of defeaters, and this undermines the criticisms of IRI.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-defending-interest-relative-invariantism</guid>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-defending-interest-relative-invariantism/broadway.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>No Royal Road to Relativism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-no-royal-road-to-relativism</link>
+      <description>A reponse to _Relativism and Monadic Truth_. I argue that while the Cappelen and Hawthorne have good responses to the deductive arguments for relativism, there are various good inductive arguments for relativism that their view can't adequately respond to.</description>
+      <category>language</category>
+      <category>relativism</category>
+      <category>on books</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-no-royal-road-to-relativism</guid>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-no-royal-road-to-relativism/royalroad.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Assertion, Knowledge and Action</title>
+      <dc:creator>Ishani Maitra</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-assertion-knowledge-and-action</link>
+      <description>We argue against the knowledge rule of assertion, and in favour of integrating the account of assertion more tightly with our best theories of evidence and action. We think that the knowledge rule has an incredible consequence when it comes to practical deliberation, that it can be right for a person to do something that she can’t properly assert she can do. We develop some vignettes that show how this is possible, and how odd this consequence is. We then argue that these vignettes point towards alternate rules that tie assertion to sufficient evidence-responsiveness or to proper action. These rules have many of the virtues that are commonly claimed for the knowledge rule, but lack the knowledge rule’s problematic consequences when it comes to assertions about what to do.</description>
+      <category>epistemology</category>
+      <category>language</category>
+      <category>interest-relativity</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-assertion-knowledge-and-action</guid>
+      <pubDate>Tue, 23 Mar 2010 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-assertion-knowledge-and-action/commons.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Attitudes and Relativism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-attitudes-and-relativism</link>
+      <description>Data about attitude reports provide some of the most interesting arguments for, and against, various theses of semantic relativism. This paper is a short survey of three such arguments. First, I'll argue (against recent work by von Fintel and Gillies) that relativists can explain the behaviour of relativistic terms in factive attitude reports. Second, I'll argue (against Glanzberg) that looking at attitude reports suggests that relativists have a *more* plausible story to tell than contextualists about the division of labour between semantics and meta-semantics. Finally, I'll offer a new argument for invariantism (i.e. against both relativism and contextualism) about moral terms. The argument will turn on the observation that the behaviour of normative terms in factive and non-factive attitude reports is quite unlike the behaviour of any other plausibly context-sensitive term.</description>
+      <category>language</category>
+      <category>relativism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-attitudes-and-relativism</guid>
+      <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-attitudes-and-relativism/zurich.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Conditionals and Indexical Relativism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-conditionals-and-indexical-relativism</link>
+      <description>I set out and defend a view on indicative conditionals that I call “indexical relativism”. The core of the view is that which proposition is (semantically) expressed by an utterance of a conditional is a function of (among other things) the speaker’s context and the assessor’s context. This implies a kind of relativism, namely that a single utterance may be correctly assessed as true by one assessor and false by another.</description>
+      <category>language</category>
+      <category>conditionals</category>
+      <category>relativism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-conditionals-and-indexical-relativism</guid>
+      <pubDate>Mon, 29 Dec 2008 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-conditionals-and-indexical-relativism/leith.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Deontology and Descartes's Demon</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-11-deontology-and-descartess-demon</link>
+      <description>In this paper, I defend a broadly Cartesian position about doxastic freedom. At least some of our beliefs are freely formed, so we are responsible for them. Moreover, this has consequences for epistemology. But the some here is crucial. Some of our beliefs are not freely formed, and we are not responsible for those. And that has epistemological consequences too. Out of these considerations a concept of doxastic responsibility arises that is useful to the externalist in responding to several challenges. I will say at some length how it supports a familiar style of externalism response to the New Evil Demon problem, and I will note some difficulties in reconciling internalism with the idea that justification is a kind of blamelessness. The internalist, I will argue, has to say that justification is a kind of praiseworthiness, and this idea that praise is more relevant to epistemic concepts than blame will be a recurring theme of the paper.</description>
+      <category>epistemology</category>
+      <category>epistemic norms</category>
+      <category>epistemic voluntarism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-11-deontology-and-descartess-demon</guid>
+      <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-11-deontology-and-descartess-demon/bike.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>The Bayesian and the Dogmatist</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-11-the-bayesian-and-the-dogmatist</link>
+      <description>It has been argued recently that dogmatism in epistemology is incompatible with Bayesianism. That is, it has been argued that dogmatism cannot be modelled using traditional techniques for Bayesian modelling. I argue that our response to this should not be to throw out dogmatism, but to develop better modelling techniques. I sketch a model for formal learning in which an agent can discover a posteriori fundamental epistemic connections. In this model, there is no formal objection to dogmatism.</description>
+      <category>epistemology</category>
+      <category>scepticism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-11-the-bayesian-and-the-dogmatist</guid>
+      <pubDate>Wed, 01 Aug 2007 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-11-the-bayesian-and-the-dogmatist/dogmatic.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “David Lewis”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-david-lewis</link>
+      <description>A review of _David Lewis_ by Daniel Nolan.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>David Lewis</category>
+      <category>history of analytic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-david-lewis</guid>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-david-lewis/nolan-lewis.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>The Asymmetric Magnets Problem</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-the-asymmetric-magnets-problem</link>
+      <description>There are many controversial theses about intrinsicness and duplication. The first aim of this paper is to introduce a puzzle that shows that two of the uncontroversial sounding ones can’t both be true. The second aim is to suggest that the best way out of the puzzle requires sharpening some distinctions that are too frequently blurred, and adopting a fairly radical reconception of the ways things are.</description>
+      <category>metaphysics</category>
+      <category>intrinsic properties</category>
+      <category>Humeanism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-the-asymmetric-magnets-problem</guid>
+      <pubDate>Thu, 16 Nov 2006 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-the-asymmetric-magnets-problem/magnets.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Doing Philosophy With Words</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-doing-philosophy-with-words</link>
+      <description>This paper discusses the coverage of ordinary language philosophy in Scott Soames' "Philosophical Analysis in the Twentieth Century". After praising the book's virtues, I raise three points where I dissent from Soames' take on the history. First, I suggest that there is more to ordinary language philosophy than the rather implausible version of it that Soames sees to have been destroyed by Grice. Second, I argue that confusions between analyticity, necessity and priority are less important to the ordinary language period than Soames takes them to be. Finally, I claim that Soames' criticisms of Ryle turn in part on attributing reductionist positions to Ryle that Ryle did not hold.</description>
+      <category>book symposium</category>
+      <category>history of analytic</category>
+      <category>language</category>
+      <category>on books</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-doing-philosophy-with-words</guid>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-doing-philosophy-with-words/soames.jpeg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Humeans Aren't Out of Their Minds</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-humeans-arent-out-of-their-minds</link>
+      <description>Humeans about causation say that in some situations, whether C causes E depends on events far away from C and E. John Hawthorne has objected to this feature of the view. Whether one has a mind depends on what causal relations obtain between the parts of one's brain. But whether one has a mind does not depend on what happens far far away. I reply on behalf of the Humean. In the cases Hawthorne is worried about, the Humean can and should deny the problematic long-range dependence. One advantage of Humeanism is that it lets us make sense of the idea that the laws could be different in different parts of the universe. In the cases Hawthorne is worried about, that's exactly what is happening - the laws are different here to how they are over there. And what causal relations obtain here is only dependent on what happens in places the laws are the same.</description>
+      <category>metaphysics</category>
+      <category>mind</category>
+      <category>Humeanism</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-humeans-arent-out-of-their-minds</guid>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-humeans-arent-out-of-their-minds/mind.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Questioning Contextualism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-12-questioning-contextualism</link>
+      <description>This chapter argues against the pragmatism that shows that there is a striking disanalogy between the behavior of “knows” in questions and the behavior of “knows” in terms. The chapter discusses that different people may have different standards for knowledge, so perhaps they may mean different things by a statement, because they communicate to meet their preferred standards for knowledge. Standards for knowledge are not the kind of thing that people can differ on without making a mistake, in the way one would say that different people can have different immediate goals (about what to have for dinner) without making a mistake. This explains that one does not just adopt questioners' standards for knowledge while answering their knowledge questions. So, it is argued that questions involving “knows” should have the three properties—speaker, clarification, and different answers. However, the counter argument is that the proposition can be true relative to some contexts and false relative to other contexts, just as temporality about propositions that a proposition can be true at some times and false at other times, and the utterance is true if the proposition is true only in the context of the utterance.</description>
+      <category>language</category>
+      <category>epistemology</category>
+      <category>contextualism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-12-questioning-contextualism</guid>
+      <pubDate>Mon, 31 Jul 2006 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-12-questioning-contextualism/liverpool.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Scepticism, Rationalism, and Externalism</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-08-scepticism-rationalism-and-externalism</link>
+      <description>I argue that we have to accept one of the three isms in the title. Either inductive scepticism is true, or we have substantial contingent a priori knowledge, or a strongly externalist theory of knowledge is crrect.</description>
+      <category>epistemology</category>
+      <category>scepticism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-08-scepticism-rationalism-and-externalism</guid>
+      <pubDate>Thu, 09 Feb 2006 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-08-scepticism-rationalism-and-externalism/winter.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Can We Do Without Pragmatic Encroachment?</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-08-can-we-do-without-pragmatic-encroachment</link>
+      <description>I argue that interests primarily affect the relationship between credence and belief. A view is set out and defended where evidence and rational credence are not interest-relative, but belief, rational belief, and knowledge are.</description>
+      <category>epistemology</category>
+      <category>interest-relativity</category>
+      <category>philosophy of mind</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-08-can-we-do-without-pragmatic-encroachment</guid>
+      <pubDate>Tue, 13 Dec 2005 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-08-can-we-do-without-pragmatic-encroachment/train.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Epistemic Modals in Context</title>
+      <dc:creator>Andy Egan</dc:creator>
+      <dc:creator>John Hawthorne</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-03-epistemic-modals-in-context</link>
+      <description>A very simple contextualist treatment of a sentence containing an  epistemic modal, e.g. *a might be F*, is that it is true iff for all the contextually salient community knows, *a* is *F*. It is widely agreed that the simple theory will not work in some cases, but the counterexamples produced so far seem amenable to a more complicated contextualist theory. We argue, however, that no contextualist theory can capture the evaluations speakers naturally make of sentences containing epistemic modals. If we want to respect these evaluations, our best option is a *relativist* theory of epistemic modals. On a relativist theory, an utterance of *a might be F* can be true relative to one context of evaluation and false relative to another. We argue that such a theory does better than any rival approach at capturing all the behaviour of epistemic modals.</description>
+      <category>language</category>
+      <category>relativism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-03-epistemic-modals-in-context</guid>
+      <pubDate>Thu, 29 Sep 2005 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-03-epistemic-modals-in-context/flamethrower.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Lewisian Themes”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-lewisian-themes</link>
+      <description>A review of Frank Jackson and Graham Priest (eds), “Lewisian Themes: The Philosophy of David K. Lewis”, Oxford University Press, 2004.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>David Lewis</category>
+      <category>history of analytic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-lewisian-themes</guid>
+      <pubDate>Tue, 02 Aug 2005 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-lewisian-themes/lewisian-themes.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Should We Respond to Evil With Indifference?</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-11-should-we-respond-to-evil-with-indifference</link>
+      <description>In a recent article, Adam Elga outlines a strategy for "Defeating Dr Evil with Self-Locating Belief". The strategy relies on an indifference principle that is not up to the task. In general, there are two things to dislike about indifference principles: adopting one normally means confusing risk for uncertainty, and they tend to lead to incoherent views in some 'paradoxical' situations. I argue that both kinds of objection can be levelled against Elga's indifference principle. There are also some difficulties with the concept of evidence that Elga uses, and these create further difficulties for the principle.</description>
+      <category>epistemology</category>
+      <category>scepticism</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-11-should-we-respond-to-evil-with-indifference</guid>
+      <pubDate>Sun, 01 May 2005 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-11-should-we-respond-to-evil-with-indifference/evilcat.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>True, Truer, Truest</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-04-true-truer-truest</link>
+      <description>My theory of vagueness.</description>
+      <category>language</category>
+      <category>logic</category>
+      <category>vagueness</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-04-true-truer-truest</guid>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <media:content url="https://brian.weatherson.org/images/butterfly.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Chopping up Gunk</title>
+      <dc:creator>John Hawthorne</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-chopping-up-gunk</link>
+      <description>We raise an objection to the idea that the world is gunky. Certain plausible sounding supertasks have implausible consequences if the world is made of gunk.</description>
+      <category>metaphysics</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-chopping-up-gunk</guid>
+      <pubDate>Mon, 01 Nov 2004 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-chopping-up-gunk/knife.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Morality, Fiction and Possibility</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-morality-fiction-and-possibility</link>
+      <description>Authors have a lot of leeway with regard to what they can make true in their story. In general, if the author says that p is true in the fiction we're reading, we believe that p is true in that fiction. And if we're playing along with the fictional game, we imagine that, along with everything else in the story, p is true. But there are exceptions to these general principles. Many authors, most notably Kendall Walton and Tamar Szabó Gendler, have discussed apparent counterexamples when p is "morally deviant". Many other statements that are conceptually impossible also seem to be counterexamples. In this paper I do four things. I survey the range of counterexamples, or at least putative counterexamples, to the principles. Then I look to explanations of the counterexamples. I argue, following Gendler, that the explanation cannot simply be that morally deviant claims are impossible. I argue that the distinctive attitudes we have towards moral propositions cannot explain the counterexamples, since some of the examples don't involve moral concepts. And I put forward a proposed explanation that turns on the role of 'higher-level concepts', concepts that if they are satisfied are satisfied in virtue of more fundamental facts about the world, in fiction, and in imagination.</description>
+      <category>ethics</category>
+      <category>fiction</category>
+      <category>metaphysics</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-morality-fiction-and-possibility</guid>
+      <pubDate>Mon, 01 Nov 2004 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-morality-fiction-and-possibility/freeway.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Prankster's Ethics</title>
+      <dc:creator>Andy Egan</dc:creator>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-05-pranksters-ethics</link>
+      <description>We raise an objection to a very weak form of consequentialism. A world with only moral saints would be improved by adding a few mostly harmless pranksters. This result is not dependent on a particular way of thinking about value; it is resilient across a lot of measures of the value of worlds. But these pranksters would be doing things that are morally wrong. So we cannot identify rightness with making the world a better place.</description>
+      <category>ethics</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-05-pranksters-ethics</guid>
+      <pubDate>Mon, 01 Nov 2004 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-05-pranksters-ethics/pie.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “The Realm of Reason”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-the-realm-of-reason</link>
+      <description>Review of Christopher Peacocke, “The Realm of Reason”. Oxford: Clarendon Press, 2004</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>epistemology</category>
+      <category>metaphysics</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-the-realm-of-reason</guid>
+      <pubDate>Fri, 15 Oct 2004 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-the-realm-of-reason/peacocke.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Luminous Margins</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-07-luminous-margins</link>
+      <description>Timothy Williamson has recently argued that few mental states are luminous, meaning that to be in that state is to be in a position to know that you are in the state. His argument rests on the plausible principle that beliefs only count as knowledge if they are safely true. That is, any belief that could easily have been false is not a piece of knowledge. I argue that the form of the safety rule Williamson uses is inappropriate, and the correct safety rule might not conflict with luminosity.</description>
+      <category>epistemology</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-07-luminous-margins</guid>
+      <pubDate>Thu, 01 Jul 2004 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-07-luminous-margins/luminous.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Nine Objections to Steiner and Wolff on Land Disputes</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-nine-objections-to-steiner-and-wolff-on-land-disputes</link>
+      <description>Nine objections to Steiner and Wolff on land disputes.</description>
+      <category>political philosophy</category>
+      <category>philosophy of economics</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-nine-objections-to-steiner-and-wolff-on-land-disputes</guid>
+      <pubDate>Wed, 01 Oct 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-nine-objections-to-steiner-and-wolff-on-land-disputes/shetland.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Real Conditionals”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-real-conditionals</link>
+      <description>Review of William Lycan, “Real Conditionals”. Oxford: Clarendon Press, 2001.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>conditionals</category>
+      <category>logic</category>
+      <category>language</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-real-conditionals</guid>
+      <pubDate>Wed, 01 Oct 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-real-conditionals/lycan.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Words Without Meaning”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-words-without-meaning</link>
+      <description>Review of Christopher Gauker, “Words Without Meaning”. Cambridge: MIT Press, 2002.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>language</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-words-without-meaning</guid>
+      <pubDate>Mon, 08 Sep 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-words-without-meaning/gauker.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Theories of Vagueness”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-theories-of-vagueness</link>
+      <description>Review of Rosanna Keefe, “Theories of Vagueness”. Cambridge: Cambridge University Press, 2000.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>vagueness</category>
+      <category>logic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-theories-of-vagueness</guid>
+      <pubDate>Mon, 01 Sep 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-theories-of-vagueness/keefe.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Many Many Problems</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-02-03-many-many-problems</link>
+      <description>Recently four different papers have suggested that the supervaluational solution to the Problem of the Many is flawed. Stephen Schiffer has argued that the theory cannot account for reports of speech involving vague singular terms. Vann McGee and Brian McLaughlin say that theory cannot, yet, account for vague singular beliefs. Neil McKinnon has argued that we cannot provide a plausible theory of when precisifications are acceptable, which the supervaluational theory needs. And Roy Sorensen argues that supervaluationism is inconsistent with a directly referential theory of names. McGee and McLaughlin see the problem they raise as a cause for further research, but the other authors all take the problems they raise to provide sufficient reasons to jettison supervaluationism. I will argue that none of these problems provide such a reason, though the arguments are valuable critiques. In many cases, we must make some adjustments to the supervaluational theory to meet the posed challenges. The goal of this paper is to make those adjustments, and meet the challenges.</description>
+      <category>language</category>
+      <category>logic</category>
+      <category>vagueness</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-02-03-many-many-problems</guid>
+      <pubDate>Fri, 29 Aug 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-02-03-many-many-problems/kilimanjaro.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>What Good are Counterexamples?</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-what-good-are-counterexamples</link>
+      <description>Intuitively, Gettier cases are instances of justified true beliefs that are not cases of knowledge. Should we therefore conclude that knowledge is not justified true belief? Only if we have reason to trust intuition here. But intuitions are unreliable in a wide range of cases. And it can be argued that the Gettier intuitions have ag reater resemblance to unreliable intuitions than to reliable intuitions. What’s distinctive about the faulty intuitions, I argue, is that respecting them would mean abandoning a simple, systematic and largely successful theory in favour of a complicated, disjunctive and idiosyncratic theory. So maybe respecting the Gettier intuitions was the wrong reaction, we should instead have been explaining why we are all so easily misled by these kinds of cases.</description>
+      <category>games and decisions</category>
+      <category>epistemology</category>
+      <category>methodology</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-what-good-are-counterexamples</guid>
+      <pubDate>Tue, 01 Jul 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-what-good-are-counterexamples/paradox_store.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Are You a Sim?</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-07-are-you-a-sim</link>
+      <description>Nick Bostrom argues that if we accept some plausible assumptions about how the future will unfold, we should believe we are probably not humans. The argument appeals crucially to an indifference principle whose content is unclear. I set out four possible interpretations of the principle, none of which can be used to support Bostrom's argument. On the first two interpretations the principle is false; on the third it does not entail the conclusion; and on the fourth it only entails the conclusion given an auxiliary hypothesis which we have no reason to believe.</description>
+      <category>epistemology</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-07-are-you-a-sim</guid>
+      <pubDate>Tue, 01 Jul 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-07-are-you-a-sim/sims.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Vagueness and Contradiction”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-vagueness-and-contradiction</link>
+      <description>Review of Roy Sorensen, “Vagueness and Contradiction”. Cambridge: Cambridge University Press, 2000.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>vagueness</category>
+      <category>logic</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-vagueness-and-contradiction</guid>
+      <pubDate>Tue, 01 Apr 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-vagueness-and-contradiction/book_cover.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Epistemicism, Parasites, and Vague Names</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-07-epistemicism-parasites-and-vague-names</link>
+      <description>John Burgess has recently argued that Timothy Williamson's attempts to avoid the objection that his theory of vagueness is based on an untenable metaphysics of content are unsuccessful. Burgess's arguments are important, and largely correct, but there is a mistake in the discussion of one of the key examples. In this note I provide some alternative examples and use them to repair the mistaken section of the argument.</description>
+      <category>logic</category>
+      <category>language</category>
+      <category>vagueness</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-07-epistemicism-parasites-and-vague-names</guid>
+      <pubDate>Tue, 01 Apr 2003 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-07-epistemicism-parasites-and-vague-names/parasites.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Misleading Indexicals</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-misleading-indexicals</link>
+      <description>I argue against well informed observer theories about the referent of indexicals.</description>
+      <category>notes</category>
+      <category>language</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-misleading-indexicals</guid>
+      <pubDate>Tue, 01 Oct 2002 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-misleading-indexicals/kabukicho.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Sameness and Substance Renewed”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-sameness-and-substance-renewed</link>
+      <description>Review of David Wiggins, “Sameness and Substance Renewed”. Cambridge: Cambridge University Press, 2001.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>metaphysics</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-sameness-and-substance-renewed</guid>
+      <pubDate>Fri, 06 Sep 2002 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-sameness-and-substance-renewed/wiggins.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Moral Uncertainty and Its Consequences”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-moral-uncertainty-and-its-consequences</link>
+      <description>Review of Ted Lockhart, “Moral Uncertainty and Its Consequences”. Oxford: Oxford University Press, 2000.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>ethics</category>
+      <category>moral uncertainty</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-moral-uncertainty-and-its-consequences</guid>
+      <pubDate>Mon, 01 Jul 2002 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-moral-uncertainty-and-its-consequences/lockhart.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Review of “Rethinking Intuition”</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-rethinking-intuition</link>
+      <description>Review of Michael DePaul and William Ramsey, eds. “Rethinking Intuition: The Psychology of Intuition and Its Role in Philosophical Inquiry.” Lanham, Md.: Rowman &amp; Littlefield, 1998.</description>
+      <category>book review</category>
+      <category>on books</category>
+      <category>methodology</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-rethinking-intuition</guid>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-rethinking-intuition/intuition.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>From Classical to Intuitionistic Probability</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-from-classical-to-intuitionistic-probability</link>
+      <description>We generalize the Kolmogorov axioms for probability calculus to obtain conditions defining, for any given logic, a class of probability functions relative to that logic, coinciding with the standard probability functions in the special case of classical logic but allowing consideration of other classes of "essentially Kolmogorovian" probability functions relative to other logics. We take a broad view of the Bayesian approach as dictating *inter alia* that from the perspective of a given logic, rational degrees of belief are those representable by probability functions from the class appropriate to that logic. Classical Bayesianism, which fixes the logic as classical logic, is only one version of this general approach. Another, which we call Intuitionistic Bayesianism, selects intuitionistic logic as the preferred logic and the associated class of probability functions as the right class of candidate representions of epistemic states (rational allocations of degrees of belief). Various objections to classical Bayesianism are, we argue, best met by passing to intuitionistic Bayesianism -- in which the probability functions are taken relative to intuitionistic logic -- rather than by adopting a radically non-Kolmogorovian, e.g. non-additive, conception of (or substitute for) probability functions, in spite of the popularity of the latter response amongst those who have raised these objections. The interest of intuitionistic Bayesianism is further enhanced by the availability of a Dutch Book argument justifying the selection of intuitionistic probability functions as guides to rational betting behaviour when due consideration is paid to the fact that bets are settled only when/if the outcome betted on becomes known.</description>
+      <category>logic</category>
+      <category>games and decisions</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-from-classical-to-intuitionistic-probability</guid>
+      <pubDate>Sat, 01 Sep 2001 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-from-classical-to-intuitionistic-probability/heyting.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Intrinsic Properties and Combinatorial Principles</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-04-intrinsic-properties-and-combinatorial-principles</link>
+      <description>Three objections have recently been levelled at the analysis of intrinsicness offered by Rae Langton and David Lewis. While these objections do seem telling against the particular theory Langton and Lewis offer, they do not threaten the broader strategy Langton and Lewis adopt: defining intrinsicness in terms of combinatorial features of properties. I show how to amend their theory to overcome the objections without abandoning the strategy.</description>
+      <category>metaphysics</category>
+      <category>intrinsic properties</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-04-intrinsic-properties-and-combinatorial-principles</guid>
+      <pubDate>Sat, 01 Sep 2001 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-04-intrinsic-properties-and-combinatorial-principles/rock.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Begging the Question and Bayesians</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-07-begging-the-question-and-bayesians</link>
+      <description>In a recent article Patrick Maher shows that the `depragmatised' form of Dutch Book arguments for Bayesianism tend to beg the question against their most interesting anti-Bayesian opponents. I argue that the same criticism can be levelled at Maher's own argument for Bayesianism.</description>
+      <category>epistemology</category>
+      <category>games and decisions</category>
+      <category>notes</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-07-begging-the-question-and-bayesians</guid>
+      <pubDate>Sun, 01 Apr 2001 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-07-begging-the-question-and-bayesians/begging.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Indicative and Subjunctive Conditionals</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-07-indicative-and-subjunctive-conditionals</link>
+      <description>In any plausible semantics for conditionals, the semantics for indicatives and subjunctives will resemble each other closely. This means that if we are to keep the possible‐worlds semantics for subjunctives suggested by Lewis, we need to find a possible‐worlds semantics for indicatives. One reason for thinking that this will be impossible is the behaviour of rigid designators in indicatives. An indicative like ‘If the stuff in the rivers, lakes and oceans really is H~3~O, then water is H~3~O’ is non‐vacuously true, even though its consequent is true in no possible worlds, and hence not in the nearest possible world where the antecedent is true. I solve this difficulty by providing a semantics for conditionals within the framework of two‐dimensional modal logic. In doing so, I show that we can have a reasonably unified semantics for indicative and subjunctive conditionals.</description>
+      <category>logic</category>
+      <category>language</category>
+      <category>conditionals</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-07-indicative-and-subjunctive-conditionals</guid>
+      <pubDate>Sun, 01 Apr 2001 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-07-indicative-and-subjunctive-conditionals/water.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Keynes, Uncertainty and Interest Rates</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-01-07-keynes-uncertainty-and-interest-rates</link>
+      <description>Uncertainty plays an important role in *The General Theory*, particularly in the theory of interest rates. Keynes did not provide a theory of uncertainty, but he did make some enlightening remarks about the direction he thought such a theory should take. I argue that some modern innovations in the theory of probability allow us to build a theory which captures these Keynesian insights. If this is the right theory, however, uncertainty cannot carry its weight in Keynes's arguments. This does not mean that the conclusions of these arguments are necessarily mistaken; in their best formulation they may succeed with merely an appeal to risk.</description>
+      <category>epistemology</category>
+      <category>games and decisions</category>
+      <category>philosophy of economics</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-01-07-keynes-uncertainty-and-interest-rates</guid>
+      <pubDate>Sun, 01 Apr 2001 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-01-07-keynes-uncertainty-and-interest-rates/cambridge.jpg" medium="image" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Keynes and Wittgenstein</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-13-keynes-and-wittgenstein</link>
+      <description>Three recent books have argued that Keynes's philosophy, like Wittgenstein's, underwent a radical foundational shift. It is argued that Keynes, like Wittgenstein, moved from an atomic Cartesian individualism to a more conventionalist, intersubjective philosophy. It is sometimes argued this was caused by Wittgenstein's concurrent conversion. Further, it is argued that recognising this shift is important for understanding Keynes's later economics. In this paper I argue that the evidence adduced for these theses is insubstantial, and other available evidence contradicts their claims.</description>
+      <category>history of analytic</category>
+      <category>economics</category>
+      <category>unpublished</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-13-keynes-and-wittgenstein</guid>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

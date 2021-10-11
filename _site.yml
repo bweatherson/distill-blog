@@ -1,0 +1,44 @@
+name: "distill-blog"
+title: "Brian Weatherson"
+description: |
+  Brian Weatherson's Papers
+base_url: http://brian.weatherson.org/html-papers/
+twitter:
+  site: "@bweatherson"
+  creator: "@bweatherson"
+output_dir: "docs"
+theme: brian.css
+include: 
+navbar:
+  logo: http://brian.weatherson.org/Block_M-Hex.png
+  search: True
+  right:
+    - text: "Epistemology"
+      href: index.html#category:epistemology
+    - text: "Games and Decisions"
+      href: index.html#category:games_and_decisions
+    - text: "Other Subjects"
+      menu:
+        - text: "Book Reviews"
+          href: index.html#category:book_review
+        - text: "Book Symposia"
+          href: index.html#category:book_symposium
+        - text: "Economics"
+          href: index.html#category:philosophy_of_economics
+        - text: "Ethics"  
+          href: index.html#category:ethics
+        - text: "History of Analytic"
+          href: index.html#category:history_of_analytic
+        - text: "Language"
+          href: index.html#category:language
+        - text: "Logic"
+          href: index.html#category:logic
+        - text: "Notes"
+          href: index.html#category:notes
+    - icon: fa fa-rss
+      href: index.xml
+output:
+  distill::distill_article:
+    css: brian.css
+    highlight: rstudio
+    toc: true

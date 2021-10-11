@@ -1,0 +1,35 @@
+\documentclass{minimal}
+\begin{document}
+\begin{center}
+\setlength{\unitlength}{0.7mm}
+\begin{picture}(110, 35)
+%Draw Magnet A
+\put(0,10){\line(1,0){20}}
+\put(0,10){\line(0,1){20}}
+\put(20,10){\line(1,1){10}}
+\put(0,30){\line(1,0){20}}
+\put(20,30){\line(1,-1){10}}
+%Draw Magnet b
+\put(50,10){\line(1,0){20}}
+\put(70,10){\line(0,1){20}}
+\put(50,10){\line(-1,1){10}}
+\put(50,30){\line(1,0){20}}
+\put(40,20){\line(1,1){10}}
+%Draw Magnet C
+\put(80,10){\line(1,0){20}}
+\put(80,10){\line(0,1){20}}
+\put(100,10){\line(1,1){10}}
+\put(80,30){\line(1,0){20}}
+\put(100,30){\line(1,-1){10}}
+%Add Arrows
+\thicklines
+\put(10,20){\vector(1,0){10}}
+\put(60,20){\vector(-1,0){10}}
+\put(100,20){\vector(-1,0){10}}
+%Add Labels
+\put(10,0){A}
+\put(55,0){B}
+\put(90,0){C}
+\end{picture}
+\end{center}
+\end{document}
