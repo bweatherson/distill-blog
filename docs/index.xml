@@ -7,7 +7,18 @@
     <description>Brian Weatherson's Papers
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Indecisive Decision Theory</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory</link>
+      <description>A decisive decision theory says that in any given decision problem, either one choice is best, or all the choices are equally good. I argue against this, and in favor of indecisive decision theories. The main example that is used is a game with a demon (who is good at predicting others' moves) that has multiple equilibria. It is argued that all the plausible decisive theories violate a principle of dynamic consistency that we should accept.</description>
+      <category>games and decisions</category>
+      <category>unpublished</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory</guid>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
+      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory/bear_hunt.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>Mixing Expert Opinion</title>
       <dc:creator>Brian Weatherson</dc:creator>
@@ -18,17 +29,6 @@
       <guid>http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion</guid>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
       <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion/two_chairs.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Indecisive Decision Theory</title>
-      <dc:creator>Brian Weatherson</dc:creator>
-      <link>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory</link>
-      <description>A decisive decision theory says that in any given decision problem, either one choice is best, or all the choices are equally good. I argue against this, and in favor of indecisive decision theories. The main example that is used is a game with a demon (who is good at predicting others' moves) that has multiple equilibria. It is argued that all the plausible decisive theories violate a principle of dynamic consistency that we should accept.</description>
-      <category>games and decisions</category>
-      <category>unpublished</category>
-      <guid>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory</guid>
-      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
-      <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory/bear_hunt.jpg" medium="image" type="image/jpeg"/>
     </item>
     <item>
       <title>The Sporting Attitude</title>

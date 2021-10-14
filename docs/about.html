@@ -54,54 +54,51 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ad0000; } /* Alert */
-code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
-code span.bn { color: #ad0000; } /* BaseN */
+code span.al { color: #ff0000; } /* Alert */
+code span.an { color: #008000; } /* Annotation */
+code span.at { } /* Attribute */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
-code span.ch { color: #20794d; } /* Char */
-code span.cn { color: #8f5902; } /* Constant */
-code span.co { color: #5e5e5e; } /* Comment */
-code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-code span.dt { color: #ad0000; } /* DataType */
-code span.dv { color: #ad0000; } /* DecVal */
-code span.er { color: #ad0000; } /* Error */
+code span.cf { color: #0000ff; } /* ControlFlow */
+code span.ch { color: #008080; } /* Char */
+code span.cn { color: #585cf6; } /* Constant */
+code span.co { color: #4c886b; } /* Comment */
+code span.cv { color: #008000; } /* CommentVar */
+code span.do { color: #008000; } /* Documentation */
+code span.dv { color: #0000cd; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
-code span.fl { color: #ad0000; } /* Float */
-code span.fu { color: #4758ab; } /* Function */
+code span.fl { color: #0000cd; } /* Float */
 code span.im { } /* Import */
-code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
-code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
-code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
-code span.ss { color: #20794d; } /* SpecialString */
-code span.st { color: #20794d; } /* String */
-code span.va { color: #111111; } /* Variable */
-code span.vs { color: #20794d; } /* VerbatimString */
-code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+code span.in { color: #008000; } /* Information */
+code span.kw { color: #0000ff; } /* Keyword */
+code span.op { color: #687687; } /* Operator */
+code span.ot { color: #ff4000; } /* Other */
+code span.pp { color: #ff4000; } /* Preprocessor */
+code span.sc { color: #008080; } /* SpecialChar */
+code span.ss { color: #008080; } /* SpecialString */
+code span.st { color: #036a07; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #008080; } /* VerbatimString */
+code span.wa { color: #008000; font-weight: bold; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Papers: About this blog</title>
+  <title>Brian Weatherson: About this blog</title>
 
   <meta property="description" itemprop="description" content="Some additional details about the blog"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Papers: About this blog"/>
+  <meta property="og:title" content="Brian Weatherson: About this blog"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Some additional details about the blog"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Papers"/>
+  <meta property="og:site_name" content="Brian Weatherson"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Papers: About this blog"/>
+  <meta property="twitter:title" content="Brian Weatherson: About this blog"/>
   <meta property="twitter:description" content="Some additional details about the blog"/>
   <meta property="twitter:site" content="@bweatherson"/>
   <meta property="twitter:creator" content="@bweatherson"/>
@@ -2421,7 +2418,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2431,8 +2428,165 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+  @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:300, 300i&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      30px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #ca225e;
+    --header-color:    #ca225e;                    /* edited */
+    --body-color:      #404040;                    /* edited */
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    "Noto Serif JP", sans-serif; /* edited */
+    --mono-font:       "IBM Plex Mono", monospace;  /* edited */
+    --body-font:       "Lato", sans-serif;          /* edited */
+    --navbar-font:     "Lato", sans-serif;          /* edited */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.9rem;                      /* edited */
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.95rem;                     /* edited */
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);      
+    --text-size:       0.9rem;                    /* edited */
+    --text-color:      #1a162d;                   /* edited */
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       #1f1f1f;                   /* edited */
+    --text-size:        12px;
+    --hover-color:      #787878;                   /* edited */
+    --bkgd-color:       #fff;                      /* edited */
+  }
+
+  .distill-site-footer {
+    --text-color:       #7e7b88;                   /* edited */
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #ca225e3d;                 /* edited */
+  }
+
+  /*-- Additional custom styles --*/
+
+  ul > li::marker {
+    color: #ca225e;
+  }
+
+  .distill-site-header { 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .nav-dropbtn{
+     letter-spacing: 2px;
+    text-transform: uppercase; 
+  }
+
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+
+  .distill-site-header .logo img{
+    max-height: 40px; /* Makes logo bigger, default was 20px */
+  }
+
+  .distill-site-header {
+    padding-top: 1rem;
+  }
+
+  d-title h1,
+  d-article h2,
+  .posts-list .description h2,
+  .posts-list > h1 {
+      font-weight: 300;
+  }
+
+  d-appendix {
+    background-color: #fdf7f9;
+    border-top: none;
+  }
+
+  /** Change border color to white **/
+  .table>thead>tr>th {
+    border-color: white;
+  }
+
+
+  /** Remove borders within the table body **/
+  .table>tbody>tr>td {
+    border: none;
+  }
+
+
+  /** Add a top border to the table header row **/
+  .table thead tr:first-child { 
+    border-top: 2px solid white;
+  }
+
+
+  /** Add a bottom border to the table body **/
+  .table tbody tr:last-child {
+    border-bottom: 2px solid white;
+  }
+
+
+  d-article table {
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+  }
+
+  d-article table th {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  d-article table td {
+    border-bottom: 2px solid white;
+  }
+  </style>
   <!--/radix_placeholder_site_in_header-->
 
+  <link rel="stylesheet" href="brian.css" type="text/css"/>
 
 </head>
 
@@ -2452,7 +2606,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span class="logo">
 <img src="http://brian.weatherson.org/Block_M-Hex.png"/>
 </span>
-<a href="index.html" class="title">Papers</a>
+<a href="index.html" class="title">Brian Weatherson</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
