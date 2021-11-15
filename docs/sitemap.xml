@@ -2,23 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>http://brian.weatherson.org/html-papers/about.html</loc>
-    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
+    <lastmod>2021-01-03T16:05:44-05:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/</loc>
-    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
+    <lastmod>2021-03-16T22:02:24-04:00</lastmod>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>http://brian.weatherson.org/html-papers/posts/2021-11-15-a-dynamic-war-on-edt/</loc>
     <lastmod>2021-11-15T15:03:32-05:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion/</loc>
     <lastmod>2021-03-30T12:12:18-04:00</lastmod>
+=======
+    <loc>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory/</loc>
+    <lastmod>2021-10-14T18:02:46-04:00</lastmod>
+>>>>>>> 8e652dbc854885d12f590d99944ed3fb925c89ef
   </url>
   <url>
-    <loc>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory/</loc>
-    <lastmod>2021-10-11T10:20:03-04:00</lastmod>
+    <loc>http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion/</loc>
+    <lastmod>2021-03-30T12:12:18-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-the-sporting-attitude/</loc>
