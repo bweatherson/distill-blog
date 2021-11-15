@@ -7,7 +7,6 @@
     <description>Brian Weatherson's Papers
 </description>
     <generator>Distill</generator>
-<<<<<<< HEAD
     <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate>
     <item>
       <title>A Dynamic WAR on EDT</title>
@@ -19,8 +18,7 @@
       <guid>http://brian.weatherson.org/html-papers/posts/2021-11-15-a-dynamic-war-on-edt</guid>
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       <media:content url="http://brian.weatherson.org/html-papers/posts/2021-11-15-a-dynamic-war-on-edt/war.jpg" medium="image" type="image/jpeg"/>
-=======
-    <lastBuildDate>Thu, 14 Oct 2021 00:00:00 +0000</lastBuildDate>
+    </item>
     <item>
       <title>Indecisive Decision Theory</title>
       <dc:creator>Brian Weatherson</dc:creator>
@@ -31,7 +29,6 @@
       <guid>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory</guid>
       <pubDate>Thu, 14 Oct 2021 00:00:00 +0000</pubDate>
       <media:content url="http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory/bear_hunt.jpg" medium="image" type="image/jpeg"/>
->>>>>>> 8e652dbc854885d12f590d99944ed3fb925c89ef
     </item>
     <item>
       <title>Mixing Expert Opinion</title>
