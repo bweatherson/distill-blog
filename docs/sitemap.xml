@@ -2,331 +2,326 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>http://brian.weatherson.org/html-papers/about.html</loc>
-    <lastmod>2021-01-03T16:05:44-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/</loc>
-    <lastmod>2021-03-16T22:02:24-04:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
-<<<<<<< HEAD
     <loc>http://brian.weatherson.org/html-papers/posts/2021-11-15-a-dynamic-war-on-edt/</loc>
     <lastmod>2021-11-15T15:03:32-05:00</lastmod>
   </url>
   <url>
-    <loc>http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion/</loc>
-    <lastmod>2021-03-30T12:12:18-04:00</lastmod>
-=======
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-14-indecisive-decision-theory/</loc>
-    <lastmod>2021-10-14T18:02:46-04:00</lastmod>
->>>>>>> 8e652dbc854885d12f590d99944ed3fb925c89ef
+    <lastmod>2021-11-15T15:24:53-05:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-30-mixing-expert-opinion/</loc>
-    <lastmod>2021-03-30T12:12:18-04:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-the-sporting-attitude/</loc>
-    <lastmod>2021-03-04T10:22:07-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-deliberation-costs/</loc>
-    <lastmod>2021-02-04T15:33:13-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-accuracy-and-the-imps/</loc>
-    <lastmod>2021-02-04T15:31:18-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-freedom-of-research-area/</loc>
-    <lastmod>2021-03-12T23:41:42-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-02-interests-evidence-and-games/</loc>
-    <lastmod>2021-02-05T20:43:25-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-notes-on-some-ideas-in-lloyd-humberstones-philosophical-applications-of-modal-logic/</loc>
-    <lastmod>2021-03-16T22:08:39-04:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-vagueness-as-indeterminacy/</loc>
-    <lastmod>2021-03-13T00:07:46-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-relativism/</loc>
-    <lastmod>2021-03-12T14:19:47-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-intellectual-skill-and-the-rylean-regress/</loc>
-    <lastmod>2021-02-04T15:24:47-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-02-interest-relative-invariantism/</loc>
-    <lastmod>2021-02-05T20:43:43-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-analytic-synthetic-and-a-priori-a-posteriori/</loc>
-    <lastmod>2021-03-12T14:19:35-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-03-for-bayesians-rational-modesty-requires-imprecision/</loc>
-    <lastmod>2021-02-05T20:44:48-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-eaton-and-pickavance/</loc>
-    <lastmod>2021-02-05T20:44:30-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-02-games-beliefs-and-credences/</loc>
-    <lastmod>2021-02-05T20:43:59-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-03-reply-to-blackson/</loc>
-    <lastmod>2021-02-05T20:44:14-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-03-memory-belief-and-time/</loc>
-    <lastmod>2021-02-05T20:45:03-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-humean-supervenience/</loc>
-    <lastmod>2021-02-04T15:23:59-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-04-probability-and-scepticism/</loc>
-    <lastmod>2021-03-05T14:15:06-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-06-centrality-and-marginalisation/</loc>
-    <lastmod>2021-03-12T15:12:54-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-06-running-risks-morally/</loc>
-    <lastmod>2021-03-12T15:14:10-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-06-in-defense-of-the-acas-medicaid-expansion/</loc>
-    <lastmod>2021-02-05T15:26:06-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-04-disagreements-philosophical-and-otherwise/</loc>
-    <lastmod>2021-03-04T15:46:38-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-the-role-of-naturalness-in-lewiss-theory-of-meaning/</loc>
-    <lastmod>2021-02-05T15:25:25-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-05-margins-and-errors/</loc>
-    <lastmod>2021-03-12T14:18:02-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-04-ross-on-sleeping-beauty/</loc>
-    <lastmod>2021-03-08T16:13:36-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-04-knowledge-bets-and-interests/</loc>
-    <lastmod>2021-03-04T11:07:34-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-in-defense-of-a-kripkean-dogma/</loc>
-    <lastmod>2021-02-05T15:24:53-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-04-induction-and-supposition/</loc>
-    <lastmod>2021-03-04T10:55:40-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-explanation-idealisation-and-the-goldilocks-problem/</loc>
-    <lastmod>2021-02-04T15:22:10-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-04-games-and-the-reason-knowledge-principle/</loc>
-    <lastmod>2021-03-04T11:15:44-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-04-the-temporal-generality-problem/</loc>
-    <lastmod>2021-03-04T10:42:23-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-05-dogmatism-probability-and-logical-uncertainty/</loc>
-    <lastmod>2021-03-05T14:47:14-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-03-stalnaker-on-sleeping-beauty/</loc>
-    <lastmod>2021-02-05T20:45:20-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-15-epistemic-modals-and-epistemic-modality/</loc>
-    <lastmod>2021-03-15T11:25:59-04:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-defending-interest-relative-invariantism/</loc>
-    <lastmod>2021-02-04T15:20:57-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-no-royal-road-to-relativism/</loc>
-    <lastmod>2021-03-12T14:21:02-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-assertion-knowledge-and-action/</loc>
-    <lastmod>2021-02-04T22:06:14-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-attitudes-and-relativism/</loc>
-    <lastmod>2021-03-12T14:55:59-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-conditionals-and-indexical-relativism/</loc>
-    <lastmod>2021-03-12T15:10:41-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-11-deontology-and-descartess-demon/</loc>
-    <lastmod>2021-02-05T20:43:11-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-11-the-bayesian-and-the-dogmatist/</loc>
-    <lastmod>2021-02-05T20:42:55-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-david-lewis/</loc>
-    <lastmod>2021-03-13T10:26:15-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-the-asymmetric-magnets-problem/</loc>
-    <lastmod>2021-02-04T15:31:02-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-doing-philosophy-with-words/</loc>
-    <lastmod>2021-02-05T15:23:03-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-humeans-arent-out-of-their-minds/</loc>
-    <lastmod>2021-02-05T15:23:41-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-12-questioning-contextualism/</loc>
-    <lastmod>2021-03-12T14:35:17-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-08-scepticism-rationalism-and-externalism/</loc>
-    <lastmod>2021-02-05T20:42:16-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-08-can-we-do-without-pragmatic-encroachment/</loc>
-    <lastmod>2021-02-05T20:41:59-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-03-epistemic-modals-in-context/</loc>
-    <lastmod>2021-03-17T10:19:31-04:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-13-review-of-lewisian-themes/</loc>
-    <lastmod>2021-03-13T10:34:15-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-11-should-we-respond-to-evil-with-indifference/</loc>
-    <lastmod>2021-02-05T20:42:36-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-04-true-truer-truest/</loc>
-    <lastmod>2021-02-04T09:25:14-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-chopping-up-gunk/</loc>
-    <lastmod>2021-02-04T22:20:02-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-morality-fiction-and-possibility/</loc>
-    <lastmod>2021-02-05T15:24:25-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-05-pranksters-ethics/</loc>
-    <lastmod>2021-02-05T15:22:16-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-the-realm-of-reason/</loc>
-    <lastmod>2021-03-04T11:24:58-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-07-luminous-margins/</loc>
-    <lastmod>2021-02-05T20:41:40-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-nine-objections-to-steiner-and-wolff-on-land-disputes/</loc>
-    <lastmod>2021-02-04T22:02:13-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-real-conditionals/</loc>
-    <lastmod>2021-02-04T22:02:48-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-review-of-words-without-meaning/</loc>
-    <lastmod>2021-02-04T22:03:47-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-theories-of-vagueness/</loc>
-    <lastmod>2021-02-04T15:30:03-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-02-03-many-many-problems/</loc>
-    <lastmod>2021-02-05T20:45:52-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-what-good-are-counterexamples/</loc>
-    <lastmod>2021-02-04T22:05:17-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-07-are-you-a-sim/</loc>
-    <lastmod>2021-02-05T20:41:25-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-vagueness-and-contradiction/</loc>
-    <lastmod>2021-02-04T15:30:35-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-07-epistemicism-parasites-and-vague-names/</loc>
-    <lastmod>2021-02-05T15:29:45-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-misleading-indexicals/</loc>
-    <lastmod>2021-02-04T22:01:13-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-sameness-and-substance-renewed/</loc>
-    <lastmod>2021-02-04T15:29:47-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-moral-uncertainty-and-its-consequences/</loc>
-    <lastmod>2021-02-04T15:28:20-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-03-review-of-rethinking-intuition/</loc>
-    <lastmod>2021-02-04T15:27:54-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-from-classical-to-intuitionistic-probability/</loc>
-    <lastmod>2021-02-04T21:59:18-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-04-intrinsic-properties-and-combinatorial-principles/</loc>
-    <lastmod>2021-02-04T22:00:32-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-07-begging-the-question-and-bayesians/</loc>
-    <lastmod>2021-02-05T15:30:40-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-07-indicative-and-subjunctive-conditionals/</loc>
-    <lastmod>2021-02-05T15:27:51-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-01-07-keynes-uncertainty-and-interest-rates/</loc>
-    <lastmod>2021-03-04T11:18:34-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
   <url>
     <loc>http://brian.weatherson.org/html-papers/posts/2021-03-13-keynes-and-wittgenstein/</loc>
-    <lastmod>2021-03-13T10:43:18-05:00</lastmod>
+    <lastmod>2021-10-11T09:53:15-04:00</lastmod>
   </url>
 </urlset>
