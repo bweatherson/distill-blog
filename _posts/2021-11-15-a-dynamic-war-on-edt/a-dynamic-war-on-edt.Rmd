@@ -11,7 +11,7 @@ author:
 date: 11-15-2021
 bibliography: ../../../articles/Rbib.bib
 self-contained: false
-preview: war.jpg
+preview: the-game.png
 citation: false
 categories:
   - games and decisions
@@ -23,7 +23,7 @@ output:
     number_sections: TRUE
 ---
 
-Here is a common form of argument against causal decision theory, as described by @AhmedPrice2012. (I've slightly changed some of the wording, but otherwise this is quoted from page 16 of their paper.)
+Here is a common form of argument against causal decision theory, as described by @AhmedPrice2012. (I've slightly changed some of the wording, but otherwise this argument is taken directly from page 16 of their paper.)
 
 1. In Newcomb problems, the average returns to one-boxing exceed that to two-boxing.
 2. Everyone can see that (1) is true.
