@@ -26,59 +26,7 @@ output:
 ---
 
 
-```{r, include=FALSE}
-require(knitr)
-require(tidyverse)
-require(kableExtra)
-require(huxtable)
 
-knitr::opts_chunk$set(echo = FALSE, results = "asis")
-
-gameformat <- function(game){
-  gg <- as_hux(game) %>%
-    set_width(ncol(game)/10) %>%
-#    set_caption(caption) %>%
-    set_bold(1, everywhere) %>%
-    set_bold(everywhere, 1) %>%
-    set_right_border(everywhere, 1, 0.5) %>%
-    set_bottom_border(1, everywhere, 0.5) %>%
-    set_align(everywhere, everywhere, "center") %>%
-#    set_caption_pos("bottom") %>%
-    set_row_height(everywhere, 0.6)
-  right_border_color(gg) <- "grey80"
-  print_html(gg)
-  ### kbl(game, 
-  ###     booktabs = F, 
-  ###     escape = FALSE,
-  ###     align = paste0("r",strrep("c", ncol(game)-1)),
-  ###     # caption = caption,
-  ###     linesep = ""
-  ###     ) %>%
-  ###   column_spec(1, 
-  ###               border_right = T,
-  ###               bold = T) %>%
-  ###   row_spec(0, bold = T, extra_css = "border-bottom: solid 0.5px;") %>%
-  ###   cell_spec(df[1, 2], extra_css = "border_left = solid 0.5px;") %>%
-  ###   kable_styling(full_width = F)  
-}
-
-game_display_caption <- function(game, caption){
-  labelgame <- rbind(
-    c("", names(game)[2:length(names(game))]),
-    game
-  )
-  labelgame %>%
-    kbl(booktabs = T, 
-        col.names = NULL, 
-        escape = FALSE,
-        align = paste0("r",strrep("c", ncol(game)-1)),
-        linesep = "",
-        caption = caption) %>%
-    column_spec(1, border_right = T) %>%
-    row_spec(1, hline_after = TRUE) %>%
-    kable_styling(latex_options = "HOLD_position")
-}
-```
 
 ### Decisiveness
 
@@ -101,14 +49,18 @@ The argument  turns on a pair of very similar decision problems. Each problem ha
 
 If you prefer this in the way we standardly present games in normal form, it looks like this, with the human as Row, doctor as Column, and in each cell the human's payout is listed first. (All payouts are in dollars)
 
-```{r}
-	main_game <- tribble(
-	   ~" ", ~A, ~B,
-	   "A", "6,4", "0,0",
-	   "B", "3,0", "4,1"
-	)
-gameformat(main_game)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-2">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">6,4</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0,0</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3,0</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4,1</td></tr>
+</table>
+
+</div>
+
 
 Doctor is good at predictions, and prefers more money to less. So if Doctor predicts Player will choose A, they will opt-in, and also play A, getting $4. But what if they predict Player will choose B. They will get $1 either by opting-out, or by opting-in and choosing B. Since they are indifferent in this case, let's say they will flip a coin to decide which way to go. And Player knows that this is how Doctor will decide, should Doctor predict Player will choose B. Doctor will also flip a coin to decide what prediction to make if they think Player is completely indifferent between the choices, and Player also knows this.
 
@@ -162,25 +114,33 @@ So that's the defence of **The Core Premise**. What I'll now show is that a wide
 
 To see why theories might violate **The Core Premise**, it's helpful to set out explicitly the choices that Amsterdam and Brussels face. And we'll treat Doctor largely as a non-player character, just as the demon is typically treated in Newcomb's problem. So from now on the columns will not be Doctor's choices, but what Doctor predicts the human player chooses. And we'll assume Doctor maximises their financial return given a correct prediction. It's easy to set out the choice Amsterdam faces; it's just the embedded game with some notational differences.
 
-```{r}
-	ams_game <- tribble(
-	   ~" ", ~PA, ~PB,
-	   "A", "6", "0",
-	   "B", "3", "4"
-	)
-gameformat(ams_game)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-3">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PA</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PB</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">6</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4</td></tr>
+</table>
+
+</div>
+
 
 I've written **PA** and **PB** in the columns to indicated that A or B is Predicted. But in this game that makes little difference, since Doctor will do whatever they predict Amsterdam will do. Things are a little different for Brussels. If Doctor predicts that Brussels has written B, they will flip a coin to decide whether to opt-out, or opt-in.  So we can't write Brussels's return in actual dollars, since we don't know how the coin lands. But we can write the return in expected dollars, and we assume that Brussels is after all trying to maximise expected dollars. (We'll come back to this assumption in the next section.) So the table Brussels faces looks like this.
 
-```{r}
-	bru_game <- tribble(
-	   ~" ", ~PA, ~PB,
-	   "A", "6", "50",
-	   "B", "3", "52"
-	)
-gameformat(bru_game)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-4">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PA</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PB</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">6</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">50</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">52</td></tr>
+</table>
+
+</div>
+
 
 If Doctor predicts B, then Player has a 1 in 2 chance of getting $100, and a 1 in 2 chance of getting the payout from the previous game. So their average payout is $50 if they play A, and $52 if they play B. Hence the values in  the right hand column here.
 
@@ -208,14 +168,18 @@ If you plug various famous games into the recipe from the previous paragraph, yo
 
 Here is an abstract form of a Stag Hunt game, where the options are G/g for Gather or H/h for Hunt. Actually, this is a table for a generic symmetric game; what makes it a Stag Hunt are the four constraints listed below.^[I've listed the constraints as strict inequalities, but that might be over the top. Sometimes you'll see one or other of these constraints weakened to an inclusive inequality. This difference won't matter for current purposes.]
 
-```{r}
-stag_hunt_game <- tribble(
-  ~" ",       ~g, ~h,
-  "G",      "$x, x$", "$y, z$",
-  "H",    "$z, y$", "$w, w$"
-)
-gameformat(stag_hunt_game)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-5">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">g</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">h</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">G</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$x, x$</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$y, z$</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">H</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$z, y$</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$w, w$</td></tr>
+</table>
+
+</div>
+
 
 - $x > z$
 - $w > y$
@@ -230,14 +194,18 @@ Second, one might want to maximise expected utility, given uncertainty about wha
 
 What I'll call a _Stag Decision_ is basically a Stag Hunt game where the other player is a predictor. So the decision looks like this, where the above four constraints on the values still hold, and **PX** means the predictor predicts **X** will be chosen.
 
-```{r}
-stag_hunt_decision <- tribble(
-  ~" ",       ~PG, ~PH,
-  "G",      "$x$", "$y$",
-  "H",    "$z$", "$w$"
-)
-gameformat(stag_hunt_decision)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-6">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PG</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PH</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">G</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$x$</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$y$</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">H</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$z$</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$w$</td></tr>
+</table>
+
+</div>
+
 
 These kinds of decisions are important in the history of game theory because they illustrate in the one game the two most prominent theories of equilibrium selection: risk dominance and payoff dominance [@HarsanyiSelten1988]. Risk dominance recommends gathering; payoff dominance recommends hunting. And most contemporary proponents of decisive decision theories in philosophy fall into one of these two camps.
 
@@ -251,14 +219,18 @@ Both Amsterdam and Brussels are facing Stag Decisions. But for Amsterdam, choosi
 
 What about views that deny that all Stag Decisions should be treated alike? As I've said, I don't think any such view is in the literature, but it's good to think about other views. Let's drop the assumption that we're even looking at a Stag Decision (though it will turn out that we are), and think about what to do in general in cases where there are two strict equilibria. That is, think about what our imaginary decisive decision theory will say about the following case, where we just have the constraints $x > z$ and $w > y$, and again $PX$ means the predictor predicts $X$.
 
-```{r}
-two_eqm_decision <- tribble(
-  ~" ",       ~PE, ~PF,
-  "E",      "$x$", "$y$",
-  "F",    "$z$", "$w$"
-)
-gameformat(two_eqm_decision)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-7">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PE</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PF</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">E</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$x$</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$y$</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">F</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$z$</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">$w$</td></tr>
+</table>
+
+</div>
+
 
 Any coherent solution must be invariant under redescriptions of the problem. So if you take a real world example that fits this category, and relabel which option is E and which is F, the recommendation should flip. And if you rescale the utilities by multiplying by a positive constant or adding a constant, the verdict should be unchanged, since utilities are only defined up to positive affine transformation. The only theories that meet these constraints say that a choice has a 'score' $x + my$, where $x$ is the equilibrium payoff, and $y$ is the other possible payoff, and $m$ is a free variable the theory sets which reflects how much it cares about the value of the non-equilibrium payoff. The theory then says to pick the option with the higher score, or to be indifferent otherwise. So it  says to strictly prefer E to F iff $x + my > w + mz$ and to be indifferent between the choices if that's an equality not an inequality. Setting $m$ to 0 gives you the view that says one should always Hunt, since one should always pick the equilibrium with the highest equilibrium value. Setting $m$ to 1 gives you the view that you should always Gather, since you should maximise the sum (or, equivalently, the average) of the two payouts you might get with the choice. And both of these views violate **The Core Premise**. But what should we say about views that give $m$ other values?
 
@@ -278,27 +250,35 @@ Human Pick   Doctor Pick   Human Reward               Doctor Reward
 
 Then the 'late game' that Amsterdam faces will look like this:
 
-```{r}
-general_late_game <- tribble(
-  ~" ",       ~PA, ~PB,
-  "A",      "4", "0",
-  "B",    "3", "2"
-)
-gameformat(general_late_game)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-8">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PA</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PB</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">2</td></tr>
+</table>
+
+</div>
+
 
 Since $2 + 3m > 4 + 0m$ for any value of $m$ satisfying $\frac{2}{3} \leq m \leq \frac{46}{47}$, the theory will say Amsterdam should choose B.
 
 The 'early game' that Brussels faces will look like this:
  
-```{r}
-general_early_game <- tribble(
-  ~" ",       ~PA, ~PB,
-  "A",      "4", "0",
-  "B",    "3", "1"
-)
-gameformat(general_early_game)
-```
+<div class="layout-chunk" data-layout="l-body">
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 30%; margin-left: auto; margin-right: auto;  " id="tab:unnamed-chunk-9">
+<col><col><col><tr style="height: 33.3%;">
+<th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;"> </th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PA</th><th style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.5pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: bold;">PB</th></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0</td></tr>
+<tr style="height: 33.3%;">
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">1</td></tr>
+</table>
+
+</div>
+
 
 Since in this game Player gets nothing if Doctor opts-out, and there is a 50/50 chance the Doctor will opt-out if they predict B, the returns in the right-hand column are half what they are in the late game. Since $4 + 0m > 1 + 3m$ for any value of $m$ satisfying $\frac{2}{3} \leq m \leq \frac{46}{47}$, the theory will say Brussels should choose A.
 
@@ -337,3 +317,5 @@ The Canadian Presidency examples suggests that there are constraints on $Pr$ tha
 The long term goal of the project behind this paper is to argue that there are no such principles. The only constraints on rational decision are that one should maximise expected utility given some $Pr$, and this $Pr$ should satisfy independently motivated epistemic requirements. Now I haven't come close to arguing for that here, and it's a very strong claim. Given everything else I've said, it basically amounts to the claim that the theory of equilibrium selection has no role to play in normative decision theory. It may have a central role to play in descriptive decision theory, in explaining why people end up at a certain equilibrium. But it can't justify that equilibrium, since any equilibrium could be rationally justified.^[But note here that what I'm calling an equilibrium is just a coherent set of beliefs that is grounded in the evidence. It doesn't include the requirement, typical in game-theory, that the chooser has true beliefs about some aspect of the world around them.]
 
 But all of this is for future work. The aim of this paper has been to open up the possibility of an indecisive, i.e., permissive, decision theory. Decisive decision theories have to take a stand on Stag Decisions, and there is no coherent way for them to do that. So no decisive theory is correct, and the correct decision theory is indecisive.
+```{.r .distill-force-highlighting-css}
+```
