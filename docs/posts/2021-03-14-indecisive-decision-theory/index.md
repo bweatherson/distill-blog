@@ -37,6 +37,10 @@ Say a decision theory is **decisive** iff for any decision problem, it says eith
 
 A decision theory is **decisive over binary choices** iff it satisfies this condition for all decision problems where there are just two choices. Most decision theories in the literature are decisive, and of those that are not, most of them are at least decisive over binary choices. I'm going to argue that the correct decision theory, whatever it is, is indecisive. It is not, I'll argue, even decisive over binary choices.
 
+<aside>
+Picture is "Study for 'The Bear Hunt' (for the Alcázar, Madrid)" by Peter Paul Rubens via [Cleveland Museum of Art](https://www.clevelandart.org/art/1983.69).
+</aside>
+
 The argument  turns on a pair of very similar decision problems. Each problem has the following structure. There is a human Player, and a predictor, who I'll call Doctor. Doctor is very good, as good as the demon in Newcomb's problem, at predicting Player's behavior. Doctor will make two decisions. First, they will opt-in (which I'll write as I for In), or opt-out (which I'll write as O for out). If they opt-out, Doctor gets $1, and Player gets $100. (Assume both Doctor and Player prefer more money to less, and indeed that over these small sums there is more or less no declining marginal utility of money.) If they opt-in, this will be publicly announced, an another game will be played. Each of Doctor and Player will (independently) pick a letter: A or B. Doctor will aim to predict Player's choice, and will be rewarded iff that prediction is correct. Here is the payout table for the possible outcomes of this game.
 
  Human Pick   Doctor Pick   Human Reward   Doctor Reward
@@ -245,7 +249,7 @@ Human Pick   Doctor Pick   Human Reward               Doctor Reward
   None        Opt-out           0                         1
      A           A              4                         4
      A           B              0                         0
-     B           A              3                         0
+     B           A              2+$\frac{1}{m}            0
      B           B              2                         1
 
 Then the 'late game' that Amsterdam faces will look like this:
@@ -257,13 +261,13 @@ Then the 'late game' that Amsterdam faces will look like this:
 <tr style="height: 33.3%;">
 <td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0</td></tr>
 <tr style="height: 33.3%;">
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">2</td></tr>
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">2+$rac{1}{m}$</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">2</td></tr>
 </table>
 
 </div>
 
 
-Since $2 + 3m > 4 + 0m$ for any value of $m$ satisfying $\frac{2}{3} \leq m \leq \frac{46}{47}$, the theory will say Amsterdam should choose B.
+Since $2 + m(2+\frac{1}{m}) > 4 + 0m$ for any value of $m$ satisfying $\frac{2}{3} \leq m \leq \frac{46}{47}$, the theory will say Amsterdam should choose B.^[More slowly, we can use the formula to work out the score of each option. The score of A is the value in the top-left, 4, plus $m$ times the value in the top-right, 0. And that's 4, no matter the value of $m$. The score of B is the value in the bottom-left, 2, plus $m$ times the value in the bottom-left, $2 + \frac{1}{m}$. That is, the score is $2 + (1 + 2m) = 3 + 2m$. Since $m > \frac{1}{2}$, this value is greater than 4, which was the score of A.]
 
 The 'early game' that Brussels faces will look like this:
  
@@ -274,13 +278,13 @@ The 'early game' that Brussels faces will look like this:
 <tr style="height: 33.3%;">
 <td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">A</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">4</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.5pt 0pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">0</td></tr>
 <tr style="height: 33.3%;">
-<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">3</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">1</td></tr>
+<td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.5pt 0pt 0pt;  border-right-color: rgb(204, 204, 204);   padding: 6pt 6pt 6pt 6pt; font-weight: bold;">B</td><td style="vertical-align: top; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0pt 0.5pt;  border-right-color: rgb(204, 204, 204);   border-left-color: rgb(204, 204, 204); padding: 6pt 6pt 6pt 6pt; font-weight: normal;">2+$rac{1}{m}$</td><td style="vertical-align: top; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">1</td></tr>
 </table>
 
 </div>
 
 
-Since in this game Player gets nothing if Doctor opts-out, and there is a 50/50 chance the Doctor will opt-out if they predict B, the returns in the right-hand column are half what they are in the late game. Since $4 + 0m > 1 + 3m$ for any value of $m$ satisfying $\frac{2}{3} \leq m \leq \frac{46}{47}$, the theory will say Brussels should choose A.
+Since in this game Player gets nothing if Doctor opts-out, and there is a 50/50 chance the Doctor will opt-out if they predict B, the returns in the right-hand column are half what they are in the late game. Since $4 + 0m > 1 + m(2+\frac{1}{m})$ for any value of $m$ satisfying $\frac{2}{3} \leq m \leq \frac{46}{47}$, the theory will say Brussels should choose A.^[More slowly, we can use the formula to work out the score of each option. The score of A is the value in the top-left, 4, plus $m$ times the value in the top-right, 0. And that's 4, no matter the value of $m$. The score of B is the value in the bottom-left, 1, plus $m$ times the value in the bottom-left, $2 + \frac{1}{m}$. That is, the score is $1 + (1 + 2m) = 2 + 2m$. Since $m < 1$, this value is less than 4, which was the score of A.]
 
 So any decisive theory will violate **The Core Premise** for some choice pair or other. Hence all decisive theories are mistaken.
 
