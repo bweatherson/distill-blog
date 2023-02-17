@@ -480,7 +480,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1887,7 +1887,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2621,7 +2624,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Humeans Aren't Out of Their Minds","description":"Humeans about causation say that in some situations, whether C causes E depends on events far away from C and E. John Hawthorne has objected to this feature of the view. Whether one has a mind depends on what causal relations obtain between the parts of one's brain. But whether one has a mind does not depend on what happens far far away. I reply on behalf of the Humean. In the cases Hawthorne is worried about, the Humean can and should deny the problematic long-range dependence. One advantage of Humeanism is that it lets us make sense of the idea that the laws could be different in different parts of the universe. In the cases Hawthorne is worried about, that's exactly what is happening - the laws are different here to how they are over there. And what causal relations obtain here is only dependent on what happens in places the laws are the same.","doi":"10.1111/j.1468-0068.2007.00659.x","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2006-10-25T00:00:00.000+00:00","citationText":"Weatherson, 2006"}
+{"title":"Humeans Aren't Out of Their Minds","description":"Humeans about causation say that in some situations, whether C causes E depends on events far away from C and E. John Hawthorne has objected to this feature of the view. Whether one has a mind depends on what causal relations obtain between the parts of one's brain. But whether one has a mind does not depend on what happens far far away. I reply on behalf of the Humean. In the cases Hawthorne is worried about, the Humean can and should deny the problematic long-range dependence. One advantage of Humeanism is that it lets us make sense of the idea that the laws could be different in different parts of the universe. In the cases Hawthorne is worried about, that's exactly what is happening - the laws are different here to how they are over there. And what causal relations obtain here is only dependent on what happens in places the laws are the same.","doi":"10.1111/j.1468-0068.2007.00659.x","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2006-10-25T00:00:00.000-04:00","citationText":"Weatherson, 2006"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

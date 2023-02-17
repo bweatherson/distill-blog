@@ -484,7 +484,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1891,7 +1891,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2625,7 +2628,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Dogmatism, Probability and Logical Uncertainty","description":"Many epistemologists hold that an agent can come to justifiably believe that p is true by seeing that it appears that p is true, without having any antecedent reason to believe that visual impressions are generally reliable. Certain reliabilists think this, at least if the agent’s vision is generally reliable. And it is a central tenet of dogmatism (as described by Pryor (2000) and Pryor (2004)) that this is possible. Against these positions it has been argued (e.g. by Cohen (2005) and White (2006)) that this violates some principles from probabilistic learning theory. To see the problem, let’s note what the dogmatist thinks we can learn by paying attention to how things appear. (The reliabilist says the same things, but we’ll focus on the dogmatist.)","doi":"10.1057/9781137003720","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"},{"author":"David Jehle","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2012-01-01T00:00:00.000+00:00","citationText":"Weatherson & Jehle, 2012"}
+{"title":"Dogmatism, Probability and Logical Uncertainty","description":"Many epistemologists hold that an agent can come to justifiably believe that p is true by seeing that it appears that p is true, without having any antecedent reason to believe that visual impressions are generally reliable. Certain reliabilists think this, at least if the agent’s vision is generally reliable. And it is a central tenet of dogmatism (as described by Pryor (2000) and Pryor (2004)) that this is possible. Against these positions it has been argued (e.g. by Cohen (2005) and White (2006)) that this violates some principles from probabilistic learning theory. To see the problem, let’s note what the dogmatist thinks we can learn by paying attention to how things appear. (The reliabilist says the same things, but we’ll focus on the dogmatist.)","doi":"10.1057/9781137003720","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"},{"author":"David Jehle","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2012-01-01T00:00:00.000-05:00","citationText":"Weatherson & Jehle, 2012"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

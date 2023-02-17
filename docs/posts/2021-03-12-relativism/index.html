@@ -509,7 +509,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1916,7 +1916,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2650,7 +2653,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Relativism","description":"Relativism is the view that the truth of a sentence is relative both to a context of utterance and to a context of assessment. That the truth of a sentence is relative to a context of utterance is uncontroversial in contemporary semantics. This chapter focuses on three points: whether the version of contextualism is vulnerable to the disagreement and retraction arguments, and if so, whether these problems can be avoided by a more sophisticated contextualist theory. The points include: whether relativism really does avoid the four problems posed for the other theories; and whether there are other theories that also avoid the problems, without running into the problems facing relativism or problems of their own. The chapter concentrates on two families of views that have been called relativist: Relativism about propositional truth; and Relativism about utterance truth.","doi":"10.1002/9781118972090.ch30","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"},{"author":"Patrick Shirreff","authorURL":"https://patrickshirreff.wixsite.com/home","affiliation":"University of Tartu","affiliationURL":"https://www.flfi.ut.ee/en/department-philosophy","orcidID":""}],"publishedDate":"2017-04-24T00:00:00.000+00:00","citationText":"Weatherson & Shirreff, 2017"}
+{"title":"Relativism","description":"Relativism is the view that the truth of a sentence is relative both to a context of utterance and to a context of assessment. That the truth of a sentence is relative to a context of utterance is uncontroversial in contemporary semantics. This chapter focuses on three points: whether the version of contextualism is vulnerable to the disagreement and retraction arguments, and if so, whether these problems can be avoided by a more sophisticated contextualist theory. The points include: whether relativism really does avoid the four problems posed for the other theories; and whether there are other theories that also avoid the problems, without running into the problems facing relativism or problems of their own. The chapter concentrates on two families of views that have been called relativist: Relativism about propositional truth; and Relativism about utterance truth.","doi":"10.1002/9781118972090.ch30","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"},{"author":"Patrick Shirreff","authorURL":"https://patrickshirreff.wixsite.com/home","affiliation":"University of Tartu","affiliationURL":"https://www.flfi.ut.ee/en/department-philosophy","orcidID":""}],"publishedDate":"2017-04-24T00:00:00.000-04:00","citationText":"Weatherson & Shirreff, 2017"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

@@ -499,7 +499,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1906,7 +1906,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2640,7 +2643,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Knowledge, Bets and Interests","description":"This paper argues that the interest-relativity of knowledge cannot be explained by the interest-relativity of belief. The discussion starts with an argument that knowledge plays a key pair of roles in decision theory. It is then argued that knowledge cannot play that role unless knowledge is interest-relative. The theory of the interest-relativity of belief is reviewed and revised. That theory can explain some of the cases that are used to suggest knowledge is interest-relative. But it can’t explain some cases involving ignorance, or mistake, about the odds at which a bet is offered. The paper ends with an argument that these cases require positing interest-relative defeaters, which affect whether an agent knows something without affecting whether she believes it, or is justified in believing it.","doi":"10.1093/acprof:oso/9780199693702.003.0004","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2012-07-26T00:00:00.000+00:00","citationText":"Weatherson, 2012"}
+{"title":"Knowledge, Bets and Interests","description":"This paper argues that the interest-relativity of knowledge cannot be explained by the interest-relativity of belief. The discussion starts with an argument that knowledge plays a key pair of roles in decision theory. It is then argued that knowledge cannot play that role unless knowledge is interest-relative. The theory of the interest-relativity of belief is reviewed and revised. That theory can explain some of the cases that are used to suggest knowledge is interest-relative. But it can’t explain some cases involving ignorance, or mistake, about the odds at which a bet is offered. The paper ends with an argument that these cases require positing interest-relative defeaters, which affect whether an agent knows something without affecting whether she believes it, or is justified in believing it.","doi":"10.1093/acprof:oso/9780199693702.003.0004","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2012-07-26T00:00:00.000-04:00","citationText":"Weatherson, 2012"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

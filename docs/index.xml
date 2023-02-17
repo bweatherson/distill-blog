@@ -7,7 +7,17 @@
     <description>Brian Weatherson's Papers
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 16 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Comments on Gallow</title>
+      <dc:creator>Brian Weatherson</dc:creator>
+      <link>http://brian.weatherson.org/html-papers/posts/2023-02-15-comments-on-gallow</link>
+      <description>Dmitri Gallow wrote a very interesting paper, "The Sure Thing Principle Leads to Instability", in Philosophical Quarterly. The main conclusion, as the title implies, is that no plausible decision theory satisfies two desiderata, which he calls Sure Thing and Stability. I think the motivations he gives for those desiderata do not support ptinciples quite as strong as the principles he gives. And the weaker, but more plausible, versions of the principles are both consistent with a version of causal ratificationism. This note, which is too narrow and too long to be reasonably published anywhere, sets out why I think causal ratificationism avoids his criticism.</description>
+      <category>games and decisions</category>
+      <category>unpublished</category>
+      <guid>http://brian.weatherson.org/html-papers/posts/2023-02-15-comments-on-gallow</guid>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Epistemic Permissiveness and Symmetric Games</title>
       <dc:creator>Brian Weatherson</dc:creator>

@@ -493,7 +493,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1900,7 +1900,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2634,7 +2637,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"From Classical to Intuitionistic Probability","description":"We generalize the Kolmogorov axioms for probability calculus to obtain conditions defining, for any given logic, a class of probability functions relative to that logic, coinciding with the standard probability functions in the special case of classical logic but allowing consideration of other classes of \"essentially Kolmogorovian\" probability functions relative to other logics. We take a broad view of the Bayesian approach as dictating *inter alia* that from the perspective of a given logic, rational degrees of belief are those representable by probability functions from the class appropriate to that logic. Classical Bayesianism, which fixes the logic as classical logic, is only one version of this general approach. Another, which we call Intuitionistic Bayesianism, selects intuitionistic logic as the preferred logic and the associated class of probability functions as the right class of candidate representions of epistemic states (rational allocations of degrees of belief). Various objections to classical Bayesianism are, we argue, best met by passing to intuitionistic Bayesianism -- in which the probability functions are taken relative to intuitionistic logic -- rather than by adopting a radically non-Kolmogorovian, e.g. non-additive, conception of (or substitute for) probability functions, in spite of the popularity of the latter response amongst those who have raised these objections. The interest of intuitionistic Bayesianism is further enhanced by the availability of a Dutch Book argument justifying the selection of intuitionistic probability functions as guides to rational betting behaviour when due consideration is paid to the fact that bets are settled only when/if the outcome betted on becomes known.","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2001-09-01T00:00:00.000+00:00","citationText":"Weatherson, 2001"}
+{"title":"From Classical to Intuitionistic Probability","description":"We generalize the Kolmogorov axioms for probability calculus to obtain conditions defining, for any given logic, a class of probability functions relative to that logic, coinciding with the standard probability functions in the special case of classical logic but allowing consideration of other classes of \"essentially Kolmogorovian\" probability functions relative to other logics. We take a broad view of the Bayesian approach as dictating *inter alia* that from the perspective of a given logic, rational degrees of belief are those representable by probability functions from the class appropriate to that logic. Classical Bayesianism, which fixes the logic as classical logic, is only one version of this general approach. Another, which we call Intuitionistic Bayesianism, selects intuitionistic logic as the preferred logic and the associated class of probability functions as the right class of candidate representions of epistemic states (rational allocations of degrees of belief). Various objections to classical Bayesianism are, we argue, best met by passing to intuitionistic Bayesianism -- in which the probability functions are taken relative to intuitionistic logic -- rather than by adopting a radically non-Kolmogorovian, e.g. non-additive, conception of (or substitute for) probability functions, in spite of the popularity of the latter response amongst those who have raised these objections. The interest of intuitionistic Bayesianism is further enhanced by the availability of a Dutch Book argument justifying the selection of intuitionistic probability functions as guides to rational betting behaviour when due consideration is paid to the fact that bets are settled only when/if the outcome betted on becomes known.","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2001-09-01T00:00:00.000-04:00","citationText":"Weatherson, 2001"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

@@ -488,7 +488,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1895,7 +1895,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2629,7 +2632,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Epistemic Modals and Epistemic Modality","description":"This chapter introduces the main themes of the volume, summarizes the chapters in it, and looks at the various arguments that have been raised for semantic relativism over the past decade. It concludes that two of these arguments seem to be resistant to the anti-relativist replies that have appeared in response to this work on relativism. One of these is an argument from agreement. It is argued that contextualist theories about various puzzling locutions have a hard time explaining why it is so easy for people who would happily utter the same words to describe themselves as agreeing, if those words were really context-sensitive. Another is an argument concerning attitude ascriptions. It seems there are quite different restrictions on what values the (allegedly) context-sensitive expressions can take inside and outside of attitude ascriptions. Since this isn't how context-sensitive terms usually behave, this phenomena tells against contextualism, and in favour of relativism.","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"},{"author":"Andy Egan","authorURL":"https://www.andyegan.net","affiliation":"Rutgers University","affiliationURL":"https://philosophy.rutgers.edu/","orcidID":""}],"publishedDate":"2011-09-01T00:00:00.000+00:00","citationText":"Weatherson & Egan, 2011"}
+{"title":"Epistemic Modals and Epistemic Modality","description":"This chapter introduces the main themes of the volume, summarizes the chapters in it, and looks at the various arguments that have been raised for semantic relativism over the past decade. It concludes that two of these arguments seem to be resistant to the anti-relativist replies that have appeared in response to this work on relativism. One of these is an argument from agreement. It is argued that contextualist theories about various puzzling locutions have a hard time explaining why it is so easy for people who would happily utter the same words to describe themselves as agreeing, if those words were really context-sensitive. Another is an argument concerning attitude ascriptions. It seems there are quite different restrictions on what values the (allegedly) context-sensitive expressions can take inside and outside of attitude ascriptions. Since this isn't how context-sensitive terms usually behave, this phenomena tells against contextualism, and in favour of relativism.","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"},{"author":"Andy Egan","authorURL":"https://www.andyegan.net","affiliation":"Rutgers University","affiliationURL":"https://philosophy.rutgers.edu/","orcidID":""}],"publishedDate":"2011-09-01T00:00:00.000-04:00","citationText":"Weatherson & Egan, 2011"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

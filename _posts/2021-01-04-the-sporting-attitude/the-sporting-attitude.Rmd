@@ -8,13 +8,14 @@ author:
     affiliation: University of Michigan
     affiliation_url: https://umich.edu
     orcid_id: 0000-0002-0830-141X
-date: 12-17-2020
+date: 04-26-2022
+doi: "10.1080/17511321.2021.1974531"
+citation_url: "https://doi.org/10.1080/17511321.2021.1974531"
 citation: false
 categories:
   - book symposium
   - on books
   - games and decisions
-  - unpublished
 preview: "matildas.jpg"
 bibliography: ../../../articles/Rbib.bib
 output:
@@ -27,6 +28,8 @@ output:
 Steffen Borge's _The Philosophy of Football_ [@Borge2019] is a really great contribution to philosophy of sport. More than that, it shows how questions in metaphysics, aesthetics, and philosophy of mind can be illuminated by looking at them through the perspective of sport. I'm going to focus on one particular question he raises, primarily in chapter 3. What attitude towards a game should players take? What is, to use Suits's terminology [@Suits1978], the lusory attitude that goes along with playing a sport.
 
 <aside>
+Published in _Sport, Ethics and Philosophy_ 16(3): 353-361.
+
 Image by [IQRemix](https://www.flickr.com/photos/46021126@N00) via [Creative Commons](https://search.creativecommons.org/photos/fe8b7ec1-a0a7-4aa4-9a2c-e95dcb3b59d0).
 </aside>
 There are actually three distinct questions here that are worth separating. I'm going to start with the first, but as we'll see, I'm going to end up having more to say about the second and the third.

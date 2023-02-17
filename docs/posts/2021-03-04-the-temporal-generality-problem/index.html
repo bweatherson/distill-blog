@@ -478,7 +478,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1885,7 +1885,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2619,7 +2622,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"The Temporal Generality Problem","description":"The traditional generality problem for process reliabilism concerns the difficulty in identifying each belief forming process with a particular kind of process. Thatidentification is necessary since individual belief forming processes are typically of many kinds, and those kinds may vary in reliability. I raise a new kind of generality problem, one which turns on the difficulty of identifying beliefs with processes by which they were formed. This problem arises because individual beliefs may be the culmination of overlapping processes of distinct lengths, and these processes may differ in reliability. I illustrate the force of this problem with a discussion of recent work on the bootstrapping problem.","doi":"10.5840/logos-episteme20123153","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2012-01-01T00:00:00.000+00:00","citationText":"Weatherson, 2012"}
+{"title":"The Temporal Generality Problem","description":"The traditional generality problem for process reliabilism concerns the difficulty in identifying each belief forming process with a particular kind of process. Thatidentification is necessary since individual belief forming processes are typically of many kinds, and those kinds may vary in reliability. I raise a new kind of generality problem, one which turns on the difficulty of identifying beliefs with processes by which they were formed. This problem arises because individual beliefs may be the culmination of overlapping processes of distinct lengths, and these processes may differ in reliability. I illustrate the force of this problem with a discussion of recent work on the bootstrapping problem.","doi":"10.5840/logos-episteme20123153","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2012-01-01T00:00:00.000-05:00","citationText":"Weatherson, 2012"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

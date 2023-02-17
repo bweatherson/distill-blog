@@ -494,7 +494,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1901,7 +1901,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2635,7 +2638,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Questioning Contextualism","description":"This chapter argues against the pragmatism that shows that there is a striking disanalogy between the behavior of “knows” in questions and the behavior of “knows” in terms. The chapter discusses that different people may have different standards for knowledge, so perhaps they may mean different things by a statement, because they communicate to meet their preferred standards for knowledge. Standards for knowledge are not the kind of thing that people can differ on without making a mistake, in the way one would say that different people can have different immediate goals (about what to have for dinner) without making a mistake. This explains that one does not just adopt questioners' standards for knowledge while answering their knowledge questions. So, it is argued that questions involving “knows” should have the three properties—speaker, clarification, and different answers. However, the counter argument is that the proposition can be true relative to some contexts and false relative to other contexts, just as temporality about propositions that a proposition can be true at some times and false at other times, and the utterance is true if the proposition is true only in the context of the utterance.","doi":"10.1016/B978-008044979-1/50010-2","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2006-07-31T00:00:00.000+00:00","citationText":"Weatherson, 2006"}
+{"title":"Questioning Contextualism","description":"This chapter argues against the pragmatism that shows that there is a striking disanalogy between the behavior of “knows” in questions and the behavior of “knows” in terms. The chapter discusses that different people may have different standards for knowledge, so perhaps they may mean different things by a statement, because they communicate to meet their preferred standards for knowledge. Standards for knowledge are not the kind of thing that people can differ on without making a mistake, in the way one would say that different people can have different immediate goals (about what to have for dinner) without making a mistake. This explains that one does not just adopt questioners' standards for knowledge while answering their knowledge questions. So, it is argued that questions involving “knows” should have the three properties—speaker, clarification, and different answers. However, the counter argument is that the proposition can be true relative to some contexts and false relative to other contexts, just as temporality about propositions that a proposition can be true at some times and false at other times, and the utterance is true if the proposition is true only in the context of the utterance.","doi":"10.1016/B978-008044979-1/50010-2","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2006-07-31T00:00:00.000-04:00","citationText":"Weatherson, 2006"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

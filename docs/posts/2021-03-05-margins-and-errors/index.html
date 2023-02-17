@@ -488,7 +488,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1895,7 +1895,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2629,7 +2632,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Margins and Errors","description":"Timothy Williamson has argued that cases involving fallible measurement show that knowledge comes apart from justified true belief in ways quite distinct from the familiar ‘double luck’ cases. I start by describing some assumptions that are necessary to generate Williamson's conclusion, and arguing that these assumptions are well justified. I then argue that the existence of these cases poses problems for theorists who suppose that knowledge comes apart from justified true belief only in a well defined class of cases. I end with some general discussion of what we can know on the basis of imperfect measuring devices.","doi":"10.1080/0020174X.2013.775015","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2013-04-25T00:00:00.000+00:00","citationText":"Weatherson, 2013"}
+{"title":"Margins and Errors","description":"Timothy Williamson has argued that cases involving fallible measurement show that knowledge comes apart from justified true belief in ways quite distinct from the familiar ‘double luck’ cases. I start by describing some assumptions that are necessary to generate Williamson's conclusion, and arguing that these assumptions are well justified. I then argue that the existence of these cases poses problems for theorists who suppose that knowledge comes apart from justified true belief only in a well defined class of cases. I end with some general discussion of what we can know on the basis of imperfect measuring devices.","doi":"10.1080/0020174X.2013.775015","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2013-04-25T00:00:00.000-04:00","citationText":"Weatherson, 2013"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

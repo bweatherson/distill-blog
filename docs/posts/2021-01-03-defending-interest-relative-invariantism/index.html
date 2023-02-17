@@ -486,7 +486,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1893,7 +1893,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2627,7 +2630,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Defending Interest Relative Invariantism","description":"Since interest-relative invariantism (hereafter, IRI) was introduced into contemporary epistemology in the early 2000s, it has been criticised on a number of fronts. This paper responds to six different criticisms of IRI launched by five different authors. And it does so by noting that the best version of IRI is immune to the criticisms they have launched. The 'best version' in question notes three things about IRI. First, what matters for knowledge is not strictly the *stakes* the agent faces in any decision-problem, but really the *odds* at which she has to bet. Second, IRI is a relatively weak theory; it just says interests sometimes matter. Defenders of IRI have often derived it from much stronger principles about reasoning, and critics have attacked those principles, but much weaker principles would do. Third, and most importantly, interests matter because generate certain kinds of *defeaters*. It isn't part of this version of IRI that an agent can know something in virtue of their interests. Rather, the theory says that whether a certain kind of consideration is a defeater to an agent's putative knowledge that _p_ depends on their interests. This matters for the intuitive plausibility of IRI. Critics have argued, rightly, that interests don't behave in ways distinctive of grounds of knowledge. But interests do behave like other kinds of defeaters, and this undermines the criticisms of IRI.","doi":"10.5840/logos-episteme2011248","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2011-01-01T00:00:00.000+00:00","citationText":"Weatherson, 2011"}
+{"title":"Defending Interest Relative Invariantism","description":"Since interest-relative invariantism (hereafter, IRI) was introduced into contemporary epistemology in the early 2000s, it has been criticised on a number of fronts. This paper responds to six different criticisms of IRI launched by five different authors. And it does so by noting that the best version of IRI is immune to the criticisms they have launched. The 'best version' in question notes three things about IRI. First, what matters for knowledge is not strictly the *stakes* the agent faces in any decision-problem, but really the *odds* at which she has to bet. Second, IRI is a relatively weak theory; it just says interests sometimes matter. Defenders of IRI have often derived it from much stronger principles about reasoning, and critics have attacked those principles, but much weaker principles would do. Third, and most importantly, interests matter because generate certain kinds of *defeaters*. It isn't part of this version of IRI that an agent can know something in virtue of their interests. Rather, the theory says that whether a certain kind of consideration is a defeater to an agent's putative knowledge that _p_ depends on their interests. This matters for the intuitive plausibility of IRI. Critics have argued, rightly, that interests don't behave in ways distinctive of grounds of knowledge. But interests do behave like other kinds of defeaters, and this undermines the criticisms of IRI.","doi":"10.5840/logos-episteme2011248","authors":[{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2011-01-01T00:00:00.000-05:00","citationText":"Weatherson, 2011"}
 </script>
 
 <!--/radix_placeholder_front_matter-->

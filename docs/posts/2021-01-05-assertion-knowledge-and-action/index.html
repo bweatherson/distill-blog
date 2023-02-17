@@ -490,7 +490,7 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1897,7 +1897,10 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        return "<p>" + $('#ref-' + ref).html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -2631,7 +2634,7 @@ d-article table td {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Assertion, Knowledge and Action","description":"We argue against the knowledge rule of assertion, and in favour of integrating the account of assertion more tightly with our best theories of evidence and action. We think that the knowledge rule has an incredible consequence when it comes to practical deliberation, that it can be right for a person to do something that she can’t properly assert she can do. We develop some vignettes that show how this is possible, and how odd this consequence is. We then argue that these vignettes point towards alternate rules that tie assertion to sufficient evidence-responsiveness or to proper action. These rules have many of the virtues that are commonly claimed for the knowledge rule, but lack the knowledge rule’s problematic consequences when it comes to assertions about what to do.","doi":"10.1007/s11098-010-9542-z","authors":[{"author":"Ishani Maitra","authorURL":"https://lsa.umich.edu/philosophy/people/faculty/imaitra.html","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":""},{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2010-03-23T00:00:00.000+00:00","citationText":"Maitra & Weatherson, 2010"}
+{"title":"Assertion, Knowledge and Action","description":"We argue against the knowledge rule of assertion, and in favour of integrating the account of assertion more tightly with our best theories of evidence and action. We think that the knowledge rule has an incredible consequence when it comes to practical deliberation, that it can be right for a person to do something that she can’t properly assert she can do. We develop some vignettes that show how this is possible, and how odd this consequence is. We then argue that these vignettes point towards alternate rules that tie assertion to sufficient evidence-responsiveness or to proper action. These rules have many of the virtues that are commonly claimed for the knowledge rule, but lack the knowledge rule’s problematic consequences when it comes to assertions about what to do.","doi":"10.1007/s11098-010-9542-z","authors":[{"author":"Ishani Maitra","authorURL":"https://lsa.umich.edu/philosophy/people/faculty/imaitra.html","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":""},{"author":"Brian Weatherson","authorURL":"http://brian.weatherson.org","affiliation":"University of Michigan","affiliationURL":"https://umich.edu","orcidID":"0000-0002-0830-141X"}],"publishedDate":"2010-03-23T00:00:00.000-04:00","citationText":"Maitra & Weatherson, 2010"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
