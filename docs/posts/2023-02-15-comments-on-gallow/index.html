@@ -138,10 +138,6 @@ margin-left: 2em;
 
 <!--/radix_placeholder_meta_tags-->
   
-  <meta name="citation_reference" content="citation_title=Collective choice and social welfare: An expanded edition;citation_publisher=Harvard University Press;citation_author=Amartya Sen" />
-  <meta name="citation_reference" content="citation_title=A reexamination of the perfectness concept for equilibrium points in extensive games;citation_volume=4;citation_doi=10.1007/BF01766400;citation_author=Reinhard Selten" />
-  <meta name="citation_reference" content="citation_title=Ratifiability, game theory, and the principle of independence of irrelevant alternatives;citation_volume=69;citation_doi=10.1080/00048409112344491;citation_author=Ellery Eells;citation_author=William Haper" />
-  <meta name="citation_reference" content="citation_title=The sure thing principle leads to instability;citation_volume=forthcoming;citation_author=Dmitri Gallow" />
   <meta name="citation_reference" content="citation_title=Causal decision theory;citation_volume=59;citation_doi=10.1080/00048408112340011;citation_author=David Lewis" />
   <meta name="citation_reference" content="citation_title=Signalling games and stable equilibria;citation_volume=102;citation_doi=10.2307/1885060;citation_author=In-Koo Cho;citation_author=David M. Kreps" />
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -3766,8 +3762,8 @@ Other Subjects
 </ul>
 </nav>
 </div>
-<p>Dmitri <span class="citation" data-cites="Gallow2024">Gallow (<a href="#ref-Gallow2024" role="doc-biblioref">2024</a>)</span> has recently argued that no plausible decision theory satisfies both the Sure Thing principle and something he calls Stability. The proof of this requires a couple of other premises that are not completely trivial, but ultimately, I think they are plausible enough that the argument goes through. What he calls Sure Thing and what he calls Stability are indeed impossible to jointly plausibly satisfy. But the motivations for those principles don’t really support the formal principles as he states them. Rather, they support slightly weaker principles. And a version of causal ratificationism is compatible with those weaker principles. Or so I’ll argue here.</p>
-<p>To anticipate a bit, the version of causal ratificationism I’m going to argue is compatible with the (most plausible versions of) Sure Thing and Stability is the third of the four versions of ratificationism discused by Ellery Eells and William Harper in their paper “Ratifiability, game theory, and the principle of independence of irrelevant alternatives” <span class="citation" data-cites="EellsHarper1991">(<a href="#ref-EellsHarper1991" role="doc-biblioref">1991</a>)</span>. I’m going to make a small modification to the presentation of the theory, and add one epicycle to it. The epicycle is that I’ll say that only theories that are trembling hand perfect, in the sense developed by Reinhart <span class="citation" data-cites="Selten1975">Selten (<a href="#ref-Selten1975" role="doc-biblioref">1975</a>)</span>, are ratifiable. But before I develop this theory, I need to say a fair bit about how Dmitri and I are thinking about decision theories.</p>
+<p>Dmitri <span class="citation" data-cites="Gallow2024">(<a href="#ref-Gallow2024" role="doc-biblioref"><strong>Gallow2024?</strong></a>)</span> has recently argued that no plausible decision theory satisfies both the Sure Thing principle and something he calls Stability. The proof of this requires a couple of other premises that are not completely trivial, but ultimately, I think they are plausible enough that the argument goes through. What he calls Sure Thing and what he calls Stability are indeed impossible to jointly plausibly satisfy. But the motivations for those principles don’t really support the formal principles as he states them. Rather, they support slightly weaker principles. And a version of causal ratificationism is compatible with those weaker principles. Or so I’ll argue here.</p>
+<p>To anticipate a bit, the version of causal ratificationism I’m going to argue is compatible with the (most plausible versions of) Sure Thing and Stability is the third of the four versions of ratificationism discused by Ellery Eells and William Harper in their paper “Ratifiability, game theory, and the principle of independence of irrelevant alternatives” <span class="citation" data-cites="EellsHarper1991">(<a href="#ref-EellsHarper1991" role="doc-biblioref"><strong>EellsHarper1991?</strong></a>)</span>. They call it Basic Ratifiability with Mixtures, and the key notion is that we assume that rational actors always have available to them mixtures of any strategies that are available. I’m going to make a small modification to the presentation of the theory, and add one epicycle to it. The epicycle is that I’ll say that only theories that are trembling hand perfect, in the sense developed by Reinhart <span class="citation" data-cites="Selten1975">(<a href="#ref-Selten1975" role="doc-biblioref"><strong>Selten1975?</strong></a>)</span>, are ratifiable. But before I develop this theory, I need to say a fair bit about how Dmitri and I are thinking about decision theories.</p>
 <h1 id="the-structure-of-a-decision-theory">The Structure of a Decision Theory</h1>
 <p>Here is what Dmitri says he thinks a decision theory should do.</p>
 <blockquote>
@@ -3785,7 +3781,7 @@ All page references are to the manuscript version of Dmitri’s paper on <a href
 <p>You might worry about the assumption of totality because you think that there can be rational incomparabilities, where neither <span class="math inline">\(A\)</span> nor <span class="math inline">\(B\)</span> is at least as rational as the other. If you have this view, then you may interpret ‘<span class="math inline">\(A\)</span> ⪰ <span class="math inline">\(B\)</span>’ as meaning ‘it’s not the case that <span class="math inline">\(A\)</span> is less rational than <span class="math inline">\(B\)</span>’. So long as ‘<span class="math inline">\(A\)</span> is at least as rational as <span class="math inline">\(B\)</span>’ is a pre-order (reflexive and transitive), ‘<span class="math inline">\(A\)</span> is not less rational than <span class="math inline">\(B\)</span>’ will be a total pre-order. (5n11)</p>
 </blockquote>
 <p>Since ratificationist theories do frequently generate rational incomparabilities, I do indeed worry about this assumption. This is an elegant way to weaken the assumption, but I think it generates some weird consequences down the line.</p>
-<p>But first I want to note something even more foundational. I don’t really think the role of a decision theory is to provide this kind of ordering. I think the role of a decision theory is to make decisions. In the terminology made famous by <span class="citation" data-cites="Sen2018">Sen (<a href="#ref-Sen2018" role="doc-biblioref">2018</a>)</span>, I think the main role of a decision theory is to provide a function <span class="math inline">\(C\)</span> from sets of options to choice-worthy options. (I’ll typical label the set of options as <span class="math inline">\(O\)</span>.) To parallel the reflexive, transitive, and total constraints, we might simply insist that <span class="math inline">\(C\)</span> is non-empty.</p>
+<p>But first I want to note something even more foundational. I don’t really think the role of a decision theory is to provide this kind of ordering. I think the role of a decision theory is to make decisions. In the terminology made famous by <span class="citation" data-cites="Sen2018">(<a href="#ref-Sen2018" role="doc-biblioref"><strong>Sen2018?</strong></a>)</span>, I think the main role of a decision theory is to provide a function <span class="math inline">\(C\)</span> from sets of options to choice-worthy options. (I’ll typical label the set of options as <span class="math inline">\(O\)</span>.) To parallel the reflexive, transitive, and total constraints, we might simply insist that <span class="math inline">\(C\)</span> is non-empty.</p>
 <p>Now given a function <span class="math inline">\(C\)</span>, one could try to reconstruct a pairwise relation like ⪰. But it’s a little tricky. Imagine that our chooser must take one of three things in front of them: a 50 dollar note, a 20 dollar note, or a 10 dollar note. They should (barring some weird views about the value of money), take the 50. That is, in this case, <span class="math inline">\(C\)</span> picks out a singleton. But while <span class="math inline">\(C\)</span> does not distinguish between taking the 20 and taking the 10, it does not follow that we should be indifferent between them. So it won’t do to say that given <span class="math inline">\(C\)</span>, we can say that <span class="math inline">\(A\)</span> ⪰ <span class="math inline">\(B\)</span> unless <span class="math inline">\(B \in C(O) \wedge A \notin C(O)\)</span>.</p>
 <h1 id="the-sure-thing-principles">The Sure Thing Principles</h1>
 <p>This all matters, because the versions of Sure Thing that Dmitri states are defined in terms of ⪰, and if one would rather use <span class="math inline">\(C\)</span>, then we have to rephrase them. I say ‘versions’ because he offers two. The first is what he simply calls <strong>Sure Thing Principle</strong>, but I’ll call <strong>Strong Sure Thing Principle</strong> to contrast it with what’s about to come.</p>
@@ -3817,6 +3813,7 @@ All page references are to the manuscript version of Dmitri’s paper on <a href
 <p>Stability says that these four things suffice to make a decision. The name might seem strange, but it comes from the thought that various versions of causal decision theory, such as the version defended by David <span class="citation" data-cites="Lewis1981b">Lewis (<a href="#ref-Lewis1981b" role="doc-biblioref">1981</a>)</span>, violate it. And they violate it because what one chooses is a function of what one thinks one will choose, and that in turn means that decisions can be unstable during deliberation. I don’t love calling some particular theory ‘orthodox causal decision theory’, I’m not sure any theory has wide enough uptake to warrant such a label, but it does seem that Ludovician causal decsion theory does violate this principle, and does so because it is in a sense instable.</p>
 <p>One quibble I have with this formulation of Stability is that it could be violated by theories that are not in any sense instable. Consider the following problem. When I label a state P-something, that means that the option ‘something’ is predicted. And assume that the probability of a correct prediction is 1, so all other predictions have probability 0.</p>
 <table>
+<caption>Game 1</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -3850,6 +3847,7 @@ All page references are to the manuscript version of Dmitri’s paper on <a href
 <p>But the bigger issue is how mixed strategies are treated. As it stands, Stability doesn’t seem right because it says that what will happen given that a mixed strategy is played doesn’t affect what choice should be made. Consider the following two games. In each game, Column is a Demon who can predict with probability 1 what strategy the human, playing Row, will play. But if Human plays a mixed strategy, Demon can predict the mixed strategy, but not which choice is made by the randomiser. (If they could, that would be some kind of backward causation, and the predictions would not be suitable states.)</p>
 <p>Here is the first game. In each cell, human’s payouts are listed first, and Demon’s payouts are listed second.</p>
 <table>
+<caption>Game 2</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -3872,6 +3870,7 @@ All page references are to the manuscript version of Dmitri’s paper on <a href
 </table>
 <p>The only ratifiable strategy for human is to play a 50/50 mixture of Up and Down, and presumably Demon will do the same thing. Compare that with the following game.</p>
 <table>
+<caption>Game 3</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -3892,50 +3891,15 @@ All page references are to the manuscript version of Dmitri’s paper on <a href
 </tr>
 </tbody>
 </table>
-<aside>
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">PU</th>
-<th style="text-align: center;">PD</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Up</td>
-<td style="text-align: center;">0,3</td>
-<td style="text-align: center;">1,0</td>
-</tr>
-<tr class="even">
-<td>Down</td>
-<td style="text-align: center;">1,0</td>
-<td style="text-align: center;">0,1</td>
-</tr>
-</tbody>
-</table>
-</aside>
-<p>The only Nash equilibrium for this game is that human plays a mixed strategy of Up with probability ¼, and Down with probability ¾, while Demon plays a 50/50 mix of P-Up and P-Down. It seems plausible that</p>
+<p>The only Nash equilibrium for this game is that human plays a mixed strategy of Up with probability ¼, and Down with probability ¾, while Demon plays a 50/50 mix of P-Up and P-Down. The game theoretic orthodoxy which says that one should play Nash equilibrium strategies seems at least plausible to me. And, crucially, it doesn’t seem unstable.</p>
 <p>⪰</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
-<div id="ref-ChoKreps1987" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ChoKreps1987" class="csl-entry" role="listitem">
 Cho, In-Koo, and David M. Kreps. 1987. <span>“Signalling Games and Stable Equilibria.”</span> <em>The Quarterly Journal of Economics</em> 102 (2): 179–221. <a href="https://doi.org/10.2307/1885060">https://doi.org/10.2307/1885060</a>.
 </div>
-<div id="ref-EellsHarper1991" class="csl-entry" role="doc-biblioentry">
-Eells, Ellery, and William Haper. 1991. <span>“Ratifiability, Game Theory, and the Principle of Independence of Irrelevant Alternatives.”</span> <em>Australasian Journal of Philosophy</em> 69 (1): 1–19. <a href="https://doi.org/10.1080/00048409112344491">https://doi.org/10.1080/00048409112344491</a>.
-</div>
-<div id="ref-Gallow2024" class="csl-entry" role="doc-biblioentry">
-Gallow, Dmitri. 2024. <span>“The Sure Thing Principle Leads to Instability.”</span> <em>The Philosophical Quarterly</em> forthcoming (forthcoming): 1–10.
-</div>
-<div id="ref-Lewis1981b" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Lewis1981b" class="csl-entry" role="listitem">
 Lewis, David. 1981. <span>“Causal Decision Theory.”</span> <em>Australasian Journal of Philosophy</em> 59 (1): 5–30. <a href="https://doi.org/10.1080/00048408112340011">https://doi.org/10.1080/00048408112340011</a>.
-</div>
-<div id="ref-Selten1975" class="csl-entry" role="doc-biblioentry">
-Selten, Reinhard. 1975. <span>“A Reexamination of the Perfectness Concept for Equilibrium Points in Extensive Games.”</span> <em>International Journal of Game Theory</em> 4 (1): 25–55. <a href="https://doi.org/10.1007/BF01766400">https://doi.org/10.1007/BF01766400</a>.
-</div>
-<div id="ref-Sen2018" class="csl-entry" role="doc-biblioentry">
-Sen, Amartya. 2018. <em>Collective Choice and Social Welfare: An Expanded Edition</em>. Cambridge, MA: Harvard University Press.
 </div>
 </div>
 <!--radix_placeholder_article_footer-->

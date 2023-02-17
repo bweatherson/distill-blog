@@ -25,7 +25,7 @@ output:
 
 Dmitri @Gallow2024 has recently argued that no plausible decision theory satisfies both the Sure Thing principle and something he calls Stability. The proof of this requires a couple of other premises that are not completely trivial, but ultimately, I think they are plausible enough that the argument goes through. What he calls Sure Thing and what he calls Stability are indeed impossible to jointly plausibly satisfy. But the motivations for those principles don't really support the formal principles as he states them. Rather, they support slightly weaker principles. And a version of causal ratificationism is compatible with those weaker principles. Or so I'll argue here.
 
-To anticipate a bit, the version of causal ratificationism I'm going to argue is compatible with the (most plausible versions of) Sure Thing and Stability is the third of the four versions of ratificationism discused by Ellery Eells and William Harper in their paper "Ratifiability, game theory, and the principle of independence of irrelevant alternatives" [-@EellsHarper1991]. I'm going to make a small modification to the presentation of the theory, and add one epicycle to it. The epicycle is that I'll say that only theories that are trembling hand perfect, in the sense developed by Reinhart @Selten1975, are ratifiable. But before I develop this theory, I need to say a fair bit about how Dmitri and I are thinking about decision theories.
+To anticipate a bit, the version of causal ratificationism I'm going to argue is compatible with the (most plausible versions of) Sure Thing and Stability is the third of the four versions of ratificationism discused by Ellery Eells and William Harper in their paper "Ratifiability, game theory, and the principle of independence of irrelevant alternatives" [-@EellsHarper1991]. They call it Basic Ratifiability with Mixtures, and the key notion is that we assume that rational actors always have available to them mixtures of any strategies that are available. I'm going to make a small modification to the presentation of the theory, and add one epicycle to it. The epicycle is that I'll say that only theories that are trembling hand perfect, in the sense developed by Reinhart @Selten1975, are ratifiable. But before I develop this theory, I need to say a fair bit about how Dmitri and I are thinking about decision theories.
 
 # The Structure of a Decision Theory
 
@@ -91,6 +91,8 @@ One quibble I have with this formulation of Stability is that it could be violat
    Up      10             1            0
   Mid      0             10            1
  Down      1              0            10
+
+Table: Game 1
  
 I can imagine a theory that says what one should do here turns on the prior probability of P-Mid given Up and not P-Up. That conditional probability is not determined by $P$, which says that Up and not P-Up has probability 0. But it could be relevant to a decision theory. We've known since at least the work of @ChoKreps1987 that probabilities conditional on zero probability events can in principle be relevant to decision making, and I don't think Stability will rule them out.
 
@@ -103,6 +105,8 @@ Here is the first game. In each cell, human's payouts are listed first, and Demo
    Up     0,1           1,0
  Down     1,0           0,1
  
+Table: Game 2
+ 
 The only ratifiable strategy for human is to play a 50/50 mixture of Up and Down, and presumably Demon will do the same thing. Compare that with the following game.
 
           P-Up        P-Down
@@ -110,16 +114,16 @@ The only ratifiable strategy for human is to play a 50/50 mixture of Up and Down
    Up     0,3           1,0
  Down     1,0           0,1
 
-<aside>
+Table: Game 3
 
-          PU          PD
------ -----------  ---------------
-   Up     0,3           1,0
- Down     1,0           0,1
+The only Nash equilibrium for this game is that human plays a mixed strategy of Up with probability ¼, and Down with probability ¾, while Demon plays a 50/50 mix of P-Up and P-Down. The game theoretic orthodoxy which says that one should play Nash equilibrium strategies seems at least plausible to me. And, crucially, it doesn't seem unstable. The Nash equilibrium theorist doesn't say that someone should change their mind during deliberation, or that what they should do is a function of what they believe they will do. They say the game has an equilibrium, and it should be played. It's just that Games 2 and 3 have different equilibria, and hence lead to different plays, even though they are alike in the respects that Dmitri highlights.
 
-</aside>
+One could say here that the mixed strategies should be extra rows in the table, and games 2 and 3 would differ in what went into those extra rows. But this would mean that all games are infinite games, which creates its own technical problems. And it would ignore the sense in which these mixed strategies are indeed mixtures of other strategies. They are not distinct pure strategies that need their own payouts.
 
-The only Nash equilibrium for this game is that human plays a mixed strategy of Up with probability ¼, and Down with probability ¾, while Demon plays a 50/50 mix of P-Up and P-Down. It seems plausible that 
+This is not an argument against Stability, it is an argument against this formalisation of stability. There is a better formalisation that does not run into problems with the equilibrium theorist. Say that the world has one or other **type**. The idea here goes back to @Harsanyi1967. The type of the world is, and is known to be, causally independent of the choice the agent makes. The type of the world does two things. First, it specifies the quantity that the world is 'trying' to maximise. Intuitively, or perhaps unintuitively, we think of the world as having both a goal, and perfect foresight as to the strategy (pure or mixed) of the chooser. There is some function from act-state pairs to numerical values, and the world is trying to maximise the expected value of that function given the chooser's strategy. In versions of Newcomb's Problem where the Demon has perfect foresight, the type of the Demon is simple - 1 for a correct response, 0 for incorrect - and the chooser knows the Demon's type. But for the general case we need two more complications. One is that the chooser doesn't always know the world's type. If the Demon is only 80% reliable, we will model this by saying that the chooser thinks it is 80% likely that the world is of the normal type, and 20% likely that the type of the world is that it gets 1 if its makes the 'wrong' prediction (e.g., puts a million dollars in the box even though 2 boxes are chosen) and 0 otherwise. they are trying to this isn't quite enough. So second, the world's type also specifies the probability that the world will make one or other selction when each of those selections would do equally well at maximising the expected value of this function.
+
+The chooser doesn't know what type the world has. But their uncertainty can be entirely expressed as uncertainty about the type of the world. The simplest problems, ones where there is no evidential connection between acts and states, are ones where the function the world is trying to maximise is a constant, the probabilities that the world will 'choose' one or other state are the familiar state probabilities, and the chooser knows the world has precisely this type. Newcomb problems, and indeed the general class of problems that Dmitri's formalism lets one express, are problems where the function the world is trying to maximise take the value 1 or 0. In some sense, we can think of all of them as problems where the world is trying to make some kind of prediction. (Perhaps this is because the world contains a Demon who is quite literally trying to make some kind of prediction.) And the world gets score 1 if the prediction is right, 0 if it is wrong. And these are a very interesting class of problems. But they are not the most general kind. The most general kind lets this quantity 
+Second, it specifies the probability that the world when instantiate one or other state when multiple instantiations would do equally well at 
 
 
 ⪰
