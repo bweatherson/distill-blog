@@ -1,0 +1,130 @@
+---
+title: "Comments on Gallow"
+description: |
+  Dmitri Gallow wrote a very interesting paper, "The Sure Thing Principle Leads to Instability", in Philosophical Quarterly. The main conclusion, as the title implies, is that no plausible decision theory satisfies two desiderata, which he calls Sure Thing and Stability. I think the motivations he gives for those desiderata do not support ptinciples quite as strong as the principles he gives. And the weaker, but more plausible, versions of the principles are both consistent with a version of causal ratificationism. This note, which is too narrow and too long to be reasonably published anywhere, sets out why I think causal ratificationism avoids his criticism.
+author:
+  - name: Brian Weatherson 
+    url: http://brian.weatherson.org
+    affiliation: University of Michigan
+    affiliation_url: https://umich.edu
+    orcid_id: 0000-0002-0830-141X
+date: 02-15-2023
+bibliography: ../../../articles/rBib.bib
+self-contained: false
+preview: the-game.png
+citation: false
+categories:
+  - games and decisions
+  - unpublished
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    number_sections: TRUE
+---
+
+Dmitri @Gallow2024 has recently argued that no plausible decision theory satisfies both the Sure Thing principle and something he calls Stability. The proof of this requires a couple of other premises that are not completely trivial, but ultimately, I think they are plausible enough that the argument goes through. What he calls Sure Thing and what he calls Stability are indeed impossible to jointly plausibly satisfy. But the motivations for those principles don't really support the formal principles as he states them. Rather, they support slightly weaker principles. And a version of causal ratificationism is compatible with those weaker principles. Or so I'll argue here.
+
+To anticipate a bit, the version of causal ratificationism I'm going to argue is compatible with the (most plausible versions of) Sure Thing and Stability is the third of the four versions of ratificationism discused by Ellery Eells and William Harper in their paper "Ratifiability, game theory, and the principle of independence of irrelevant alternatives" [-@EellsHarper1991]. They call it Basic Ratifiability with Mixtures, and the key notion is that we assume that rational actors always have available to them mixtures of any strategies that are available. I'm going to make a small modification to the presentation of the theory, and add one epicycle to it. The epicycle is that I'll say that only theories that are trembling hand perfect, in the sense developed by Reinhart @Selten1975, are ratifiable. But before I develop this theory, I need to say a fair bit about how Dmitri and I are thinking about decision theories.
+
+# The Structure of a Decision Theory
+
+Here is what Dmitri says he thinks a decision theory should do.
+
+> I’m going to suppose that, provided with any well-formed decision, a decision theory will tell you which acts are as rational as which others. So it will provide an ordering over available acts, ⪰, where $A$ ⪰ $B$ iff $A$ is as rational a choice as $B$ is. We can then define $A$ ≻ $B$ ($A$ is more rational than $B$) and $A$ ≈$B$ ($A$ is just as rational as $B$) in the usual way. (4)
+
+<aside>
+All page references are to the manuscript version of Dmitri's paper on [PhilArchive](https://philpapers.org/archive/GALTST-2.pdf).
+</aside>
+
+So decision theories provide binary relations over acts, which behave a lot like preference orderings. In fact, Dmitri puts a quite strong constraint on what he calls a 'stable' decision theory. I'll come back to what this means in a bit, but this assumption about the nature of decision theories is going to be important.
+
+> I will assume, by the way, that a stable decision theory will provide us with a total pre-order over options. ...  If the decision theory gives us an irreflexive, intransitive, or non-total ordering, then it doesn’t count as a stable decision theory, in my terminology. (5)
+
+This is a rather strong assumption, and he notes in a footnote that it need not be quite as strong as it looks.
+
+> You might worry about the assumption of totality because you think that there can be rational incomparabilities, where neither $A$ nor $B$ is at least as rational as the other. If you have this view, then you may interpret ‘$A$ ⪰ $B$’ as meaning ‘it’s not the case that $A$ is less rational than $B$’. So long as ‘$A$ is at least as rational as $B$’ is a pre-order (reflexive and transitive), ‘$A$ is not less rational than $B$’ will be a total pre-order. (5n11)
+
+Since ratificationist theories do frequently generate rational incomparabilities, I do indeed worry about this assumption. This is an elegant way to weaken the assumption, but I think it generates some weird consequences down the line.
+
+But first I want to note something even more foundational. I don't really think the role of a decision theory is to provide this kind of ordering. I think the role of a decision theory is to make decisions. In the terminology made famous by @Sen2018, I think the main role of a decision theory is to provide a function $C$ from sets of options to choice-worthy options. (I'll typical label the set of options as $O$.) To parallel the reflexive, transitive, and total constraints, we might simply insist that $C$ is non-empty.
+
+Now given a function $C$, one could try to reconstruct a pairwise relation like ⪰. But it's a little tricky. Imagine that our chooser must take one of three things in front of them: a 50 dollar note, a 20 dollar note, or a 10 dollar note. They should (barring some weird views about the value of money), take the 50. That is, in this case, $C$ picks out a singleton. But while $C$ does not distinguish between taking the 20 and taking the 10, it does not follow that we should be indifferent between them. So it won't do to say that given $C$, we can say that $A$ ⪰ $B$ unless $B \in C(O) \wedge A \notin C(O)$.
+
+# The Sure Thing Principles
+
+This all matters, because the versions of Sure Thing that Dmitri states are defined in terms of ⪰, and if one would rather use $C$, then we have to rephrase them. I say 'versions' because he offers two. The first is what he simply calls **Sure Thing Principle**, but I'll call **Strong Sure Thing Principle** to contrast it with what's about to come.
+
+>  If whether $E$ is true is causally independent of how you choose, and $A$ ≈ $B$ | ¬$E$, then: $A$ ⪰ $B$ iff $A$ ⪰ $B$ | $E$. (2)
+
+This isn't very plausible if we believe in rational incommesurabilities. Let $X$ and $Y$ be two options that have large costs and benefits and can't be easily compared. A coin is about to be tossed. Let $A$ be a bet that returns $X$ if heads, and nothing if tails, and $B$ a bet that returns $Y$ if heads, and a penny if tails. Let $E$ be that the coin lands tails. Then given how Dmitri defined ≈, we have $A$ ≈ $B$ | ¬$E$, and $A$ ⪰ $B$, but not $A$ ⪰ $B$ | $E$. So I don't think **Strong Sure Thing Principle** is very intuitive. What about the other version, which he calls **Weak Sure Thing Principle**.
+
+ > If whether $E$ is true is causally independent of how you choose, choose and $A$ and $B$ would lead to exactly the same outcome whenever $E$ is false, then: $A$ ⪰ $B$ iff $A$ ⪰ $B$ | $E$. (2).
+
+This is more plausible, even when constituents of $A$ and $B$ are incommensurable. But how do we translate it into the language of $C$? The following principle, which I'll call **Very Weak Sure Thing Principle** isn't quite strong enough. I'll use $C_E$ for the choice function given evidence $E$.
+
+> If whether $E$ is true is causally independent of the choice, and all options in $O$ return exactly the same outcome given $\neg E$, then $C(O) = C_E(O)$.
+
+This is a very plausible theory. If the options in $O$ are identical given $\neg E$, then the chooser's choice may as well only be made after learning $E$. Which is to say, their choice should be their choice given $E$, which is what Very Weak Sure Thing says. But it isn't quite as strong as Dmitri's Weak Sure Thing. His principle says, intuitively, that if two options are equivalent given $\neg E$, then the theory should treat them the same conditional on $E$ and unconditionally. Here is how I think we should capture that, though I'm not sure that it's exactly right.
+
+> If whether $E$ is true is causally independent of the choice, and $A$ and $B$ (which are both members of $O$) return the same outcome given $\neg E$, and both $C(O) \cup \{A, B\}$ and $C_E(O) \cup \{A, B\}$ are non-empty, then $C(O) \cup \{A, B\} = C_E(O) \cup \{A, B\}$.
+
+The last condition in that principle, concerning non-empty intersections, is a little clunky. But without it the principle fails in very simple cases even if the underlying decision theory is simply expected utility maximisation. The intuition behind this principle is that $C$ doesn't actually say anything about the unchosen options, except that they are unchosen. So it only says something about the comparative value of $A$ and $B$ if both are chosen. And the principle then says that if $C$ says something about $A$ and $B$ both before and after learning $E$, then it should say the same thing unless $A$ and $B$ produce different outcomes given $\neg E$. I'm not completely sure this is as plausible a principle as Very Weak Sure Thing, but for now I'll take it on board.
+
+# Stability
+
+So that's the first of Dmirti's two big principles on the table, and translated into my preferred idiom. What about stability? Here we need to set up what he takes a decision problem to involve. It involves four things:
+
+1. A set of options $O$.
+2. A set of states of the world $S$, with a background stipulation that which member of $S$ is actual is causally independent of which member of $O$ is actual.
+3. A valuation function $V$ from pairs $\langle o \in O, s \in S\rangle$ to (numerical) payouts given that $o$ and $s$ are actual.
+4. A probability function $P$ from pairs $\langle o \in O, s \in S\rangle$ to the probability that $s$ is actual given that $o$ is chosen.
+
+Actually I've already slipped in a small change from his notation which is worth flagging. In the last clause I said that $P$ gives the probability of $s$ given that $o$ is **chosen**, not that it is **actual**. I'm not sure Dmitri means to make that distinction, but it is going to be important when we get to mixed strategies.
+
+Stability says that these four things suffice to make a decision. The name might seem strange, but it comes from the thought that various versions of causal decision theory, such as the version defended by David @Lewis1981b, violate it. And they violate it because what one chooses is a function of what one thinks one will choose, and that in turn means that decisions can be unstable during deliberation. I don't love calling some particular theory 'orthodox causal decision theory', I'm not sure any theory has wide enough uptake to warrant such a label, but it does seem that Ludovician causal decsion theory does violate this principle, and does so because it is in a sense instable.
+
+One quibble I have with this formulation of Stability is that it could be violated by theories that are not in any sense instable. Consider the following problem. When I label a state P-something, that means that the option 'something' is predicted. And assume that the probability of a correct prediction is 1, so all other predictions have probability 0.
+
+          P-Up          P-Mid        P-Down
+----- ----------- --------------  ---------------
+   Up      10             1            0
+  Mid      0             10            1
+ Down      1              0            10
+
+Table: Game 1
+ 
+I can imagine a theory that says what one should do here turns on the prior probability of P-Mid given Up and not P-Up. That conditional probability is not determined by $P$, which says that Up and not P-Up has probability 0. But it could be relevant to a decision theory. We've known since at least the work of @ChoKreps1987 that probabilities conditional on zero probability events can in principle be relevant to decision making, and I don't think Stability will rule them out.
+
+But the bigger issue is how mixed strategies are treated. As it stands, Stability doesn't seem right because it says that what will happen given that a mixed strategy is played doesn't affect what choice should be made. Consider the following two games. In each game, Column is a Demon who can predict with probability 1 what strategy the human, playing Row, will play. But if Human plays a mixed strategy, Demon can predict the mixed strategy, but not which choice is made by the randomiser. (If they could, that would be some kind of backward causation, and the predictions would not be suitable states.)
+
+Here is the first game. In each cell, human's payouts are listed first, and Demon's payouts are listed second.
+
+          P-Up        P-Down
+----- -----------  ---------------
+   Up     0,1           1,0
+ Down     1,0           0,1
+ 
+Table: Game 2
+ 
+The only ratifiable strategy for human is to play a 50/50 mixture of Up and Down, and presumably Demon will do the same thing. Compare that with the following game.
+
+          P-Up        P-Down
+----- -----------  ---------------
+   Up     0,3           1,0
+ Down     1,0           0,1
+
+Table: Game 3
+
+The only Nash equilibrium for this game is that human plays a mixed strategy of Up with probability ¼, and Down with probability ¾, while Demon plays a 50/50 mix of P-Up and P-Down. The game theoretic orthodoxy which says that one should play Nash equilibrium strategies seems at least plausible to me. And, crucially, it doesn't seem unstable. The Nash equilibrium theorist doesn't say that someone should change their mind during deliberation, or that what they should do is a function of what they believe they will do. They say the game has an equilibrium, and it should be played. It's just that Games 2 and 3 have different equilibria, and hence lead to different plays, even though they are alike in the respects that Dmitri highlights.
+
+One could say here that the mixed strategies should be extra rows in the table, and games 2 and 3 would differ in what went into those extra rows. But this would mean that all games are infinite games, which creates its own technical problems. And it would ignore the sense in which these mixed strategies are indeed mixtures of other strategies. They are not distinct pure strategies that need their own payouts.
+
+This is not an argument against Stability, it is an argument against this formalisation of stability. There is a better formalisation that does not run into problems with the equilibrium theorist. Say that the world has one or other **type**. The idea here goes back to @Harsanyi1967. The type of the world is, and is known to be, causally independent of the choice the agent makes. The type of the world does two things. First, it specifies the quantity that the world is 'trying' to maximise. Intuitively, or perhaps unintuitively, we think of the world as having both a goal, and perfect foresight as to the strategy (pure or mixed) of the chooser. There is some function from act-state pairs to numerical values, and the world is trying to maximise the expected value of that function given the chooser's strategy. In versions of Newcomb's Problem where the Demon has perfect foresight, the type of the Demon is simple - 1 for a correct response, 0 for incorrect - and the chooser knows the Demon's type. But for the general case we need two more complications. One is that the chooser doesn't always know the world's type. If the Demon is only 80% reliable, we will model this by saying that the chooser thinks it is 80% likely that the world is of the normal type, and 20% likely that the type of the world is that it gets 1 if its makes the 'wrong' prediction (e.g., puts a million dollars in the box even though 2 boxes are chosen) and 0 otherwise. they are trying to this isn't quite enough. So second, the world's type also specifies the probability that the world will make one or other selction when each of those selections would do equally well at maximising the expected value of this function.
+
+The chooser doesn't know what type the world has. But their uncertainty can be entirely expressed as uncertainty about the type of the world. The simplest problems, ones where there is no evidential connection between acts and states, are ones where the function the world is trying to maximise is a constant, the probabilities that the world will 'choose' one or other state are the familiar state probabilities, and the chooser knows the world has precisely this type. Newcomb problems, and indeed the general class of problems that Dmitri's formalism lets one express, are problems where the function the world is trying to maximise take the value 1 or 0. In some sense, we can think of all of them as problems where the world is trying to make some kind of prediction. (Perhaps this is because the world contains a Demon who is quite literally trying to make some kind of prediction.) And the world gets score 1 if the prediction is right, 0 if it is wrong. And these are a very interesting class of problems. But they are not the most general kind. The most general kind lets this quantity 
+Second, it specifies the probability that the world when instantiate one or other state when multiple instantiations would do equally well at 
+
+
+⪰
+
