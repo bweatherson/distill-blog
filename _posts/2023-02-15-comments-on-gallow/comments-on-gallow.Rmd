@@ -147,3 +147,97 @@ This is a very plausible theory. If the options in $O$ are equivalent given $\ne
 
 But can we motivate anything stronger than Sure Thing? Can we, for example, motivate what Gallow calls Weak Sure Thing? I don't see any particular reason to do so, though that might be in part because 
 
+
+> If whether $E$ is true is causally independent of the choice, and $A$ and $B$ (which are both members of $O$) return the same outcome given $\neg E$, and both $C(O) \cup \{A, B\}$ and $C_E(O) \cup \{A, B\}$ are non-empty, then $C(O) \cup \{A, B\} = C_E(O) \cup \{A, B\}$.
+
+
+
+But first I want to note something even more foundational. I don't really think the role of a decision theory is to provide this kind of ordering. I think the role of a decision theory is to make decisions. In the terminology made famous by @Sen2018, I think the main role of a decision theory is to provide a function $C$ from sets of options to choice-worthy options. (I'll typical label the set of options as $O$.) Ideally, whenever $O$ is non-empty, $C(O)$ will be non-empty, and I'll assume, something like that, from what follows.
+
+The reason that I prefer doing things in terms of $C$ rather than in terms of ⪰ is that I think we should take seriously the possibility that textbook approaches to game theory are the correct way to handle Newcomb-like decision problems. (This is an idea that I learned about from work by William @Harper1986, though it's arguably implicit in @Lewis1979e.) And when you look at a textbook version of, say, subgame perfect equilibrium, what the textbook tells you is whether or not a particular state is or is not an equilibrium. And it says that the equilibrium states are choice-worthy, and the non-equilibrium states are not. It does not go on to say anything about orderings among the equilibrium options, or, especially, among the non-equilibrium options. I'd rather work within a framework that left the possibility of such a theory open, and I'm worried that requiring the output of a decision problem to be a binary relation like ⪰ rules such a theory out before we've even started philosophising.
+
+To be sure, one could try to convert $C$ into ⪰ by saying that $A ⪰ B \leftrightarrow A \in C(\{A, B\})$. But this doesn't seem like a promising way to go for two reasons. First, there isn't much motivation for saying that this relation is transitive. Second, unless we assume Sen's principles Alpha and Beta, it isn't possible in general to reconstruct $C$ from ⪰, so $C$ still seems like the primary thing to care about. And, as Eells and Harper show, ratificationist theories do not in general support Principle Beta. So I'm going to assume in what follows that a decision theory is a function from decision problems to sets of choice-worthy options.
+
+## Stability
+
+Gallow shows that two principles, Stability and Sure Thing, are in conflict. This section discusses what he means by Stability, and the next is on Sure Thing. In each case, I'll argue that there is an important principle that he's pointing to, but that we shouldn't expect the ideal decision theory will satisfy the particular version of the principle he endorses.
+
+Stabiility, in effect, I've already introduced. A theory satsfies Stability iff $V$ and $P$ are sufficient inputs to the theory for it to output a total pre-order ⪰. It might not be obvious why _Stability_ is the right name for this. The reason is that he means to contrast theories that satisfy this constraint with some notable versions of causal decision theory. These theories say that as well as **V** and **P**, the theory also needs as an input the unconditional probability distribution the agent has over their own choices. A simple version of such a theory equates the value of an act (chosen or unchosen) with the sum across all option-state pairs of the (unconditional) probability of the act, times the (conditional) probability of the state given the option, times the value of the option-state pair. The theory then says that $A ⪰ B$ iff the value of $A$, as given by this formula, is higher than the value of $B$. And the big point is that if the chooser takes themselves to be following this procedure, then how they value acts will change as they run these calculations, realise that they were giving positive probability to playing a non-optimal option, and hence change the probability that each option will be chosen. This does look unstable, and if this probability of option choice is a further input to a decision theory, the theory violates a condition worth calling Stability.
+
+<aside>
+Gallow calls the versions of causal decision theory in question _orthodox causal decision theory_. I don't love that name; I'm not sure any variant of causal decision theory is widespread enough to warrant the name, and in any case I think it's better to pick out a particular target.
+</aside>
+
+The problem is that there are other plausible decision theories that are not unstable in any intuitive sense, but which violate Stability so defined. One simple such theory says that an option is choice-worthy iff it is part of a Nash equilibrium of the game the chooser is playing. That is, an option is choice-worthy iff it maximises expected utility on the assumption that it will be played. There are good philosophical reasons for scepticism about the centrality of Nash equilibrium to game theory; Matthias @Risse2001 has a good run-down of why the usually given reasons for making it so central don't really work. The main reason for caring about Nash equilibrium is that it means that one doesn't regret one's actions on the assumption that everyone else knows what one is doing. And that assumption is not true in general; one could simply take steps to conceal one's actions. But in the context of post-Newcomb decision theory, where demons who can read one's mind are _everywhere_, it seems like it might be a good assumptions. So I'm going to take it as a viable theory for a little while, and see what happens. And the result we're going to get is that an intuitively stable theory violates Gallow's version of Stability.
+
+Consider the following two games. In each game, Column is a Demon who can predict with probability 1 what strategy Human, playing Row, will play. But while Demon can predict Human's strategy, that does not mean they can predict what Human will play. If Human plays a mixed strategy, Demon can predict the mixed strategy, but not which choice is made by the randomiser. If they could, that would be some kind of backward causation, and the predictions would not be _states_ in the sense needed for these problems.
+
+Here is the first game. In each cell, human's payouts are listed first, and Demon's payouts are listed second.
+
+          P-Up        P-Down
+----- -----------  ---------------
+   Up     0,1           1,0
+ Down     1,0           0,1
+ 
+Table: Game 1
+ 
+The only ratifiable strategy for human is to play a 50/50 mixture of Up and Down, and presumably Demon will do the same thing. Compare that with the following game.
+
+          P-Up        P-Down
+----- -----------  ---------------
+   Up     0,3           1,0
+ Down     1,0           0,1
+
+Table: Game 2
+
+The only Nash equilibrium for this game is that human plays a mixed strategy of Up with probability ¼, and Down with probability ¾, while Demon plays a 50/50 mix of P-Up and P-Down. The game theoretic orthodoxy which says that one should play Nash equilibrium strategies seems at least plausible to me. And, crucially, it doesn't seem unstable. The Nash equilibrium theorist doesn't say that someone should change their mind during deliberation, or that what they should do is a function of what they believe they will do. They say the game has an equilibrium, and it should be played. It's just that Games 1 and 2 have different equilibria, and hence lead to different plays, even though they are alike in the respects that Dmitri highlights.
+
+One could say here that the mixed strategies should be extra rows in the table, and games 2 and 3 would differ in what went into those extra rows. But this would mean that all games are infinite games, which creates its own technical problems. And it would ignore the sense in which these mixed strategies are indeed mixtures of other strategies. They are not distinct pure strategies that need their own payouts.
+
+This is not an argument against Stability, it is an argument against this formalisation of stability. There is a better formalisation that does not run into problems with the equilibrium theorist. In fact, we can offer two versions of Stability, both of which are satisfied by this theory. The first is simply to say that Gallow's version of Stability is right as long as we restrict attention to pure strategies, i.e., strategies that are not probabilistic mixtures of other strategies.
+
+Weak Stability
+:    **V** and **P** suffice to determine which pure strategies are choice-worthy.
+
+Whether a pure strategy is part of a Nash equilibrium is determined just by **V** and **P**, so the Nash equilibrium theory will satisfy Weak Stability. But it also satisfies a somewhat stronger theory, that takes a bit of setting up.
+
+The core notion that we'll need to set up this notion of Stability is the notion of a **type** from @Harsanyi1967. A type includes two things. First, it has a reward function $r$ that, mirroring **V**, is a function from option-state pairs to the 'reward' the world gets. And in general the world 'chooses' the state of the world that maximises its reward, given a correct belief about the strategy (pure or mixed) that the chooser selects. We assume that the reward is just a function of what the chooser does and the state chosen. So it doesn't matter whether the chooser chose $o$, or they chose a mixed strategy that had non-zero probability of ending up with $o$, and an unpredictable, probabilistic process that led to $o$ being selected. Either way, the reward is the same. Second, in cases where a combination of $r$ and a strategy choice would lead to multiple states maximising expected reward, the type determines a probability distribution over those states. In general, we assume that the world's type is both probabilistically and causally independent of the choice. Any correlations between states and choices is embedded into the probability distribution over types.
+
+Given that understanding of a type, there is a stronger form of Stability that can be stated.
+
+Strong Stability
+:    **V** and a probability distribution over the possible types that the world might have determine which strategies, pure and mixed, are choice-worthy.
+
+Since the chooser's probabilities about their own choices are not an input into what is choice-worthy, it is reasonable to call this a form of stability. But to understand what Strong Stability says, it is helpful to work through some familiar examples, and see how they are translated into the language of types.
+
+Start with a simple example that we might use in an intro decision theory class. Chooser doesn't know whether it will rain, and has to make some choice, e.g., take an umbrella or not, whose value is sensitive to whether it rains. But, crucially, whether it rains is both probabilistically and causally independent of what Chooser does. In this case we can say that Chooser knows what type the world is, that $r=0$ in all possibilities, and that the probability that the tie will be split in favor of rain is whatever the actual probability of rain is. In general, any situation where the options and the states are probabilistically independent can be modeled as a situation where the reward function $r$ is a constant.
+
+That won't do for problems like Newcomb's Problem. But here we can simply borrow a technique that @Harper1986 introduces. In traditional Newcomb's Problem, where the Demon's predictions are arbitrarily accurate, the Chooser knows what type the world has, and $r=1$ if the prediction is correct, and $r=0$ otherwise. 
+
+Things are more complicated if the Demon is not quite so accurate. Now consider the case where the Demon is 80% reliable. That is, conditional on choosing one box, it is 80% likely that the Demon will predict one has chosen one box, and conditional on choosing two boxes, it is 80% likely that the Demon will predict one has chosen two boxes. This is best represented as a situation where Chooser does not know the world's type. It is 80% likely that the world's type is that  $r=1$ if the prediction is correct, and $r=0$ otherwise, while it is 20% likely that the world's type is that  $r=1$ if the prediction is _incorrect_, and $r=0$ otherwise,
+
+What if the Demon's accuracy differs between the two prediction? Imagine, for instance, that conditional on choosing one box, it is 80% likely that the Demon will predict one has chosen one box, but conditional on choosing two boxes, it is 95% likely that the Demon will predict one has chosen two boxes. This can be modeled as a situation where Chooser is uncertain between three types that the world might have. (Note it is crucial here that the world types are probabilistically independent of choices.)
+
+* It is 80% likely that the world's type is that  $r=1$ if the prediction is correct, and $r=0$ otherwise.
+* It is 5% likely that the world's type is that  $r=1$ if the prediction is incorrect, and $r=0$ otherwise.
+* It is 15% likely that the world's type is that $r=1$ if the prediction is that two boxes are chosen, and $r=0$ otherwise.
+
+Strictly speaking the last three paragraphs require a clause for saying what will happen if the expected return of the two predictions is the same, which will happen if the Chooser plays a mixed strategy where one box and two boxes are equally likely. But it won't really matter what we say here; we'll capture what's ordinarily included in Newcomb's Problem whatever we say. Still, for completeness, let's say that in these cases the world will also select each state with probability 0.5.
+
+Note something in common between all the models in the last few paragraphs. In every case, the domain of the reward function $r$ is $\{0, 1\}$. In general, any decision problem that can be represented using Gallow's **V** and **P** can be modeled by replacing **P** with a probability distribution over some types, all of which have the domain of $r$ be a subset of $\{0, 1\}$. But in the general case, where $r$ can take any real value, this framework is more expressively powerful than Gallow's. That is, it distinguishes between cases, like Games One and Two above, that Gallow's does not.
+
+Given a probability distribution over types, we don't need to know anything about the chooser's probability distribution over their own actions to know whether an act is ratifiable, or whether it is part of an equilibrium. So the ratifiability theory is consistent with Strong Stability. And this is really as strong a form of Stability as I think we should want.
+
+## The Sure Thing Principles
+
+Gallow gives two versions of Sure Thing. Both of them are defined in terms of ⪰, and they don't necessarily seem that plausible if one uses $C$ as the main primitive instead. The first he simply calls **Sure Thing Principle**, but I'll call **Strong Sure Thing Principle** to contrast it with what's about to come.
+
+>  If whether $E$ is true is causally independent of how you choose, and $A$ ≈ $B$ | ¬$E$, then: $A$ ⪰ $B$ iff $A$ ⪰ $B$ | $E$. (2)
+
+This isn't very plausible if we believe in rational incommesurabilities. Let $X$ and $Y$ be two options that have large costs and benefits and can't be easily compared. A coin is about to be tossed. Let $A$ be a bet that returns $X$ if heads, and nothing if tails, and $B$ a bet that returns $Y$ if heads, and a penny if tails. Let $E$ be that the coin lands tails. Then given how Gallow defined ≈, we have $A$ ≈ $B$ | ¬$E$, and $A$ ⪰ $B$, but not $A$ ⪰ $B$ | $E$. So I don't think **Strong Sure Thing Principle** is very intuitive if incommensurabilities are possible. And on a ratificationist theory, incommensurabilities are very common. So I think we have good grounds to reject it. What about the other version, which he calls **Weak Sure Thing Principle**?
+
+ > If whether $E$ is true is causally independent of how you choose, choose and $A$ and $B$ would lead to exactly the same outcome whenever $E$ is false, then: $A$ ⪰ $B$ iff $A$ ⪰ $B$ | $E$. (2).
+
+This does look more plausible, even when constituents of $A$ and $B$ are incommensurable. But how do we translate it into the language of $C$? We can get some of the force of it with the following principle, which I'll call **Very Weak Sure Thing Principle**. I'll use $C_E$ for the choice function given evidence $E$.
+
+
