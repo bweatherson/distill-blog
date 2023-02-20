@@ -241,3 +241,4 @@ This isn't very plausible if we believe in rational incommesurabilities. Let $X$
 This does look more plausible, even when constituents of $A$ and $B$ are incommensurable. But how do we translate it into the language of $C$? We can get some of the force of it with the following principle, which I'll call **Very Weak Sure Thing Principle**. I'll use $C_E$ for the choice function given evidence $E$.
 
 
+
