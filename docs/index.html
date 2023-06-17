@@ -456,8 +456,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -786,6 +786,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1027,10 +1028,6 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1862,9 +1859,21 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1876,6 +1885,31 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1975,6 +2009,8 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1997,7 +2033,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2422,7 +2458,7 @@ code span.wa { color: #008000; font-weight: bold; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2779,26 +2815,6 @@ function init_posts_list() {
 <div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Papers by Brian Weatherson">Papers by Brian Weatherson</h1>
-<a href="posts/2023-02-15-comments-on-gallow/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["games and decisions","unpublished"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 15, 2023</div>
-<div class="dt-authors">
-<div class="dt-author">Brian Weatherson</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Comments on Gallow</h2>
-<div class="dt-tags">
-<div class="dt-tag">games and decisions</div>
-<div class="dt-tag">unpublished</div>
-</div>
-<p>Dmitri Gallow wrote a very interesting paper, "The Sure Thing Principle Leads to Instability", in Philosophical Quarterly. The main conclusion, as the title implies, is that no plausible decision theory satisfies two desiderata, which he calls Sure Thing and Stability. I think the motivations he gives for those desiderata do not support ptinciples quite as strong as the principles he gives. And the weaker, but more plausible, versions of the principles are both consistent with a version of causal ratificationism. This note, which is too narrow and too long to be reasonably published anywhere, sets out why I think causal ratificationism avoids his criticism.</p>
-</div>
-</a>
 <a href="posts/2021-11-16-permissivism-and-symmetric-games/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":["games and decisions","epistemic permissiveness","epistemic uniqueness","unpublished"]}</script>
 <div class="metadata">
@@ -2818,7 +2834,7 @@ function init_posts_list() {
 <div class="dt-tag">epistemic uniqueness</div>
 <div class="dt-tag">unpublished</div>
 </div>
-<p>Permissivism in epistemology is a family of theses, each of which says that rationality is compatible with a number of distinct attitudes. This paper ar- gues that thinking about symmetric games gives us new reason to believe in permissivism. In some finite games, if permissivism is false then we have to think that a player is more likely to take one option rather than another, even though each have the same expected return given that player’s credences. And in some infinite games, if permissivism is false there is no rational way to play the game, although intuitively the games could be rationally played. The latter set of arguments rely on the recent discovery that there are symmetric games with only asymmetric equilibria. It was long known that there are symmetric games with no pure strategy symmetric equilibria; the surprising new discovery is that there are symmetric games with asymmetric equilibria, but no symmetric equilibria involving either mixed or pure strategies.</p>
+<p>Permissivism in epistemology is a family of theses, each of which says that rationality is compatible with a number of distinct attitudes. This paper argues that thinking about symmetric games gives us new reason to believe in permissivism. In some finite games, if permissivism is false then we have to think that a player is more likely to take one option rather than another, even though each have the same expected return given that player’s credences. And in some infinite games, if permissivism is false there is no rational way to play the game, although intuitively the games could be rationally played. The latter set of arguments rely on the recent discovery that there are symmetric games with only asymmetric equilibria. It was long known that there are symmetric games with no pure strategy symmetric equilibria; the surprising new discovery is that there are symmetric games with asymmetric equilibria, but no symmetric equilibria involving either mixed or pure strategies.</p>
 </div>
 </a>
 <a href="posts/2021-11-15-a-dynamic-war-on-edt/" class="post-preview">
@@ -2890,7 +2906,7 @@ function init_posts_list() {
 </div>
 </div>
 <div class="thumbnail">
-<img data-src="posts/2021-01-04-the-sporting-attitude/matildas.jpg"/>
+<img src="posts/2021-01-04-the-sporting-attitude/matildas.jpg"/>
 </div>
 <div class="description">
 <h2>The Sporting Attitude</h2>
@@ -4477,7 +4493,7 @@ function init_posts_list() {
 <ul>
 <li>
 <a href="#category:Articles">Articles</a>
-<span class="category-count">(81)</span>
+<span class="category-count">(80)</span>
 </li>
 <li>
 <a href="#category:accuracy">accuracy</a>
@@ -4545,7 +4561,7 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:games_and_decisions">games and decisions</a>
-<span class="category-count">(19)</span>
+<span class="category-count">(18)</span>
 </li>
 <li>
 <a href="#category:history_of_analytic">history of analytic</a>
@@ -4629,7 +4645,7 @@ function init_posts_list() {
 </li>
 <li>
 <a href="#category:unpublished">unpublished</a>
-<span class="category-count">(8)</span>
+<span class="category-count">(7)</span>
 </li>
 <li>
 <a href="#category:vagueness">vagueness</a>
@@ -4653,8 +4669,7 @@ function init_posts_list() {
 
 
 <div class="d-article">
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
